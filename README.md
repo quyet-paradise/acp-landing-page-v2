@@ -1,2 +1,2 @@
-# acp-landing-page-v2
+# acp-landing-page
 Artisan Compounding Pharmacy landing page v2
