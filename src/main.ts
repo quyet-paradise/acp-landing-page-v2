@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
 
+import "@/styles/index.scss"
+import '@/assets/scss/global-fonts.scss'
+import '@/assets/scss/global-styles.scss'
+
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import 'uno.css'
