@@ -111,7 +111,7 @@ const onHidePopover = () => {
     
     const navHeader: any = document.getElementById('navHeader')
     if (navHeader) {
-        navHeader.style.backgroundColor = 'transparent'
+        navHeader.style.backgroundColor = '#FAF8DE'
         navHeader.style.height = 'auto'
     }
 }
@@ -121,8 +121,9 @@ const onHidePopover = () => {
 .nav-header {
     width: 100%;
     height: auto;
-    background: transparent;
-    padding: 16px 32px;
+    background: #FAF8DE;
+    padding: 16px 32px 0 32px;
+    transition: all .3s ease; 
 
     &--content {
         display: flex;
@@ -164,12 +165,6 @@ const onHidePopover = () => {
                 }
             }
         }
-    }
-
-    hr {
-        border: none; 
-        height: 1px; 
-        background-color: var(--dls-color-burgundy); 
     }
 }
 </style>
