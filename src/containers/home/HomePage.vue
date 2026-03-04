@@ -9,7 +9,15 @@
         </main>
 
         <main ref="homeNavHeaderRef" class="homepage--nav">
-            <NavHeader />
+            <HomeNavHeader />
+        </main>
+
+        <main ref="homeQuoteRef">
+            <HomeQuote />
+        </main>
+
+        <main ref="homeFooterRef">
+            <Footer />
         </main>
     </div>
 </template>
@@ -19,13 +27,14 @@ import { defineAsyncComponent } from 'vue'
 
 const HomeAuxHeader = defineAsyncComponent(() => import('@/components/header/AuxHeader.vue'))
 const HomeBanner = defineAsyncComponent(() => import('./components/HomeBanner.vue'))
-const NavHeader = defineAsyncComponent(() => import('@/components/header/NavHeader.vue'))
+const HomeNavHeader = defineAsyncComponent(() => import('@/components/header/NavHeader.vue'))
+const HomeQuote = defineAsyncComponent(() => import('./components/HomeQuote.vue'))
+const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue'))
 </script>
 
 <style lang="scss" scoped>
 .homepage {
     width: 100%;
-    height: 5000px; //test
     max-width: 1920px;
     margin: 0 auto;
     background: var(--dls-color-faf8de);
