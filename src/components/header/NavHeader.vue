@@ -87,7 +87,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn">BOOK CONSULTATION</div>
+                <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
             </div>
         </div>
 
@@ -150,19 +150,6 @@ const onHidePopover = () => {
             .item {
                 cursor: pointer;
                 color: var(--dls-color-burgundy);
-            }
-
-            .book-consultation-btn {
-                background: var(--dls-color-sunlight);
-                color: var(--dls-color-burgundy);
-                border-radius: 4px;
-                padding: 12px 16px;
-                cursor: pointer;
-                border: 1px solid var(--dls-color-sunlight);
-
-                &:hover {
-                    border: 1px solid var(--dls-color-burgundy);
-                }
             }
         }
     }

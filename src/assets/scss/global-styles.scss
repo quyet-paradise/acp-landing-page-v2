@@ -53,3 +53,32 @@ hr {
     height: 1px; 
     background-color: var(--dls-color-burgundy); 
 }
+
+.book-consultation-btn-v1 {
+    background: var(--dls-color-sunlight);
+    color: var(--dls-color-burgundy);
+    border-radius: 4px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid var(--dls-color-sunlight);
+
+    &:hover {
+        border: 1px solid var(--dls-color-burgundy);
+    }
+}
+
+.book-consultation-btn-v2 {
+    color: var(--dls-color-burgundy);
+    border-radius: 4px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid var(--dls-color-burgundy);
+    background: var(--dls-color-faf8de);
+    width: fit-content;
+    transition: all .3s ease;
+
+    &:hover {
+        background: var(--dls-color-sunlight);
+        border: 1px solid var(--dls-color-sunlight);
+    }
+}
