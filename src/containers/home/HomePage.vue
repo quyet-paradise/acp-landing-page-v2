@@ -16,6 +16,10 @@
             <HomeQuote />
         </main>
 
+        <main ref="homeContactRef">
+            <HomeContact />
+        </main>
+
         <main ref="homeFooterRef">
             <Footer />
         </main>
@@ -29,6 +33,7 @@ const HomeAuxHeader = defineAsyncComponent(() => import('@/components/header/Aux
 const HomeBanner = defineAsyncComponent(() => import('./components/HomeBanner.vue'))
 const HomeNavHeader = defineAsyncComponent(() => import('@/components/header/NavHeader.vue'))
 const HomeQuote = defineAsyncComponent(() => import('./components/HomeQuote.vue'))
+const HomeContact = defineAsyncComponent(() => import('./components/HomeContact.vue'))
 const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue'))
 </script>
 
