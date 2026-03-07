@@ -10,7 +10,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">OUR TEAM</div>
@@ -31,7 +32,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">HORMONE REPLACEMENT THERAPY (BHRT)</div>
@@ -55,7 +57,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">WHAT IS COMPOUNDING</div>
@@ -75,7 +78,8 @@
                     :width="288"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">SEND PRESCRIPTION</div>
@@ -170,6 +174,8 @@ const onHidePopover = () => {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 12px;
+        background-color: var(--dls-color-sunlight);
+        transition: all .3s ease; 
 
         &--text {
             font-size: 16px;
