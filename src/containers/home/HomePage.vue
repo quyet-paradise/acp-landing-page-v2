@@ -20,6 +20,10 @@
             <HomeServices />
         </main>
 
+        <main ref="homeCommitmentRef">
+            <HomeCommitment />
+        </main>
+
         <main ref="homeCommentRef">
             <HomeComment />
         </main>
@@ -46,6 +50,7 @@ const HomeBanner = defineAsyncComponent(() => import('./components/HomeBanner.vu
 const HomeNavHeader = defineAsyncComponent(() => import('@/components/header/NavHeader.vue'))
 const HomeQuote = defineAsyncComponent(() => import('./components/HomeQuote.vue'))
 const HomeServices = defineAsyncComponent(() => import('./components/HomeServices.vue'))
+const HomeCommitment = defineAsyncComponent(() => import('./components/HomeCommitment.vue'))
 const HomeContact = defineAsyncComponent(() => import('./components/HomeContact.vue'))
 const HomeAccreditation = defineAsyncComponent(() => import('./components/HomeAccreditation.vue'))
 const HomeComment = defineAsyncComponent(() => import('./components/HomeComment.vue'))
