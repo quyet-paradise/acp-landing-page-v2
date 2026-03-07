@@ -10,7 +10,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">OUR TEAM</div>
@@ -31,7 +32,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">HORMONE REPLACEMENT THERAPY (BHRT)</div>
@@ -55,7 +57,8 @@
                     :width="400"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">WHAT IS COMPOUNDING</div>
@@ -75,7 +78,8 @@
                     :width="288"
                     popper-class="box-item-menu-header"
                     @after-enter="onShowPopover"
-                    @before-leave="onHidePopover">
+                    @before-leave="onHidePopover"
+                    trigger="click">
 
                     <div class="item--popover">
                         <div class="item--popover--text">SEND PRESCRIPTION</div>
@@ -87,7 +91,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn">BOOK CONSULTATION</div>
+                <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
             </div>
         </div>
 
@@ -151,19 +155,6 @@ const onHidePopover = () => {
                 cursor: pointer;
                 color: var(--dls-color-burgundy);
             }
-
-            .book-consultation-btn {
-                background: var(--dls-color-sunlight);
-                color: var(--dls-color-burgundy);
-                border-radius: 4px;
-                padding: 12px 16px;
-                cursor: pointer;
-                border: 1px solid var(--dls-color-sunlight);
-
-                &:hover {
-                    border: 1px solid var(--dls-color-burgundy);
-                }
-            }
         }
     }
 }
@@ -183,6 +174,8 @@ const onHidePopover = () => {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 12px;
+        background-color: var(--dls-color-sunlight);
+        transition: all .3s ease; 
 
         &--text {
             font-size: 16px;
