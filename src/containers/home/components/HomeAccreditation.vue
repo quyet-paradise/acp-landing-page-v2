@@ -37,5 +37,23 @@
             width: auto;
         }
     }
+
+    @media (max-width: 1024px) {
+        &--title {
+            font-size: 48px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &--title {
+            font-size: 36px;
+        }
+
+        &--imgs {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 </style>

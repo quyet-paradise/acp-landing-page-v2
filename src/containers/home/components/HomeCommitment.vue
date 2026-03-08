@@ -78,7 +78,7 @@ const handleNext = () => {
     .home-commitment {
         width: 100%;
         display: flex;
-        min-height: 1200px;
+        height: 800px;
 
         &--left {
             flex: 1 0 50%;
@@ -90,7 +90,7 @@ const handleNext = () => {
 
             .img {
                 position: absolute;
-                width: 70%;
+                width: 50%;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
@@ -150,6 +150,72 @@ const handleNext = () => {
                 top: 50%;
                 transform: translate(0, -50%);
             } 
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home-commitment {
+            height: 600px;
+
+            &--left {
+                flex: 1 0 40%;
+
+                .img {
+                    width: 70%;
+                }
+            }
+
+            &--right {
+                flex: 1 0 60%;
+                padding: 16px;
+
+                .header {
+                    gap: 16px;
+
+                    .title {
+                        font-size: 48px;
+                    }
+                }
+
+                .content {
+                    gap: 16px;
+
+                    &--detail {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-commitment {
+            flex-direction: column-reverse;
+            height: 800px;
+
+            &--left {
+                flex: 1 0 60%;
+
+                .img {
+                    width: 50%;
+                }
+            }
+
+            &--right {
+                flex: 1 0 40%;
+
+                .header {
+                    .title {
+                        font-size: 36px;
+                    }
+                }
+
+                .content { 
+                    &--detail {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
     }
 }

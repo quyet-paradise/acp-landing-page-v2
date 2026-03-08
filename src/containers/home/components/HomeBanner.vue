@@ -1,8 +1,8 @@
 <template>
     <div class="home-banner">
         <div class="home-banner--img">
-            <img class="banner banner1" src="/images/home-banner/banner1.png" alt="banner">
-            <img class="banner banner2" src="/images/home-banner/banner2.png" alt="banner">
+            <div class="banner banner-1"></div>
+            <div class="banner banner-2"></div>
         </div>
 
         <div class="home-banner--info">
@@ -34,8 +34,11 @@ onBeforeUnmount(() => {
 })
 
 watch(scrollPosition, (newValue) => {
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     const logoScaling = document.getElementById('logoScaling')
 
+    if (width < 1024) return
+    
     if (logoScaling) {
         // React to the scroll position changes
         if (newValue >= 100 && newValue < 200) {
@@ -133,7 +136,59 @@ watch(scrollPosition, (newValue) => {
         gap: 0;
 
         .banner {
-            width: 50%;
+            flex: 1 0 50%;
+            height: 90vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            &.banner-1 {
+                background-image: url('/images/home-banner/banner1.png');
+            }
+
+            &.banner-2 {
+                background-image: url('/images/home-banner/banner2.png');
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &--info {
+            &--logo {
+                height: 200px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &--info {
+            &--title {
+                left: 32px;
+
+                .title {
+                    font-size: 45px;
+                }
+
+                .learnmore-btn {
+                    font-size: 15px;
+                    margin-top: 24px;
+                }
+            }
+
+            &--logo {
+                height: 105px;
+            }
+        }
+
+        &--img {
+            .banner {
+                flex: 1 0 100%;
+                height: 700px;
+
+                &.banner-1 {
+                    display: none;
+                }
+            }
         }
     }
 }

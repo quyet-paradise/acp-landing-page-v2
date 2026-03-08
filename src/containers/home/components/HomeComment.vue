@@ -96,6 +96,7 @@ const onNextBtn = () => {
                 font-weight: 400;
                 font-size: 24px;
                 color: var(--dls-color-sunlight);
+                line-height: 105%;
             }
         }
 
@@ -137,6 +138,33 @@ const onNextBtn = () => {
 
     hr {
         background-color: var(--dls-color-sunlight);
+    }
+
+    @media (max-width: 768px) {
+        .home-comment {
+            padding: 32px;
+            gap: 32px;
+
+            &--top {
+                .title {
+                    font-size: 16px;
+                }
+            }
+
+            &--content {
+                gap: 24px;
+
+                .content {
+                    font-size: 32px;
+                    line-height: 120%;
+                    letter-spacing: -2px;
+                }
+
+                .name {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 </style>

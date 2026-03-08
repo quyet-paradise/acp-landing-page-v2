@@ -17,5 +17,28 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+
+        @media (max-width: 1440px) {
+            &--title {
+                font-size: 60px;
+                line-height: 120%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding: 32px 32px 0 32px;
+
+            &--title {
+                font-size: 45px;
+                letter-spacing: -3px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &--title {
+                font-size: 24px;
+                letter-spacing: -2px;
+            }
+        }
     }
 </style>

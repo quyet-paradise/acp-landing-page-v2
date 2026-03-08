@@ -1,6 +1,6 @@
 <template>
     <div class="homepage">
-        <main ref="homeAuxHeaderRef">
+        <main ref="homeAuxHeaderRef" class="homepage--aux">
             <HomeAuxHeader />
         </main>
 
@@ -68,11 +68,24 @@ const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue
     max-width: 1920px;
     margin: 0 auto;
     background: var(--dls-color-faf8de);
+    position: relative;
 
-    &--nav {
+    &--aux {
         position: sticky;
         top: 0;
         z-index: 1000;
+    }
+
+    &--nav {
+        position: sticky;
+        top: var(--dls-aux-header-height);
+        z-index: 1000;
+    }
+
+    @media (max-width: 1024px) {
+        &--nav {
+            display: none;
+        }
     }
 }
 </style>
