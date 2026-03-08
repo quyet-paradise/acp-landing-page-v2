@@ -70,7 +70,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 <style lang="scss" scoped>
 .home-contact--wrapper {
     width: 100%;
-    padding: 0 32px;
+    padding: 0 32px 32px 32px;
 
     .home-contact {
         width: 100%;
@@ -79,6 +79,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
         border-radius: 30px;
         display: flex;
         align-items: flex-end;
+        overflow: hidden;
 
         &--form {
             flex: 1;
@@ -87,12 +88,47 @@ const submitForm = (formEl: FormInstance | undefined) => {
             align-items: center;
         }
     }
+
+    @media (max-width: 1440px) {
+        .home-contact {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home-contact {
+            padding: 32px;
+            &--text {
+                font-size: 48px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-contact {
+            justify-content: center;
+            align-items: center;
+
+            &--form {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            &--text {
+                font-size: 36px;
+                letter-spacing: -3px;
+            }
+        }
+    }
 }
 </style>
 
 <style lang="scss">
 .el-input {
-    min-width: 360px;
+    min-width: 260px;
 
     .el-input__wrapper {
         box-shadow: none;
@@ -112,6 +148,10 @@ const submitForm = (formEl: FormInstance | undefined) => {
                 font-size: 16px;
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        min-width: 300px;
     }
 }
 

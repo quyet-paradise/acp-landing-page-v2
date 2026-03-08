@@ -204,5 +204,92 @@ const handleLeave = () => {
             }
         }
     }
+
+    @media (max-width: 1780px) {
+        .home-services {
+            &--left {
+                gap: 16px;
+
+                .image {
+                    width: 360px;
+                }
+
+                .desc {
+                    font-size: 24px;
+                }
+            }
+
+            &--right {
+                .service-list {
+                    &--item {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .home-services {
+            &--left {
+                gap: 8px;
+                padding: 0 64px;
+
+                .image {
+                    width: 250px;
+                }
+
+                .desc {
+                    font-size: 20px;
+                }
+            }
+
+            &--right {
+                gap: 48px;
+                padding: 32px;
+
+                .service-list {
+                    gap: 8px;
+
+                    &--item {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home-services {
+            flex-direction: column;
+
+            &--left {
+                padding: 32px 64px;
+
+                .image {
+                    width: 200px;
+                }
+            }
+
+            &--right {
+                gap: 24px;
+                padding: 32px 64px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-services {
+            &--right {
+                padding: 32px;
+
+                .service-list {
+                    &--item {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>

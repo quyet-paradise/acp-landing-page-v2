@@ -101,11 +101,11 @@ const scrollRight = () => {
                 &--blocks {
                     display: flex;
                     align-items: flex-start;
-                    gap: 100px;
+                    gap: 150px;
 
                     &--item {
-                        width: 1220px;
-                        height: 1000px;
+                        width: 700px;
+                        height: 600px;
                         position: relative;
 
                         &.cheat-item {
@@ -129,6 +129,32 @@ const scrollRight = () => {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .home-facility {
+            padding: 32px 100px;
+
+            &--title {
+                gap: 24px;
+                .name {
+                    font-size: 60px;
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home-facility {
+            padding: 32px 50px;
+
+            &--title {
+                gap: 16px;
+                .name {
+                    font-size: 36px;
+                } 
             }
         }
     }
