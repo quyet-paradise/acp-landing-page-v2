@@ -1,6 +1,6 @@
 <template>
     <div class="home-quote">
-        <div class="home-quote--title headline-1">Artisan empowers women to hold <br /> longevity in their own hands, <br /> preserving youthful vitality, <br /> endurance, and time.</div>
+        <div class="home-quote--title headline-1">Artisan Pharmacy was built for women. Empowering you to reclaim vitality, extend your healthspan, and age beautifully, with formulations as individuals as you are.</div>
         <div class="book-consultation-btn-v2">BOOK CONSULTATION</div>
         <div>
             <hr />

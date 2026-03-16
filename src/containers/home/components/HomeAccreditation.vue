@@ -1,9 +1,10 @@
 <template>
     <div class="home-accreditation">
-        <div class="home-accreditation--title headline-1">Accreditation</div>
+        <div class="home-accreditation--title headline-1">Proud Member Of</div>
         <div class="home-accreditation--imgs">
-            <img class="pcca" src="/images/accreditation/pcca.png" alt="pcca">
             <img class="apc" src="/images/accreditation/apc.png" alt="apc">
+            <img class="ldn" src="/images/accreditation/ldn.png" alt="ldn">
+            <img class="pcca" src="/images/accreditation/pcca.png" alt="pcca">
         </div>
     </div>
 </template>
@@ -27,13 +28,8 @@
         align-items: flex-start;
         gap: 32px;
 
-        .pcca {
+        .pcca, .apc, .ldn {
             height: 135px;
-            width: auto;
-        }
-
-        .apc {
-            height: 165px;
             width: auto;
         }
     }

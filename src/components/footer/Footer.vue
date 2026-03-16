@@ -4,31 +4,27 @@
             <div class="footer--menu">
                 <img class="logo" src="/images/footer/logo.png" alt="logo">
                 <div class="col-item">
-                    <div class="item">17400 IRVINE BLVD, SUITE H <br /> TUSTIN, CA 92780</div>
-                    <div class="item">(212) 967-0892</div>
-                    <div class="item">MONDAY-FRIDAY: 9AM-5PM</div>
-                </div>
+                    <div class="item">17400 Irvine Blvd, Suite H <br /> Tustin, CA 92780</div>
+                    <div class="item">Monday - Friday: 10 AM - 5:30 PM</div>
+                    <div class="item">Saturday: 10 AM - 2PM</div>
+                    <div class="item">Sunday: Closed</div>
+                    <div class="item">Phone: 714-622-8460</div>
+                    <div class="item">Fax: 714-622-8460</div>
+                    <div class="item">contact@artisan-rx.com</div>
 
-                <div class="line">
-                    <hr class="line"/>
-                </div>
-
-                <div class="col-item">
-                    <div class="item link">INSTAGRAM</div>
-                    <div class="item link">FACEBOOK</div>
-                    <div class="item link">LINKEDIN</div>
-                </div>
-
-                <div class="line">
-                    <hr />
+                    <div class="social">
+                        <img src="@/assets/images/footer/instagram.png" alt="instagram">
+                        <img src="@/assets/images/footer/facebook.png" alt="facebook">
+                        <img src="@/assets/images/footer/linkedin.png" alt="linkedin">
+                    </div>
                 </div>
 
                 <div class="col-item">
-                    <div class="item link">ABOUT US</div>
-                    <div class="item link">SERVICES</div>
-                    <div class="item link">PATIENTS</div>
-                    <div class="item link">PROVIDERS</div>
-                    <div class="item link">BOOK CONSULTATION</div>
+                    <div class="item link">About Us</div>
+                    <div class="item link">Services</div>
+                    <div class="item link">Patients</div>
+                    <div class="item link">Providers</div>
+                    <div class="item link">Book Consultation</div>
                 </div>
             </div>
 
@@ -86,6 +82,17 @@
                         &:hover {
                             text-decoration: underline;
                         }
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    gap: 8px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
                     }
                 }
             }

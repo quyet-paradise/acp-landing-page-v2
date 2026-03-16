@@ -39,24 +39,24 @@ type Commitment = {
 const commitments: Commitment[] = [
     {
         id: 0,
-        title: 'Finest Ingredients For You',
+        title: 'Relationship-first',
         bg: '/images/commitment/bg/bg-1.png',
         img: commitment1,
-        content: 'We compound with high-quality traceable ingredients from rigorously evaluated manufacturers. Expect complete transparency about ingredients, pricing, and independent third-party testing.'
+        content: 'In a world of 15-minute doctor visits and impersonal chain pharmacies, Artisan offers consultations, follow-ups, and genuine partnership in each patient’s health journey.'
     },
     {
         id: 1,
-        title: 'Unhurried, Pharmacist-Led Care',
+        title: 'Finest Ingredients',
         bg: '/images/commitment/bg/bg-2.png',
         img: commitment2,
-        content: 'You set the pace. We make time for you. Our pharmacists walk you through the details of your customized wellness plan. We’ll answer your every question, follow up, no rushed appointments, ever.'
+        content: 'We compound exclusively with high-quality ingredients from rigorously vetted suppliers — free from unnecessary fillers, additives, and common allergens including corn, soy, lactose, dairy, casein, dyes, parabens, sulfates, and preservatives.'
     },
     {
         id: 2,
-        title: 'Formulated For Your Body',
+        title: 'Formulated for Your Body',
         bg: '/images/commitment/bg/bg-3.png',
         img: commitment3,
-        content: 'Your care plan is crafted hand-in-hand with your physician and dosed to best fit your wellness needs. We make hard-to-find medications easy.'
+        content: 'The “Artisan” promise. Our name is our brand. Every compound is handcrafted, quality-checked, and tailored to the individual. This isn’t a factory; it’s a workshop.'
     }
 ]
 
