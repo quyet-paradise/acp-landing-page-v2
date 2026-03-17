@@ -1,4 +1,4 @@
-<template>  
+<template>
   <div class="app-main-view" v-if="currentRouteName === ROUTE_NAME.HOME">
     <router-view />
   </div>
@@ -6,7 +6,7 @@
   <div v-else class="app-main-view">
     <div class="app-header">
       <HomeAuxHeader />
-      <HomeNavHeader />
+      <HomeNavHeader class="nav-header" />
     </div>
     <router-view />
     <Footer />
@@ -30,14 +30,23 @@ const currentRouteName = computed<any>(() => route.name)
 <style lang="scss" scoped>
 .app-main-view {
   position: relative;
-  background: var(--dls-color-faf8de);
+  background: var(--dls-color-creamlight);
 
   .app-header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+  }
+
+  @media (max-width: 1024px) {
+    .app-header {
+      .nav-header {
+        display: none;
+      }
+    }
+    
   }
 }
 </style>

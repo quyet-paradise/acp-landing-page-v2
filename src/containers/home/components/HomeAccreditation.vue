@@ -29,7 +29,7 @@
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 32px;
+        gap: 64px;
 
         .pcca, .apc, .ldn {
             height: 150px;

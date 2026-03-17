@@ -122,11 +122,11 @@ const onHidePopover = () => {
 <style lang="scss" scoped>
 .nav-header {
     width: 100%;
-    height: auto;
+    height: var(--dls-nav-header-height);
     background: #FAF8DE;
     padding: 16px 60px;
     transition: all .3s ease;
-    border-bottom: 1px solid var(--dls-color-border); 
+    border-bottom: 1px solid var(--dls-color-border);
 
     &--content {
         display: flex;

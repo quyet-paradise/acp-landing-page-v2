@@ -37,7 +37,7 @@
         </main>
 
         <main ref="homeContactRef">
-            <HomeContact />
+            <NewletterForm />
         </main>
 
         <main ref="homeFooterRef">
@@ -56,7 +56,7 @@ const HomeQuote = defineAsyncComponent(() => import('./components/HomeQuote.vue'
 const HomeServices = defineAsyncComponent(() => import('./components/HomeServices.vue'))
 const HomeCommitment = defineAsyncComponent(() => import('./components/HomeCommitment.vue'))
 const HomeFacility = defineAsyncComponent(() => import('./components/HomeFacility.vue'))
-const HomeContact = defineAsyncComponent(() => import('./components/HomeContact.vue'))
+const NewletterForm = defineAsyncComponent(() => import('@/components/contact/NewletterForm.vue'))
 const HomeAccreditation = defineAsyncComponent(() => import('./components/HomeAccreditation.vue'))
 const HomeComment = defineAsyncComponent(() => import('./components/HomeComment.vue'))
 const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue'))
@@ -67,16 +67,19 @@ const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue
     width: 100%;
     background: var(--dls-color-faf8de);
     position: relative;
+    overflow: clip;
 
     &--aux {
         position: sticky;
         top: 0;
+        left: 0;
         z-index: 1000;
     }
 
     &--nav {
         position: sticky;
         top: var(--dls-aux-header-height);
+        left: 0;
         z-index: 1000;
     }
 
