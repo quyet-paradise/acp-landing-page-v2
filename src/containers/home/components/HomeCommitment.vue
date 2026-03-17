@@ -1,5 +1,5 @@
 <template>
-    <div class="home-commitment--wrapper">
+    <div class="home-commitment--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="home-commitment">
             <div class="home-commitment--left" :style="{ backgroundImage: `url(${currentCommitment.bg})` }">
                 <img class="img" :src="currentCommitment.img" alt="img">
@@ -11,7 +11,7 @@
                     <div class="title">{{ currentCommitment.title }}</div>
                 </div>
                 <div class="content">
-                    <div class="content--detail headline-3">{{ currentCommitment.content }}</div>
+                    <div class="content--detail">{{ currentCommitment.content }}</div>
 
                     <div class="book-consultation-btn-v2">BOOK CONSULTATION</div>
                 </div>
@@ -74,11 +74,14 @@ const handleNext = () => {
 <style lang="scss" scoped>
 .home-commitment--wrapper {
     width: 100%;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
+    padding: 32px;
 
     .home-commitment {
         width: 100%;
         display: flex;
-        height: 800px;
+        height: 70vh;
 
         &--left {
             flex: 1 0 50%;
@@ -99,7 +102,7 @@ const handleNext = () => {
 
         &--right {
             flex: 1 0 50%;
-            padding: 32px;
+            padding: 16px 32px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -115,7 +118,7 @@ const handleNext = () => {
                     width: 100%;
                     font-family: 'Jost';
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 19px;
                     line-height: 250%;
                     letter-spacing: -0.5%;
                     color: var(--dls-color-burgundy);
@@ -124,7 +127,7 @@ const handleNext = () => {
 
                 .title {
                     font-family: 'SpeziaBookB';
-                    font-size: 60px;
+                    font-size: 42px;
                     line-height: 105%;
                     letter-spacing: -7%;
                     color: var(--dls-color-burgundy);
@@ -138,8 +141,11 @@ const handleNext = () => {
 
                 &--detail {
                     width: 100%;
-                    max-width: 680px;
                     line-height: 105%;
+                    font-family: 'SpeziaBookB';
+                    font-size: 24px;
+                    color: var(--dls-color-burgundy);
+                    letter-spacing: -1.5px;
                 }
             }
 
@@ -155,8 +161,6 @@ const handleNext = () => {
 
     @media (max-width: 1024px) {
         .home-commitment {
-            height: 600px;
-
             &--left {
                 flex: 1 0 40%;
 
@@ -171,10 +175,6 @@ const handleNext = () => {
 
                 .header {
                     gap: 16px;
-
-                    .title {
-                        font-size: 48px;
-                    }
                 }
 
                 .content {
@@ -191,7 +191,6 @@ const handleNext = () => {
     @media (max-width: 768px) {
         .home-commitment {
             flex-direction: column-reverse;
-            height: 800px;
 
             &--left {
                 flex: 1 0 60%;
@@ -203,17 +202,23 @@ const handleNext = () => {
 
             &--right {
                 flex: 1 0 40%;
+                gap: 16px;
 
                 .header {
                     .title {
-                        font-size: 36px;
+                        font-size: 28px;
                     }
                 }
 
                 .content { 
                     &--detail {
-                        font-size: 20px;
+                        font-size: 18px;
+                        letter-spacing: -1px;
                     }
+                }
+
+                .next-btn {
+                    right: -20px;
                 }
             }
         }

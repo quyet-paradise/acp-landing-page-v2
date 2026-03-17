@@ -1,9 +1,9 @@
 <template>
-    <div class="home-services--wrapper">
+    <div class="home-services--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="home-services">
             <div class="home-services--left">
                 <img v-if="currentService" class="image" :src="currentService?.img" alt="img">
-                <div v-if="currentService" class="desc headline-3">{{ currentService?.desc }}</div>
+                <div v-if="currentService" class="desc">{{ currentService?.desc }}</div>
                 <div v-if="currentService" class="learnmore-btn">LEARN MORE</div>
             </div>
             <div class="home-services--right">
@@ -103,37 +103,46 @@ const handleLeave = () => {
 <style lang="scss" scoped>
 .home-services--wrapper {
     width: 100%;
-    padding: 32px;
+    padding: 64px 32px;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
+    height: 70vh;
+    overflow: hidden;
 
     .home-services {
         width: 100%;
         display: flex;
         border-radius: 30px;
         overflow: hidden;
+        height: 100%;
 
         &--left {
             flex: 1 0 50%;
             background: var(--dls-color-c8a682);
-            padding: 0 136px;
+            padding: 10px 50px;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 16px;
             align-items: center;
             justify-content: center;
 
             .image {
-                width: 420px;
+                width: 40%;
                 height: auto;
             }
 
             .desc {
                 line-height: 105%;
                 text-align: center;
+                font-family: 'SpeziaBookB';
+                font-size: 24px;
+                color: var(--dls-color-burgundy);
+                letter-spacing: -2px;
             }
 
             .learnmore-btn {
                 font-family: 'Jost';
-                font-size: 16px;
+                font-size: 19px;
                 color: var(--dls-color-burgundy);
                 font-weight: 500;
                 cursor: pointer;
@@ -151,8 +160,8 @@ const handleLeave = () => {
             background: var(--dls-color-95583c);
             display: flex;
             flex-direction: column;
-            gap: 80px;
-            padding: 64px;
+            gap: 32px;
+            padding: 32px 48px;
 
             .bg {
                 position: absolute;
@@ -168,7 +177,7 @@ const handleLeave = () => {
                 font-weight: 400;
                 line-height: 250%;
                 letter-spacing: -0.5%;
-                font-size: 16px;
+                font-size: 19px;
                 color: var(--dls-color-sunlight);
 
                 border-bottom: 1px solid var(--dls-color-sunlight);
@@ -184,7 +193,7 @@ const handleLeave = () => {
 
                 &--item {
                     font-family: 'SpeziaBookB';
-                    font-size: 54px;
+                    font-size: 28px;
                     font-weight: 400;
                     line-height: 120%;
                     letter-spacing: -7%;
@@ -205,89 +214,57 @@ const handleLeave = () => {
         }
     }
 
-    @media (max-width: 1780px) {
-        .home-services {
-            &--left {
-                gap: 16px;
-
-                .image {
-                    width: 360px;
-                }
-
-                .desc {
-                    font-size: 24px;
-                }
-            }
-
-            &--right {
-                .service-list {
-                    &--item {
-                        font-size: 40px;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1440px) {
-        .home-services {
-            &--left {
-                gap: 8px;
-                padding: 0 64px;
-
-                .image {
-                    width: 250px;
-                }
-
-                .desc {
-                    font-size: 20px;
-                }
-            }
-
-            &--right {
-                gap: 48px;
-                padding: 32px;
-
-                .service-list {
-                    gap: 8px;
-
-                    &--item {
-                        font-size: 28px;
-                    }
-                }
-            }
-        }
-    }
-
     @media (max-width: 1024px) {
+        height: 90vh;
+
         .home-services {
             flex-direction: column;
 
             &--left {
-                padding: 32px 64px;
+                padding: 16px 64px;
+                height: 50%;
 
                 .image {
-                    width: 200px;
+                    width: 30%;
+                }
+
+                .desc {
+                    font-size: 20px;
+                    letter-spacing: -1.5px;
+                }
+
+                .learnmore-btn {
+                    font-size: 16px;
                 }
             }
 
             &--right {
-                gap: 24px;
-                padding: 32px 64px;
+                gap: 16px;
+                padding: 16px 64px;
+                height: 50%;
+
+                .title {
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+
+                .service-list {
+                    &--item {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
 
     @media (max-width: 768px) {
         .home-services {
-            &--right {
-                padding: 32px;
+            &--left {
+                padding: 16px 32px;
+            }
 
-                .service-list {
-                    &--item {
-                        font-size: 20px;
-                    }
-                }
+            &--right {
+                padding: 16px 32px;
             }
         }
     }

@@ -1,18 +1,20 @@
 <template>
-    <div class="home-banner">
+    <div class="home-banner" data-aos="zoom-in">
         <div class="home-banner--img">
-            <div class="banner banner-1"></div>
-            <div class="banner banner-2"></div>
+            <img class="banner banner-1" src="/images/home-banner/banner1.png" alt="banner-1">
+            <img class="banner banner-2" src="/images/home-banner/banner2.png" alt="banner-2">
         </div>
 
         <div class="home-banner--info">
             <div class="home-banner--info--title">
-                <div class="title headline-1">Personalized <br /> Medicine. <br /> Ageless Beauty.</div>
+                <h1 class="title">Personalized <br /> Medicine. <br /> Ageless Beauty.</h1>
                 <div class="learnmore-btn">LEARN MORE</div>
             </div>
 
             <img id="logoScaling" class="home-banner--info--logo" src="/images/home-banner/logo.png" alt="logo">
         </div>
+
+        <div class="home-banner--overlay"></div>
     </div>
 </template>
 
@@ -94,6 +96,7 @@ watch(scrollPosition, (newValue) => {
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 2;
 
         &--title {
             position: absolute;
@@ -102,7 +105,7 @@ watch(scrollPosition, (newValue) => {
 
             .title {
                 color: var(--dls-color-sunlight);
-                line-height: 100%;
+                margin: 0;
             }
 
             .learnmore-btn {
@@ -110,7 +113,7 @@ watch(scrollPosition, (newValue) => {
                 text-decoration: underline;
                 text-underline-offset: 5px;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 19px;
                 line-height: 100%;
                 letter-spacing: 2%;
                 width: fit-content;
@@ -131,25 +134,23 @@ watch(scrollPosition, (newValue) => {
 
     &--img {
         width: 100%;
-        height: 100%;
+        height: calc(100vh - var(--dls-aux-header-height));
         display: flex;
         gap: 0;
 
         .banner {
             flex: 1 0 50%;
-            height: 90vh;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-
-            &.banner-1 {
-                background-image: url('/images/home-banner/banner1.png');
-            }
-
-            &.banner-2 {
-                background-image: url('/images/home-banner/banner2.png');
-            }
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
+    }
+
+    &--overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .45) 100%);
     }
 
     @media (max-width: 1024px) {
@@ -164,15 +165,6 @@ watch(scrollPosition, (newValue) => {
         &--info {
             &--title {
                 left: 32px;
-
-                .title {
-                    font-size: 45px;
-                }
-
-                .learnmore-btn {
-                    font-size: 15px;
-                    margin-top: 24px;
-                }
             }
 
             &--logo {
@@ -183,7 +175,7 @@ watch(scrollPosition, (newValue) => {
         &--img {
             .banner {
                 flex: 1 0 100%;
-                height: 700px;
+                width: 100%;
 
                 &.banner-1 {
                     display: none;

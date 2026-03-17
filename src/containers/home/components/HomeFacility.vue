@@ -1,9 +1,9 @@
 <template>
-    <div class="home-facility--wrapper">
+    <div class="home-facility--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="home-facility">
             <div class="home-facility--title">
                 <img @click="scrollLeft" class="left-btn" src="@/assets/images/facility/left-btn.svg" alt="left-btn">
-                <div class="name headline-1">Our Facility</div>
+                <h1 class="name">Our Facility</h1>
                 <img @click="scrollRight" class="right-btn" src="@/assets/images/facility/right-btn.svg" alt="right-btn">
             </div>
 
@@ -60,10 +60,12 @@ const scrollRight = () => {
 <style lang="scss" scoped>
 .home-facility--wrapper {
     width: 100%;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
 
     .home-facility {
         width: 100%;
-        padding: 32px 200px;
+        padding: 64px 32px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -139,9 +141,19 @@ const scrollRight = () => {
 
             &--title {
                 gap: 24px;
-                .name {
-                    font-size: 60px;
-                } 
+            }
+
+            &--content {
+                .slider {
+                    &--blocks {
+                        gap: 100px;
+                        
+                        &--item {
+                            width: 600px;
+                            height: 500px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -152,9 +164,33 @@ const scrollRight = () => {
 
             &--title {
                 gap: 16px;
+            }
+
+            &--content {
+                .slider {
+                    &--blocks {
+                        gap: 50px;
+                        
+                        &--item {
+                            width: 450px;
+                            height: 400px;
+
+                            &.cheat-item {
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        .home-facility {
+            &--title {
                 .name {
-                    font-size: 36px;
-                } 
+                    font-size: 28px;
+                }
             }
         }
     }

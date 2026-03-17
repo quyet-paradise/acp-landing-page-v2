@@ -1,7 +1,7 @@
 <template>
-    <div class="home-contact--wrapper">
+    <div class="home-contact--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="home-contact">
-            <div class="home-contact--text headline-1">Join our list for <br /> insights, news and <br /> special offers.</div>
+            <h2 class="home-contact--text">Join our list for <br /> insights, news and <br /> special offers.</h2>
             <el-form
                 ref="formRef" 
                 class="home-contact--form"
@@ -70,16 +70,22 @@ const submitForm = (formEl: FormInstance | undefined) => {
 <style lang="scss" scoped>
 .home-contact--wrapper {
     width: 100%;
-    padding: 0 32px 32px 32px;
+    padding: 32px;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
 
     .home-contact {
         width: 100%;
-        padding: 32px 32px 32px 48px;
+        padding: 48px;
         background: var(--dls-color-sunlight);
         border-radius: 30px;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         overflow: hidden;
+
+        &--text {
+            margin: 0;
+        }
 
         &--form {
             flex: 1;
@@ -89,21 +95,12 @@ const submitForm = (formEl: FormInstance | undefined) => {
         }
     }
 
-    @media (max-width: 1440px) {
-        .home-contact {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 32px;
-        }
-    }
-
     @media (max-width: 1024px) {
         .home-contact {
             padding: 32px;
-            &--text {
-                font-size: 48px;
-                line-height: 120%;
-            }
+            flex-direction: column;
+            gap: 32px;
+            align-items: flex-start;
         }
     }
 
@@ -116,10 +113,14 @@ const submitForm = (formEl: FormInstance | undefined) => {
                 width: 100%;
                 flex-direction: column;
             }
+        }
+    }
 
+    @media (max-width: 425px) {
+        .home-contact {
             &--text {
-                font-size: 36px;
-                letter-spacing: -3px;
+                font-size: 28px;
+                letter-spacing: -2px;
             }
         }
     }
@@ -128,7 +129,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
 <style lang="scss">
 .el-input {
-    min-width: 260px;
+    min-width: 200px;
 
     .el-input__wrapper {
         box-shadow: none;
@@ -148,10 +149,6 @@ const submitForm = (formEl: FormInstance | undefined) => {
                 font-size: 16px;
             }
         }
-    }
-
-    @media (max-width: 768px) {
-        min-width: 300px;
     }
 }
 
