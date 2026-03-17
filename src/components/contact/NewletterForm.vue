@@ -100,7 +100,11 @@ const submitForm = (formEl: FormInstance | undefined) => {
             padding: 32px;
             flex-direction: column;
             gap: 32px;
-            align-items: flex-start;
+            align-items: center;
+
+            br {
+                display: none;
+            }
         }
     }
 
