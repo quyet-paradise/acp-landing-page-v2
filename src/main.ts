@@ -11,6 +11,8 @@ import 'uno.css'
 import Vue3Lottie from 'vue3-lottie'
 import router from '@/router'
 
+import 'aos/dist/aos.css'
+
 import App from './App.vue'
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'

@@ -1,35 +1,35 @@
 <template>
-    <div class="footer--wrapper">
+    <div class="footer--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="footer">
             <div class="footer--menu">
                 <img class="logo" src="/images/footer/logo.png" alt="logo">
                 <div class="col-item">
-                    <div class="item">17400 IRVINE BLVD, SUITE H <br /> TUSTIN, CA 92780</div>
-                    <div class="item">(212) 967-0892</div>
-                    <div class="item">MONDAY-FRIDAY: 9AM-5PM</div>
+                    <div class="item">17400 Irvine Blvd, Suite H <br /> Tustin, CA 92780</div>
+                    <div class="item mt-16px">Monday - Friday: 10 AM - 5:30 PM</div>
+                    <div class="item">Saturday: 10 AM - 2PM</div>
+                    <div class="item">Sunday: Closed</div>
+                    <div class="item mt-16px">Phone: 714-622-8460</div>
+                    <div class="item">Fax: 714-622-8460</div>
+                    <div class="item">contact@artisan-rx.com</div>
+
+                    <div class="social mt-16px">
+                        <img src="@/assets/images/footer/instagram.png" alt="instagram">
+                        <img src="@/assets/images/footer/facebook.png" alt="facebook">
+                        <img src="@/assets/images/footer/linkedin.png" alt="linkedin">
+                    </div>
                 </div>
 
-                <div class="line">
-                    <hr class="line"/>
-                </div>
-
-                <div class="col-item">
-                    <div class="item link">INSTAGRAM</div>
-                    <div class="item link">FACEBOOK</div>
-                    <div class="item link">LINKEDIN</div>
-                </div>
-
-                <div class="line">
-                    <hr />
-                </div>
+                <div class="divider"></div>
 
                 <div class="col-item">
-                    <div class="item link">ABOUT US</div>
-                    <div class="item link">SERVICES</div>
-                    <div class="item link">PATIENTS</div>
-                    <div class="item link">PROVIDERS</div>
-                    <div class="item link">BOOK CONSULTATION</div>
+                    <div class="item link">About Us</div>
+                    <div class="item link">Services</div>
+                    <div class="item link">Patients</div>
+                    <div class="item link">Providers</div>
+                    <div class="item link">Book Consultation</div>
                 </div>
+
+                <div class="divider"></div>
             </div>
 
             <div class="footer--legal">
@@ -46,6 +46,8 @@
 .footer--wrapper {
     width: 100%;
     padding: 32px;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
 
     .footer {
         width: 100%;
@@ -55,7 +57,7 @@
         gap: 32px;
         align-items: center;
         border-top: 1px solid var(--dls-color-burgundy);
-        padding-top: 32px;
+        padding-top: 64px;
 
         &--menu {
             width: 100%;
@@ -64,20 +66,19 @@
             align-items: flex-start;
 
             .logo {
-                height: 205px;
+                height: 180px;
                 width: auto;
             }
 
             .col-item {
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
 
                 .item {
                     font-family: 'Jost';
                     font-size: 16px;
                     color: var(--dls-color-burgundy);
-                    line-height: 145%;
+                    line-height: 200%;
                     letter-spacing: -0.5%;
 
                     &.link {
@@ -88,9 +89,20 @@
                         }
                     }
                 }
+
+                .social {
+                    display: flex;
+                    gap: 8px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
             }
 
-            .line {
+            .divider {
                 display: none;
                 width: 100%;
             }
@@ -130,7 +142,7 @@
                 gap: 32px;
             }
 
-            .line {
+            .divider {
                 display: block;
             }
         }

@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-header" id="navHeader">
+    <div class="nav-header" id="navHeader" data-aos="fade-up">
         <div class="nav-header--content">
             <img class="logo" src="/images/nav/logo.png" alt="logo">
 
@@ -94,8 +94,6 @@
                 <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
             </div>
         </div>
-
-        <hr />
     </div>
 </template>
 
@@ -106,7 +104,7 @@ const onShowPopover = () => {
     const navHeader: any = document.getElementById('navHeader')
     if (navHeader) {
         navHeader.style.backgroundColor = '#F7EC9D'
-        navHeader.style.height = '400px'
+        navHeader.style.height = '320px'
     }
 }
 
@@ -126,8 +124,9 @@ const onHidePopover = () => {
     width: 100%;
     height: auto;
     background: #FAF8DE;
-    padding: 16px 32px 0 32px;
-    transition: all .3s ease; 
+    padding: 16px 60px;
+    transition: all .3s ease;
+    border-bottom: 1px solid var(--dls-color-border); 
 
     &--content {
         display: flex;
@@ -144,7 +143,7 @@ const onHidePopover = () => {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: 64px;
+            gap: 48px;
 
             &--item {
                 cursor: pointer;
@@ -154,6 +153,11 @@ const onHidePopover = () => {
             .item {
                 cursor: pointer;
                 color: var(--dls-color-burgundy);
+                font-size: 13px;
+
+                &:hover {
+                    background: var(--dls-color-sunlight);
+                }
             }
         }
     }
@@ -166,7 +170,7 @@ const onHidePopover = () => {
     padding: 0 !important;
     box-shadow: none !important;
     border: 0 !important;
-    padding-top: 50px !important;
+    padding-top: 10px !important;
 
     .item--popover {
         display: flex;
@@ -178,7 +182,7 @@ const onHidePopover = () => {
         transition: all .3s ease; 
 
         &--text {
-            font-size: 16px;
+            font-size: 13px;
             color: var(--dls-color-burgundy);
             font-weight: 400;
             cursor: pointer;

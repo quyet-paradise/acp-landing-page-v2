@@ -1,5 +1,5 @@
 <template>
-    <div class="aux-header--wrapper">
+    <div class="aux-header--wrapper" data-aos="fade-down">
         <div class="aux-header">
             <div class="aux-header--item link">PATIENT LOGIN</div>
             <div class="aux-header--item">|</div>
@@ -116,11 +116,12 @@ const onShowProviders = () => {
 
         &--item {
             font-family: 'Jost';
-            font-weight: 400;
-            font-size: 16px;
+            font-weight: 500;
+            font-size: 11px;
             line-height: 145%;
-            letter-spacing: -0.5%;
+            letter-spacing: .08em;
             color: var(--dls-color-burgundy);
+            text-transform: uppercase;
 
             &.link {
                 cursor: pointer;

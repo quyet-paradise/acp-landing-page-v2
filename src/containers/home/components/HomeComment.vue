@@ -1,13 +1,13 @@
 <template>
-    <div class="home-comment--wrapper">
+    <div class="home-comment--wrapper" data-aos="fade-up" data-aos-delay="500">
         <div class="home-comment">
             <div class="home-comment--top">
                 <div class="title">WHAT CLIENTS ARE SAYING:</div>
                 <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
             </div>
 
-            <div class="home-comment--content">
-                <div class="content headline-2">{{ currentComment.content }}</div>
+            <div class="home-comment--content" data-aos="fade-down">
+                <div class="content">{{ currentComment.content }}</div>
                 <div class="name">{{ currentComment.name }}</div>
 
                 <div class="btns">
@@ -16,9 +16,7 @@
                 </div>
             </div>
 
-            <div>
-                <hr />
-            </div>
+            <div class="divider"></div>
         </div>
     </div>
 </template>
@@ -72,13 +70,15 @@ const onNextBtn = () => {
 <style lang="scss" scoped>
 .home-comment--wrapper {
     width: 100%;
-    padding: 32px;
+    padding: 64px 32px;
+    max-width: var(--dls-max-width);
+    margin: 0 auto;
 
     .home-comment {
         width: 100%;
         background: var(--dls-color-c8a682);
         border-radius: 30px;
-        padding: 32px 48px;
+        padding: 32px;
         display: flex;
         flex-direction: column;
         gap: 64px;
@@ -89,12 +89,12 @@ const onNextBtn = () => {
             align-items: center;
             border-top: 1px solid var(--dls-color-sunlight);
             border-bottom: 1px solid var(--dls-color-sunlight);
-            padding: 16px 0;
+            padding: 12px 0;
 
             .title {
                 font-family: 'Jost';
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 19px;
                 color: var(--dls-color-sunlight);
                 line-height: 105%;
             }
@@ -106,12 +106,15 @@ const onNextBtn = () => {
             justify-content: center;
             align-items: center;
             gap: 48px;
-            transition: all .3s ease-in-out; 
 
             .content {
                 max-width: 860px;
                 text-align: center;
                 color: var(--dls-color-sunlight);
+                font-family: 'SpeziaBookB';
+                font-size: 48px;
+                line-height: 120%;
+                letter-spacing: -3px;
             }
 
             .name {
@@ -134,10 +137,10 @@ const onNextBtn = () => {
                 }
             }
         }
-    }
 
-    hr {
-        background-color: var(--dls-color-sunlight);
+        .divider {
+            background: var(--dls-color-sunlight);
+        }
     }
 
     @media (max-width: 768px) {
@@ -149,19 +152,33 @@ const onNextBtn = () => {
                 .title {
                     font-size: 16px;
                 }
+
+                .book-consultation-btn-v1 {
+                    display: none;
+                }
             }
 
             &--content {
                 gap: 24px;
 
                 .content {
-                    font-size: 32px;
+                    font-size: 28px;
                     line-height: 120%;
-                    letter-spacing: -2px;
+                    letter-spacing: -1.5px;
                 }
 
                 .name {
                     font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        .home-comment {
+            &--content {
+                .content {
+                    font-size: 20px;
                 }
             }
         }
