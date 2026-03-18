@@ -120,3 +120,12 @@ h4 {
     color: var(--dls-color-burgundy);
     opacity: .7;
 }
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--dls-color-burgundy);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
