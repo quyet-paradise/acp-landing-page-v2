@@ -36,7 +36,7 @@
                     trigger="click">
 
                     <div class="item--popover">
-                        <div class="item--popover--text">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
                         <div class="item--popover--text">WEIGHT LOSS</div>
                         <div class="item--popover--text">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item--popover--text">LOW-DOSE NALTREXONE (LDN)</div>
@@ -98,6 +98,9 @@
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+
 const onShowPopover = () => { 
     console.log('show')
     
