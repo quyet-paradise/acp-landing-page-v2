@@ -26,7 +26,7 @@
                 <div class="services">
                     <div class="title" @click="onShowServices">Services</div>
                     <div v-if="isShowServicesItem" class="list-item">
-                        <div class="item">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
                         <div class="item">WEIGHT LOSS</div>
                         <div class="item">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item">LOW-DOSE NALTREXONE (LDN)</div>
@@ -63,6 +63,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
 
 const isOpenMenu = ref<boolean>(false)
 const isShowAboutUsItem = ref<boolean>(false)
