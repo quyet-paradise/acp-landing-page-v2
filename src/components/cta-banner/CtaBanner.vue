@@ -78,7 +78,7 @@
     align-items: center;
     gap: 12px;
     background: var(--dls-color-sunlight);
-    color: var(--dls-color-burgundy);
+    color: var(--dls-color-burgundylight);
     padding: 20px 44px;
     text-decoration: none;
     font-size: 13px;

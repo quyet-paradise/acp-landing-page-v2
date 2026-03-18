@@ -11,7 +11,7 @@
                     fill="none" />
                 <path d="M32 10l6-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
             </svg>
-            <h2 data-aos="fade-up">Conditions Prescribers May Address with HRT*</h2>
+            <h2 data-aos="fade-up">Could Compounded HRT Be Right for You?</h2>
             <p class="conditions-sub" data-aos="fade-up" data-aos-delay="100">Your prescriber determines whether HRT is
                 appropriate for your
                 individual situation. Common reasons patients are prescribed compounded hormones include:</p>
@@ -146,7 +146,7 @@ const handleChangeTab = (gender: string) => {
 <style lang="scss" scoped>
 /* CONDITIONS — BROWN BG */
 .conditions {
-    background: var(--dls-color-taupe-bg);
+    background: var(--dls-color-olive);
     padding: 100px 60px;
     position: relative;
     overflow: hidden;
@@ -199,6 +199,7 @@ const handleChangeTab = (gender: string) => {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.25;
 }
 
 /* Tabs: Women / Men */
@@ -283,7 +284,7 @@ const handleChangeTab = (gender: string) => {
 
 .cond-name {
     font-family: 'SpeziaBookB';
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-white);
     margin-bottom: 10px;
@@ -291,7 +292,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .cond-desc {
-    font-size: 13.5px;
+    font-size: 16px;
     line-height: 1.6;
     color: rgba(255, 253, 245, .72);
     font-weight: 300;
@@ -300,7 +301,7 @@ const handleChangeTab = (gender: string) => {
 .cond-note {
     text-align: center;
     margin-top: 40px;
-    font-size: 13.5px;
+    font-size: 14px;
     font-style: italic;
     color: rgba(255, 253, 245, .5);
     font-weight: 300;

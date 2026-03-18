@@ -124,7 +124,7 @@
 }
 
 .what-is-card p {
-    font-size: 14.5px;
+    font-size: 16px;
     line-height: 1.65;
     color: var(--dls-color-burgundy);
     font-weight: 300;

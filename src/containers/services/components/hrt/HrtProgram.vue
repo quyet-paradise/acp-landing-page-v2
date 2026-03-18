@@ -122,15 +122,16 @@
 
 .program-step h4 {
     font-family: 'SpeziaBookB';
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
     margin-bottom: 10px;
     line-height: 1.3;
+    letter-spacing: -1px;
 }
 
 .program-step p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--dls-color-burgundy);
     font-weight: 300;

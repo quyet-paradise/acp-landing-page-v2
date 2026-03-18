@@ -1,9 +1,9 @@
 <template>
-    <div class="home-facility--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-facility--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-facility">
             <div class="home-facility--title">
                 <img @click="scrollLeft" class="left-btn" src="@/assets/images/facility/left-btn.svg" alt="left-btn">
-                <h1 class="name">Our Facility</h1>
+                <h2 class="name">Our Facility</h2>
                 <img @click="scrollRight" class="right-btn" src="@/assets/images/facility/right-btn.svg" alt="right-btn">
             </div>
 
@@ -103,11 +103,11 @@ const scrollRight = () => {
                 &--blocks {
                     display: flex;
                     align-items: flex-start;
-                    gap: 150px;
+                    gap: 100px;
 
                     &--item {
-                        width: 700px;
-                        height: 600px;
+                        width: 600px;
+                        height: 500px;
                         position: relative;
 
                         &.cheat-item {
@@ -141,19 +141,6 @@ const scrollRight = () => {
 
             &--title {
                 gap: 24px;
-            }
-
-            &--content {
-                .slider {
-                    &--blocks {
-                        gap: 100px;
-                        
-                        &--item {
-                            width: 600px;
-                            height: 500px;
-                        }
-                    }
-                }
             }
         }
     }
