@@ -1,14 +1,13 @@
 <template>
     <div class="cta-banner">
-        <div>
-            <h2>Ready to Explore Personalized Hormone Therapy?</h2>
-            <p>Schedule a consultation with our team. We'll work alongside your prescriber to compound a preparation
-                tailored to your individual needs.</p>
-        </div>
-        <a href="#" class="cta-btn">Book Consultation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <h2>Explore Personalized LDN Compounding</h2>
+        <a href="#" class="cta-btn">
+            Book Consultation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></a>
+            </svg>
+        </a>
     </div>
 </template>
 
@@ -16,17 +15,17 @@
 
 <style lang="scss" scoped>
 .cta-banner {
-    margin: 0 60px 100px;
+    margin: 40px 60px 100px;
     max-width: var(--dls-max-width);
     margin-left: auto;
     margin-right: auto;
-    background: var(--dls-color-burgundy);
+    background: var(--dls-color-burgundylight);
     border-radius: 20px;
-    padding: 80px;
+    padding: 72px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 48px;
+    gap: 40px;
     position: relative;
     overflow: hidden;
 }
@@ -34,28 +33,17 @@
 .cta-banner::before {
     content: '';
     position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 350px;
-    height: 350px;
-    border: 1px solid rgba(255, 253, 245, .06);
-    border-radius: 50%;
-}
-
-.cta-banner::after {
-    content: '';
-    position: absolute;
-    bottom: -120px;
-    right: -80px;
+    top: -80px;
+    left: -80px;
     width: 300px;
     height: 300px;
-    border: 1px solid rgba(255, 253, 245, .04);
+    border: 1px solid rgba(255, 253, 245, 0.06);
     border-radius: 50%;
 }
 
 .cta-banner h2 {
     font-family: 'SpeziaBookB';
-    font-size: clamp(28px, 3.2vw, 42px);
+    font-size: clamp(28px, 3vw, 40px);
     font-weight: 400;
     color: var(--dls-color-sunlight);
     line-height: 1.2;
@@ -64,29 +52,20 @@
     z-index: 1;
 }
 
-.cta-banner p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(255, 253, 245, .75);
-    font-weight: 300;
-    margin-top: 16px;
-    max-width: 480px;
-}
-
 .cta-btn {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     background: var(--dls-color-sunlight);
-    color: var(--dls-color-burgundylight);
-    padding: 20px 44px;
+    color: var(--dls-color-burgundy);
+    padding: 18px 40px;
     text-decoration: none;
     font-size: 13px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 60px;
-    transition: transform .3s, box-shadow .3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     z-index: 1;
     flex-shrink: 0;
@@ -94,26 +73,26 @@
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .cta-btn svg {
     width: 16px;
     height: 16px;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .cta-btn:hover svg {
     transform: translateX(4px);
 }
 
-@media(max-width:1400px) {
+@media (max-width:1400px) {
     .cta-banner {
         margin: 32px;
     }
 }
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
     .cta-banner {
         flex-direction: column;
         text-align: center;
@@ -121,7 +100,7 @@
     }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .cta-banner {
         margin: 24px;
         padding: 40px 24px;

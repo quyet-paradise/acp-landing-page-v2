@@ -3,6 +3,8 @@ import { PATH, ROUTE_NAME } from '../constants/route-constants'
 const Home = () => import('@/containers/home/HomePage.vue')
 
 const HormoneReplacementTherapyService = () => import('@/containers/services/HormoneReplacementTherapyService.vue')
+const LowDoseNaltrexoneService = () => import('@/containers/services/LowDoseNaltrexoneService.vue')
+const SexualHealthService = () => import('@/containers/services/SexualHealthService.vue')
 
 const routes = [
     { 
@@ -16,6 +18,18 @@ const routes = [
         name: ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE, 
         component: HormoneReplacementTherapyService,
         meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE}` }
+    },
+    { 
+        path: PATH.LOW_DOSE_NALTREXONE_SERVICE, 
+        name: ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE, 
+        component: LowDoseNaltrexoneService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE}` }
+    },
+    { 
+        path: PATH.SEXUAL_HEALTH_SERVICE, 
+        name: ROUTE_NAME.SEXUAL_HEALTH_SERVICE, 
+        component: SexualHealthService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.SEXUAL_HEALTH_SERVICE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
