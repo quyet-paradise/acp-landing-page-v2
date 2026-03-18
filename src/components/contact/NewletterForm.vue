@@ -1,5 +1,5 @@
 <template>
-    <div class="home-contact--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-contact--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-contact">
             <h2 class="home-contact--text">Join our list for <br /> insights, news and <br /> special offers.</h2>
             <el-form

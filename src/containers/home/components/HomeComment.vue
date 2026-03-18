@@ -1,5 +1,5 @@
 <template>
-    <div class="home-comment--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-comment--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-comment">
             <div class="home-comment--top">
                 <div class="title">WHAT CLIENTS ARE SAYING:</div>
@@ -81,7 +81,7 @@ const onNextBtn = () => {
         padding: 32px;
         display: flex;
         flex-direction: column;
-        gap: 64px;
+        gap: 48px;
 
         &--top {
             display: flex;
@@ -105,7 +105,7 @@ const onNextBtn = () => {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 48px;
+            gap: 32px;
 
             .content {
                 max-width: 860px;

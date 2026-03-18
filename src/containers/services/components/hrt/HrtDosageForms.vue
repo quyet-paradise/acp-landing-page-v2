@@ -133,18 +133,18 @@
 
 .form-item h4 {
     font-family: 'SpeziaBookB';
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
-    color: var(--brown-dark);
+    color: var(--dls-color-burgundy);
     margin-bottom: 8px;
     line-height: 1.3;
     letter-spacing: -0.5px;
 }
 
 .form-item p {
-    font-size: 13.5px;
+    font-size: 16px;
     line-height: 1.55;
-    color: var(--text-body);
+    color: var(--dls-color-burgundy);
     font-weight: 300;
 }
 

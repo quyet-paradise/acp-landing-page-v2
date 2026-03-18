@@ -1,5 +1,5 @@
 <template>
-    <div class="footer--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="footer--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="footer">
             <div class="footer--menu">
                 <img class="logo" src="/images/footer/logo.png" alt="logo">
@@ -11,12 +11,6 @@
                     <div class="item mt-16px">Phone: 714-622-8460</div>
                     <div class="item">Fax: 714-622-8460</div>
                     <div class="item">contact@artisan-rx.com</div>
-
-                    <div class="social mt-16px">
-                        <img src="@/assets/images/footer/instagram.png" alt="instagram">
-                        <img src="@/assets/images/footer/facebook.png" alt="facebook">
-                        <img src="@/assets/images/footer/linkedin.png" alt="linkedin">
-                    </div>
                 </div>
 
                 <div class="divider"></div>
@@ -27,6 +21,12 @@
                     <div class="item link">Patients</div>
                     <div class="item link">Providers</div>
                     <div class="item link">Book Consultation</div>
+
+                    <div class="social mt-16px">
+                        <img src="@/assets/images/footer/instagram.png" alt="instagram">
+                        <img src="@/assets/images/footer/facebook.png" alt="facebook">
+                        <img src="@/assets/images/footer/linkedin.png" alt="linkedin">
+                    </div>
                 </div>
 
                 <div class="divider"></div>

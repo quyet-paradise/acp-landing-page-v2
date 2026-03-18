@@ -1,5 +1,5 @@
 <template>
-    <div class="home-services--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-services--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-services">
             <div class="home-services--left">
                 <img v-if="currentService" class="image" :src="currentService?.img" alt="img">
@@ -48,9 +48,9 @@ const services: Service[] = [
     },
     {
         id: 1,
-        name: 'Weight Loss',
+        name: 'Low-Dose Naltrexone (LDN)',
         img: waterfall,
-        desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.'
+        desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.'
     },
     {
         id: 2,
@@ -60,9 +60,9 @@ const services: Service[] = [
     },
     {
         id: 3,
-        name: 'Low-Dose Naltrexone (LDN)',
+        name: 'Weight Loss',
         img: waterfall,
-        desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.'
+        desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.'
     },
     {
         id: 4,
@@ -193,7 +193,7 @@ const handleLeave = () => {
 
                 &--item {
                     font-family: 'SpeziaBookB';
-                    font-size: 28px;
+                    font-size: 27px;
                     font-weight: 400;
                     line-height: 120%;
                     letter-spacing: -7%;
@@ -225,7 +225,7 @@ const handleLeave = () => {
                 height: 50%;
 
                 .image {
-                    width: 30%;
+                    width: 25%;
                 }
 
                 .desc {
@@ -261,10 +261,24 @@ const handleLeave = () => {
         .home-services {
             &--left {
                 padding: 16px 32px;
+
+                .image {
+                    width: 30%;
+                }
             }
 
             &--right {
                 padding: 16px 32px;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        .home-services {
+            &--left {
+                .image {
+                    width: 40%;
+                }
             }
         }
     }

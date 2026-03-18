@@ -1,5 +1,5 @@
 <template>
-    <div class="home-commitment--wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="home-commitment--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-commitment">
             <div class="home-commitment--left" :style="{ backgroundImage: `url(${currentCommitment.bg})` }">
                 <img class="img" :src="currentCommitment.img" alt="img">
