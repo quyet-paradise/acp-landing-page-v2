@@ -35,7 +35,7 @@
                         <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
                         <div class="item--popover--text" @click="goToPage(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
                         <div class="item--popover--text" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
-                        <div class="item--popover--text">WEIGHT LOSS</div>
+                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
                         <div class="item--popover--text">HAIR GROWTH</div>
                         <div class="item--popover--text">DERMATOLOGY</div>
                         <div class="item--popover--text">PEDIATRICS</div>
