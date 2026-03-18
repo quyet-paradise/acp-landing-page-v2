@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        max-width: 1400px;
+        max-width: var(--dls-max-width);
         margin: 0 auto;
 
         &--title {

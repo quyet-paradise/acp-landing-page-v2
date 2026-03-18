@@ -27,9 +27,9 @@
                     <div class="title" @click="onShowServices">Services</div>
                     <div v-if="isShowServicesItem" class="list-item">
                         <div class="item" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item" @click="goToPage(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
+                        <div class="item" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item">WEIGHT LOSS</div>
-                        <div class="item">SEXUAL HEALTH FOR MEN & WOMEN</div>
-                        <div class="item">LOW-DOSE NALTREXONE (LDN)</div>
                         <div class="item">HAIR GROWTH</div>
                         <div class="item">DERMATOLOGY</div>
                         <div class="item">PEDIATRICS</div>

@@ -6,7 +6,7 @@
 
         <div class="hero-content">
             <div class="breadcrumb">
-                <a href="#">Home</a><span>›</span><a href="#">Services</a><span>›</span>Hormone Replacement Therapy
+                <a href="/">Home</a><span>›</span><a href="#">Services</a><span>›</span>Hormone Replacement Therapy
             </div>
 
             <h1>Hormone Replacement Therapy</h1>

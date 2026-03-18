@@ -7,7 +7,7 @@
         <HrtProgram />
         <HrtDosageForms />
         <HrtFaqs />
-        <CtaBanner />
+        <HrtCtaBanner />
         <NewletterForm />
     </div>
 </template>
@@ -23,7 +23,7 @@ const HrtProgram = defineAsyncComponent(() => import('./components/hrt/HrtProgra
 const HrtDosageForms = defineAsyncComponent(() => import('./components/hrt/HrtDosageForms.vue'))
 const HrtFaqs = defineAsyncComponent(() => import('./components/hrt/HrtFaqs.vue'))
 const NewletterForm = defineAsyncComponent(() => import('@/components/contact/NewletterForm.vue'))
-const CtaBanner = defineAsyncComponent(() => import('@/components/cta-banner/CtaBanner.vue'))
+const HrtCtaBanner = defineAsyncComponent(() => import('./components/hrt/HrtCtaBanner.vue'))
 </script>
 
 <style lang="scss" scoped>
