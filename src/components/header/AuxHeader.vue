@@ -26,14 +26,14 @@
                 <div class="services">
                     <div class="title" @click="onShowServices">Services</div>
                     <div v-if="isShowServicesItem" class="list-item">
-                        <div class="item" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
-                        <div class="item" @click="goToPage(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
-                        <div class="item" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
-                        <div class="item" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
-                        <div class="item">HAIR GROWTH</div>
-                        <div class="item">DERMATOLOGY</div>
-                        <div class="item">PEDIATRICS</div>
-                        <div class="item">VETERINARY</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.HAIR_GROWTH_SERVICE)">HAIR GROWTH</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.DERMATOLOGY_SERVICE)">DERMATOLOGY</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY</div>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="btn">BOOK CONSULTATION</div>
+            <div class="btn">CONTACT US</div>
         </div>
     </div>
 </template>
@@ -98,6 +98,11 @@ const onShowProviders = () => {
     isShowServicesItem.value = false
     isShowPatientsItem.value = false
     isShowAboutUsItem.value = false
+}
+
+const handleRouting = (routeName: string) => {
+    goToPage(routeName)
+    isOpenMenu.value = false
 }
 </script>
 

@@ -1,13 +1,10 @@
 <template>
     <div class="cta-banner">
-        <h2>Explore Personalized LDN Compounding</h2>
-        <a href="#" class="cta-btn">
-            Contact Us
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+        <h2>Explore Personalized Veterinary Compounding</h2>
+        <a href="#" class="cta-btn">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-        </a>
+            </svg></a>
     </div>
 </template>
 
@@ -37,13 +34,13 @@
     left: -80px;
     width: 300px;
     height: 300px;
-    border: 1px solid rgba(255, 253, 245, 0.06);
+    border: 1px solid rgba(255, 253, 245, .06);
     border-radius: 50%;
 }
 
 .cta-banner h2 {
-    font-family: 'SpeziaBookB';
-    font-size: clamp(28px, 3vw, 40px);
+    font-family: "SpeziaBookB";
+    font-size: clamp(26px, 3vw, 38px);
     font-weight: 400;
     color: var(--dls-color-sunlight);
     line-height: 1.2;
@@ -61,11 +58,11 @@
     padding: 18px 40px;
     text-decoration: none;
     font-size: 13px;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 60px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform .3s, box-shadow .3s;
     position: relative;
     z-index: 1;
     flex-shrink: 0;
@@ -73,13 +70,13 @@
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .2);
 }
 
 .cta-btn svg {
     width: 16px;
     height: 16px;
-    transition: transform 0.3s;
+    transition: transform .3s;
 }
 
 .cta-btn:hover svg {
@@ -92,7 +89,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media(max-width:1024px) {
     .cta-banner {
         flex-direction: column;
         text-align: center;
@@ -100,7 +97,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
     .cta-banner {
         margin: 24px;
         padding: 40px 24px;

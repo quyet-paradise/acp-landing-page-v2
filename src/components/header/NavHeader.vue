@@ -5,6 +5,7 @@
 
             <div class="menu">
                 <el-popover
+                    ref="aboutUsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="350"
@@ -25,6 +26,7 @@
                 </el-popover>
 
                 <el-popover
+                    ref="servicesNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="300"
@@ -32,14 +34,14 @@
                     trigger="click">
 
                     <div class="item--popover">
-                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
-                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
-                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
-                        <div class="item--popover--text" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
-                        <div class="item--popover--text">HAIR GROWTH</div>
-                        <div class="item--popover--text">DERMATOLOGY</div>
-                        <div class="item--popover--text">PEDIATRICS</div>
-                        <div class="item--popover--text">VETERINARY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HAIR_GROWTH_SERVICE)">HAIR GROWTH</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.DERMATOLOGY_SERVICE)">DERMATOLOGY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY</div>
                     </div>
 
                     <template #reference>
@@ -48,6 +50,7 @@
                 </el-popover>
 
                 <el-popover
+                    ref="patientsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="200"
@@ -67,6 +70,7 @@
                 </el-popover>
 
                 <el-popover
+                    ref="providersNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="200"
@@ -83,7 +87,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
+                <div class="book-consultation-btn-v1">CONTACT US</div>
             </div>
         </div>
     </div>
@@ -92,6 +96,24 @@
 <script lang="ts" setup>
 import { ROUTE_NAME } from '@/constants/route-constants'
 import { goToPage } from '@/utils/common-utils'
+import { ref } from 'vue'
+
+const aboutUsNavRef = ref()
+const servicesNavRef = ref()
+const patientsNavRef = ref()
+const providersNavRef = ref()
+
+const hideAllPopover = () => {
+    aboutUsNavRef.value.hide()
+    servicesNavRef.value.hide()
+    patientsNavRef.value.hide()
+    providersNavRef.value.hide()
+}
+
+const handleRouting = (routeName: string) => {
+    goToPage(routeName)
+    hideAllPopover()
+}
 </script>
 
 <style lang="scss" scoped>

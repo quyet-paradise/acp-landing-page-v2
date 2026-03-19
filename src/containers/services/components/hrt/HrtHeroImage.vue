@@ -14,7 +14,7 @@
             <p class="hero-subtitle">Individually compounded hormone preparations — customized to your body, your lab
                 results, and your prescriber's plan.</p>
 
-            <a href="#" class="hero-cta">Book Consultation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <a href="#" class="hero-cta">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg></a>
