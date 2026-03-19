@@ -4,7 +4,10 @@ export const ROUTE_NAME = {
     LOW_DOSE_NALTREXONE_SERVICE: 'Low-Dose Naltrexone (LDN)',
     SEXUAL_HEALTH_SERVICE: 'Sexual Health for Men & Women',
     WEIGHT_LOSS_SERVICE: 'Weight Loss',
-    HAIR_GROWTH_SERVICE: 'Hair Growth'
+    HAIR_GROWTH_SERVICE: 'Hair Growth',
+    DERMATOLOGY_SERVICE: 'Dermatology',
+    PEDIATRICS_SERVICE: 'Pediatrics',
+    VETERINARY_SERVICE: 'Veterinary'
 }
 
 export const PATH = {
@@ -13,5 +16,8 @@ export const PATH = {
     LOW_DOSE_NALTREXONE_SERVICE: '/services/low-dose-naltrexone',
     SEXUAL_HEALTH_SERVICE: '/services/sexual-health-for-men-and-women',
     WEIGHT_LOSS_SERVICE: '/services/weight-loss',
-    HAIR_GROWTH_SERVICE: '/serrvices/hair-growth'
+    HAIR_GROWTH_SERVICE: '/services/hair-growth',
+    DERMATOLOGY_SERVICE: '/services/dermatology',
+    PEDIATRICS_SERVICE: '/services/pediatrics',
+    VETERINARY_SERVICE: '/services/veterinary'
 }

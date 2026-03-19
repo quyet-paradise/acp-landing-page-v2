@@ -7,6 +7,7 @@ const LowDoseNaltrexoneService = () => import('@/containers/services/LowDoseNalt
 const SexualHealthService = () => import('@/containers/services/SexualHealthService.vue')
 const WeightLossService = () => import('@/containers/services/WeightLossService.vue')
 const HairGrowthService = () => import('@/containers/services/HairGrowthService.vue')
+const DermatologyService = () => import('@/containers/services/DermatologyService.vue')
 
 const routes = [
     { 
@@ -44,6 +45,12 @@ const routes = [
         name: ROUTE_NAME.HAIR_GROWTH_SERVICE, 
         component: HairGrowthService,
         meta: { title: ` ⊹ ${ROUTE_NAME.HAIR_GROWTH_SERVICE}` }
+    },
+    { 
+        path: PATH.DERMATOLOGY_SERVICE, 
+        name: ROUTE_NAME.DERMATOLOGY_SERVICE, 
+        component: DermatologyService,
+        meta: { title: ` ⊹ ${ROUTE_NAME.DERMATOLOGY_SERVICE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
