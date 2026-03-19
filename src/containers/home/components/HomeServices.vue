@@ -170,6 +170,7 @@ const handleLeave = () => {
                 transform: translate(-50%, 0);
                 width: 80%;
                 z-index: 0;
+                height: 100%;
             }
 
             .title {
@@ -252,6 +253,10 @@ const handleLeave = () => {
                     &--item {
                         font-size: 16px;
                     }
+                }
+
+                .bg { 
+                    height: auto;
                 }
             }
         }

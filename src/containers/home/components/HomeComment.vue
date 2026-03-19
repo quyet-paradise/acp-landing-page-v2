@@ -3,7 +3,7 @@
         <div class="home-comment">
             <div class="home-comment--top">
                 <div class="title">WHAT CLIENTS ARE SAYING:</div>
-                <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
+                <div class="book-consultation-btn-v1">CONTACT US</div>
             </div>
 
             <div class="home-comment--content" data-aos="fade-down">

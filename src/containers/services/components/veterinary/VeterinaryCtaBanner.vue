@@ -1,13 +1,10 @@
 <template>
     <div class="cta-banner">
-        <h2>Explore Personalized Dermatology Compounding</h2>
-        <a href="#" class="cta-btn">
-            Book Consultation
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
+        <h2>Explore Personalized Veterinary Compounding</h2>
+        <a href="#" class="cta-btn">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-        </a>
+            </svg></a>
     </div>
 </template>
 
@@ -43,7 +40,7 @@
 
 .cta-banner h2 {
     font-family: "SpeziaBookB";
-    font-size: clamp(28px, 3vw, 40px);
+    font-size: clamp(26px, 3vw, 38px);
     font-weight: 400;
     color: var(--dls-color-sunlight);
     line-height: 1.2;

@@ -5,7 +5,7 @@
             <p>Schedule a consultation with our team. We'll work alongside your prescriber to compound a preparation
                 tailored to your individual needs.</p>
         </div>
-        <a href="#" class="cta-btn">Book Consultation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        <a href="#" class="cta-btn">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
             </svg></a>

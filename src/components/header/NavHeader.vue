@@ -39,9 +39,9 @@
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HAIR_GROWTH_SERVICE)">HAIR GROWTH</div>
-                        <div class="item--popover--text">DERMATOLOGY</div>
-                        <div class="item--popover--text">PEDIATRICS</div>
-                        <div class="item--popover--text">VETERINARY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.DERMATOLOGY_SERVICE)">DERMATOLOGY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY</div>
                     </div>
 
                     <template #reference>
@@ -87,7 +87,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn-v1">BOOK CONSULTATION</div>
+                <div class="book-consultation-btn-v1">CONTACT US</div>
             </div>
         </div>
     </div>

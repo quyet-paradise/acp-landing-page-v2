@@ -20,7 +20,7 @@
                     <div class="item link">Services</div>
                     <div class="item link">Patients</div>
                     <div class="item link">Providers</div>
-                    <div class="item link">Book Consultation</div>
+                    <div class="item link">Contact Us</div>
 
                     <div class="social mt-16px">
                         <img src="@/assets/images/footer/instagram.png" alt="instagram">

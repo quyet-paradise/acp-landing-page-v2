@@ -31,9 +31,9 @@
                         <div class="item" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.HAIR_GROWTH_SERVICE)">HAIR GROWTH</div>
-                        <div class="item">DERMATOLOGY</div>
-                        <div class="item">PEDIATRICS</div>
-                        <div class="item">VETERINARY</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.DERMATOLOGY_SERVICE)">DERMATOLOGY</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.PEDIATRICS_SERVICE)">PEDIATRICS</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.VETERINARY_SERVICE)">VETERINARY</div>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="btn">BOOK CONSULTATION</div>
+            <div class="btn">CONTACT US</div>
         </div>
     </div>
 </template>
