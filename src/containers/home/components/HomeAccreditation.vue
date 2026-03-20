@@ -22,7 +22,7 @@
 
     &--title {
         text-align: center;
-        font-size: 36px;
+        font-size: 30px;
         font-family: 'SpeziaBookB';
         font-weight: 400;
         color: var(--dls-color-burgundy);
@@ -38,7 +38,7 @@
         gap: 64px;
 
         .pcca, .apc, .ldn {
-            height: 80px;
+            height: 72px;
             width: auto;
         }
     }

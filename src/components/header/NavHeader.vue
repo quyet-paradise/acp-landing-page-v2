@@ -9,8 +9,7 @@
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="350"
-                    popper-class="box-item-menu-header"
-                    trigger="click">
+                    popper-class="box-item-menu-header">
 
                     <div class="item--popover">
                         <div class="item--popover--text">OUR TEAM</div>
@@ -30,11 +29,10 @@
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="300"
-                    popper-class="box-item-menu-header"
-                    trigger="click">
+                    popper-class="box-item-menu-header">
 
                     <div class="item--popover">
-                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (HRT)</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
@@ -54,8 +52,7 @@
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="200"
-                    popper-class="box-item-menu-header"
-                    trigger="click">
+                    popper-class="box-item-menu-header">
 
                     <div class="item--popover">
                         <div class="item--popover--text">WHAT IS COMPOUNDING</div>
@@ -74,8 +71,7 @@
                     :show-arrow="false"
                     placement="bottom-start"
                     :width="200"
-                    popper-class="box-item-menu-header"
-                    trigger="click">
+                    popper-class="box-item-menu-header">
 
                     <div class="item--popover">
                         <div class="item--popover--text">SEND PRESCRIPTION</div>
@@ -152,7 +148,7 @@ const handleRouting = (routeName: string) => {
 
                 &:hover {
                     background: var(--dls-color-sunlight);
-                    border: 1px solid var(--dls-color-burgundy);
+                    text-decoration: underline;
                 }
             }
         }
