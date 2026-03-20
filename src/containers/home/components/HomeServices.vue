@@ -106,7 +106,7 @@ const handleLeave = () => {
     padding: 64px 32px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
-    height: 70vh;
+    height: 100%;
     overflow: hidden;
 
     .home-services {
@@ -114,7 +114,7 @@ const handleLeave = () => {
         display: flex;
         border-radius: 30px;
         overflow: hidden;
-        height: 100%;
+        height: 70vh;
 
         &--left {
             flex: 1 0 50%;
@@ -191,6 +191,7 @@ const handleLeave = () => {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                height: 100%;
 
                 &--item {
                     font-family: 'SpeziaBookB';
@@ -216,10 +217,9 @@ const handleLeave = () => {
     }
 
     @media (max-width: 1024px) {
-        height: 90vh;
-
         .home-services {
             flex-direction: column;
+            height: 90vh;
 
             &--left {
                 padding: 16px 64px;
@@ -283,6 +283,20 @@ const handleLeave = () => {
             &--left {
                 .image {
                     width: 40%;
+                }
+            }
+        }
+    }
+
+    @media (max-height: 768px) and (min-width: 1025px){
+        .home-services {
+            height: 80vh;
+
+            &--right {
+                .service-list {
+                    &--item {
+                        font-size: 22px;
+                    }
                 }
             }
         }

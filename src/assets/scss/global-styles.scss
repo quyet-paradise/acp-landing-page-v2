@@ -55,10 +55,10 @@
     padding: 10px 20px;
     cursor: pointer;
     border: 1px solid var(--dls-color-sunlight);
-    font-size: 11px;
+    font-size: 13px;
 
-    &:hover {
-        border: 1px solid var(--dls-color-burgundy);
+    &:hover { 
+        opacity: .8;
     }
 }
 
@@ -71,7 +71,7 @@
     background: var(--dls-color-faf8de);
     width: fit-content;
     transition: all .3s ease;
-    font-size: 11px;
+    font-size: 13px;
 
     &:hover {
         background: var(--dls-color-sunlight);

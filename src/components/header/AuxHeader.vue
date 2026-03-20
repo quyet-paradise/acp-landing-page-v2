@@ -26,7 +26,7 @@
                 <div class="services">
                     <div class="title" @click="onShowServices">Services</div>
                     <div v-if="isShowServicesItem" class="list-item">
-                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (BHRT)</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (HRT)</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">SEXUAL HEALTH FOR MEN & WOMEN</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">WEIGHT LOSS</div>
