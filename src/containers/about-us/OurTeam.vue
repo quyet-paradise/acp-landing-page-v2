@@ -15,7 +15,7 @@ import { defineAsyncComponent } from 'vue'
 const OTHero = defineAsyncComponent(() => import('./components/our-team/OTHero.vue'))
 const OTQuoteStrip = defineAsyncComponent(() => import('./components/our-team/OTQuoteStrip.vue'))
 const OTMembers = defineAsyncComponent(() => import('./components/our-team/OTMembers.vue'))
-const OTValues = defineAsyncComponent(() => import('./components/our-team/OtValues.vue'))
+const OTValues = defineAsyncComponent(() => import('./components/our-team/OTValues.vue'))
 const OTCta = defineAsyncComponent(() => import('./components/our-team/OTCta.vue'))
 const NewletterForm = defineAsyncComponent(() => import('@/components/contact/NewletterForm.vue'))
 
