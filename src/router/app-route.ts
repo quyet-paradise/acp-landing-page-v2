@@ -10,6 +10,7 @@ const HairGrowthService = () => import('@/containers/services/HairGrowthService.
 const DermatologyService = () => import('@/containers/services/DermatologyService.vue')
 const PediatricsService = () => import('@/containers/services/PediatricsService.vue')
 const VeterinanyService = () => import('@/containers/services/VeterinaryService.vue')
+const OurTeam = () => import('@/containers/about-us/OurTeam.vue')
 
 const routes = [
     { 
@@ -65,6 +66,12 @@ const routes = [
         name: ROUTE_NAME.VETERINARY_SERVICE, 
         component: VeterinanyService,
         meta: { title: ` ⊹ ${ROUTE_NAME.VETERINARY_SERVICE}` }
+    },
+    { 
+        path: PATH.OUR_TEAM, 
+        name: ROUTE_NAME.OUR_TEAM, 
+        component: OurTeam,
+        meta: { title: ` ⊹ ${ROUTE_NAME.OUR_TEAM}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

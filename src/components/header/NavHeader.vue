@@ -8,13 +8,13 @@
                     ref="aboutUsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
-                    :width="350"
+                    :width="200"
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
-                        <div class="item--popover--text">OUR TEAM</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_TEAM)">OUR TEAM</div>
                         <div class="item--popover--text">OUR FACILITY</div>
-                        <div class="item--popover--text">PROFESSIONAL PARTNERSHIP / ACCREDITATION</div>
+                        <div class="item--popover--text">PROFESSIONAL PARTNERSHIP</div>
                         <div class="item--popover--text">FAQ</div>
                         <div class="item--popover--text">CONTACT US</div>
                     </div>
@@ -116,7 +116,7 @@ const handleRouting = (routeName: string) => {
 .nav-header {
     width: 100%;
     height: var(--dls-nav-header-height);
-    background: #FAF8DE;
+    background: var(--dls-color-linen);
     padding: 16px 60px;
     transition: all .3s ease;
     border-bottom: 1px solid var(--dls-color-border);
