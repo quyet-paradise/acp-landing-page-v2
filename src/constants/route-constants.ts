@@ -7,7 +7,8 @@ export const ROUTE_NAME = {
     HAIR_GROWTH_SERVICE: 'Hair Growth',
     DERMATOLOGY_SERVICE: 'Dermatology',
     PEDIATRICS_SERVICE: 'Pediatrics',
-    VETERINARY_SERVICE: 'Veterinary'
+    VETERINARY_SERVICE: 'Veterinary',
+    OUR_TEAM: 'Our Team'
 }
 
 export const PATH = {
@@ -19,5 +20,6 @@ export const PATH = {
     HAIR_GROWTH_SERVICE: '/services/hair-growth',
     DERMATOLOGY_SERVICE: '/services/dermatology',
     PEDIATRICS_SERVICE: '/services/pediatrics',
-    VETERINARY_SERVICE: '/services/veterinary'
+    VETERINARY_SERVICE: '/services/veterinary',
+    OUR_TEAM: '/our-team'
 }

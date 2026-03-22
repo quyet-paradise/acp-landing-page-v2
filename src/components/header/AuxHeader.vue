@@ -15,9 +15,9 @@
                 <div class="about-us">
                     <div class="title" @click="onShowAboutUs">About Us</div>
                     <div v-if="isShowAboutUsItem" class="list-item">
-                        <div class="item">OUR TEAM</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.OUR_TEAM)">OUR TEAM</div>
                         <div class="item">OUR FACILITY</div>
-                        <div class="item">PROFESSIONAL PARTNERSHIP / ACCREDITATION</div>
+                        <div class="item">PROFESSIONAL PARTNERSHIP</div>
                         <div class="item">FAQ</div>
                         <div class="item">CONTACT US</div>
                     </div>
