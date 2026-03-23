@@ -65,7 +65,7 @@ const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue
 <style lang="scss" scoped>
 .homepage {
     width: 100%;
-    background: var(--dls-color-creamlight);
+    background: var(--dls-color-lemonice);
     position: relative;
     overflow: clip;
 

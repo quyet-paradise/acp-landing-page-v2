@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
 .disclaimer-section {
-    padding: 60px 60px 40px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

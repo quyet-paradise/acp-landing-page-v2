@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 .cta-editorial {
-    padding: 120px 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
     text-align: center;
@@ -50,8 +50,8 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--dls-color-burgundy);
-    color: var(--dls-color-sunshine);
+    background: var(--dls-color-sunshine);
+    color: var(--dls-color-burgundy);
     padding: 22px 48px;
     text-decoration: none;
     font-size: 13px;

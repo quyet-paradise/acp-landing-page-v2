@@ -61,7 +61,7 @@
 <style lang="scss" scoped>
 .why-artisan {
     background: var(--dls-color-olive);
-    padding: 100px 60px;
+    padding: var(--dls-1p5cm) 60px;
     position: relative;
     overflow: hidden;
 }

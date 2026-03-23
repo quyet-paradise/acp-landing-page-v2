@@ -82,7 +82,7 @@
     font-weight: 400;
     line-height: 1.06;
     max-width: 800px;
-    color: var(--dls-color-sunlight);
+    color: var(--dls-color-sunshine);
 }
 
 .hero-subtitle {
@@ -99,7 +99,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 36px;
-    background: var(--dls-color-sunlight);
+    background: var(--dls-color-sunshine);
     color: var(--dls-color-burgundy);
     padding: 18px 40px;
     text-decoration: none;

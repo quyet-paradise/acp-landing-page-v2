@@ -22,7 +22,7 @@
 
 <style lang="scss" scoped>
 .intro {
-    padding: 100px 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }
@@ -55,7 +55,7 @@
 }
 
 .divider {
-    margin-top:80px;
+    margin-top: var(--dls-1p5cm);
 }
 
 @media(max-width:1024px) {

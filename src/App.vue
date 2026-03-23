@@ -30,7 +30,7 @@ const currentRouteName = computed<any>(() => route.name)
 <style lang="scss" scoped>
 .app-main-view {
   position: relative;
-  background: var(--dls-color-creamlight);
+  background: var(--dls-color-lemonice);
 
   .app-header {
     position: fixed;

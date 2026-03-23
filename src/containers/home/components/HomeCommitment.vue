@@ -7,7 +7,7 @@
 
             <div class="home-commitment--right">
                 <div class="header">
-                    <div class="name">OUR COMMITTMENT</div>
+                    <div class="name">OUR COMMITMENT</div>
                     <div class="title">{{ currentCommitment.title }}</div>
                 </div>
                 <div class="content">
@@ -76,7 +76,7 @@ const handleNext = () => {
     width: 100%;
     max-width: var(--dls-max-width);
     margin: 0 auto;
-    padding: 32px;
+    padding: 0 32px;
 
     .home-commitment {
         width: 100%;
@@ -85,6 +85,7 @@ const handleNext = () => {
 
         &--left {
             flex: 1 0 50%;
+            background-color: var(--dls-color-sky);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

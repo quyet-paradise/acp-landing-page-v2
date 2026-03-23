@@ -65,7 +65,7 @@ const scrollRight = () => {
 
     .home-facility {
         width: 100%;
-        padding: 64px 32px;
+        padding: var(--dls-2cm) 32px;
         display: flex;
         flex-direction: column;
         justify-content: center;

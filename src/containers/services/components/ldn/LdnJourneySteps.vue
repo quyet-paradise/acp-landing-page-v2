@@ -41,7 +41,7 @@
 
 <style lang="scss" scoped>
 .journey {
-    padding: 100px 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

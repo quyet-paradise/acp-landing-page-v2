@@ -1,7 +1,7 @@
 <template>
     <div class="home-quote" data-aos="fade-up" data-aos-delay="200">
         <h2 class="home-quote--title">Artisan Pharmacy was built for women. Empowering you to reclaim vitality, extend your healthspan, and age beautifully, with formulations as individuals as you are.</h2>
-        <div class="book-consultation-btn-v2">CONTACT US</div>
+        <div class="book-consultation-btn-v2 mt-16px">CONTACT US</div>
         <div class="divider"></div>
     </div>
 </template>
@@ -11,10 +11,9 @@
 <style lang="scss" scoped>
     .home-quote {
         width: 100%;
-        padding: 64px 32px 0 32px;
+        padding: var(--dls-2cm) 32px 0 32px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
         max-width: var(--dls-max-width);
         margin: 0 auto;
 
@@ -23,12 +22,20 @@
             max-width: 70%;
         }
 
+        .divider {
+            margin-top: var(--dls-1p5cm);
+        }
+
         @media (max-width: 1024px) {
             padding: 32px 32px 0 32px;
 
             &--title {
                 letter-spacing: -2px;
                 max-width: 100%;
+            }
+
+            .divider {
+                margin-top: 32px;
             }
         }
     }

@@ -49,12 +49,12 @@
 }
 
 .book-consultation-btn-v1 {
-    background: var(--dls-color-sunlight);
+    background: var(--dls-color-sunshine);
     color: var(--dls-color-burgundy);
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-    border: 1px solid var(--dls-color-sunlight);
+    border: 1px solid var(--dls-color-sunshine);
     font-size: 13px;
 
     &:hover { 
@@ -68,14 +68,14 @@
     padding: 10px 20px;
     cursor: pointer;
     border: 1px solid var(--dls-color-burgundy);
-    background: var(--dls-color-faf8de);
+    background: var(--dls-color-sunshine);
     width: fit-content;
     transition: all .3s ease;
     font-size: 13px;
 
     &:hover {
-        background: var(--dls-color-sunlight);
-        border: 1px solid var(--dls-color-sunlight);
+        opacity: .8;
+        border: 1px solid var(--dls-color-sunshine);
     }
 }
 
