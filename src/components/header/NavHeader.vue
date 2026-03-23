@@ -13,7 +13,7 @@
 
                     <div class="item--popover">
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_TEAM)">OUR TEAM</div>
-                        <div class="item--popover--text">OUR FACILITY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
                         <div class="item--popover--text">PROFESSIONAL PARTNERSHIP</div>
                         <div class="item--popover--text">FAQ</div>
                         <div class="item--popover--text">CONTACT US</div>

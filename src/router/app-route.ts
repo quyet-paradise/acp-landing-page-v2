@@ -11,6 +11,7 @@ const DermatologyService = () => import('@/containers/services/DermatologyServic
 const PediatricsService = () => import('@/containers/services/PediatricsService.vue')
 const VeterinanyService = () => import('@/containers/services/VeterinaryService.vue')
 const OurTeam = () => import('@/containers/about-us/OurTeam.vue')
+const OurFacility = () => import('@/containers/about-us/OurFacility.vue')
 
 const routes = [
     { 
@@ -72,6 +73,12 @@ const routes = [
         name: ROUTE_NAME.OUR_TEAM, 
         component: OurTeam,
         meta: { title: ` ⊹ ${ROUTE_NAME.OUR_TEAM}` }
+    },
+    { 
+        path: PATH.OUR_FACILITY, 
+        name: ROUTE_NAME.OUR_FACILITY, 
+        component: OurFacility,
+        meta: { title: ` ⊹ ${ROUTE_NAME.OUR_FACILITY}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
