@@ -8,7 +8,7 @@
         <!-- MEMBER 1 — Photo Left, Info Right -->
         <article class="member layout-a" data-aos="fade-up">
             <div class="member-photo-wrap">
-                <img src="/images/our-team/emily-caster.jpg" alt="Vanessa Nguyen" class="member-photo">
+                <img src="/images/our-team/vanessa.jpg" alt="Vanessa Nguyen" class="member-photo">
                 <div class="member-number">01</div>
             </div>
             <div class="member-info">
@@ -107,7 +107,7 @@
 
 <style lang="scss" scoped>
 .team-section {
-    padding: 100px 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

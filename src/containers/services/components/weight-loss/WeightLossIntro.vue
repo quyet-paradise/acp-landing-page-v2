@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 .intro {
-    padding: 100px 60px;
+    padding: var(--dls-2cm) 60px 0 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }
@@ -27,6 +27,7 @@
     max-width: 900px;
     font-weight: 400;
     letter-spacing: -2px;
+    margin: 0;
 }
 
 .intro-note {
@@ -38,7 +39,7 @@
 }
 
 .divider {
-    margin-top: 80px;
+    margin-top: var(--dls-1p5cm);
 }
 
 @media (max-width: 1024px) {}

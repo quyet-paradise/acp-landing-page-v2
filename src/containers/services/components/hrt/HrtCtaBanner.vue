@@ -16,10 +16,8 @@
 
 <style lang="scss" scoped>
 .cta-banner {
-    margin: 0 60px 100px;
+    margin: 0 auto var(--dls-2cm) auto;
     max-width: var(--dls-max-width);
-    margin-left: auto;
-    margin-right: auto;
     background: var(--dls-color-burgundylight);
     border-radius: 20px;
     padding: 80px;
@@ -57,7 +55,7 @@
     font-family: 'SpeziaBookB';
     font-size: clamp(28px, 3.2vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-sunlight);
+    color: var(--dls-color-sunshine);
     line-height: 1.2;
     max-width: 520px;
     position: relative;
@@ -77,7 +75,7 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--dls-color-sunlight);
+    background: var(--dls-color-sunshine);
     color: var(--dls-color-burgundy);
     padding: 20px 44px;
     text-decoration: none;

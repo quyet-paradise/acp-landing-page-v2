@@ -70,7 +70,7 @@ const onNextBtn = () => {
 <style lang="scss" scoped>
 .home-comment--wrapper {
     width: 100%;
-    padding: 64px 32px;
+    padding: 0 32px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 

@@ -28,8 +28,14 @@
 </template>
 
 <script lang="ts" setup>
-import waterfall from '@/assets/images/services/waterfall.png'
-import woman from '@/assets/images/services/woman.png'
+import hrt from '@/assets/images/services/icons/hrt.png'
+import ldn from '@/assets/images/services/icons/ldn.png'
+import sexual from '@/assets/images/services/icons/sexual.png'
+import weightLoss from '@/assets/images/services/icons/weight-loss.png'
+import hairGrowth from '@/assets/images/services/icons/hair-growth.png'
+import dermatology from '@/assets/images/services/icons/dermatology.png'
+import pediatrics from '@/assets/images/services/icons/pediatrics.png'
+import veterinary from '@/assets/images/services/icons/veterinary.png'
 import { ref } from 'vue'
 
 type Service = {
@@ -43,49 +49,49 @@ const services: Service[] = [
     {
         id: 0,
         name: 'Hormone Replacement Therapy',
-        img: waterfall,
+        img: hrt,
         desc: 'Help restore hormonal balance to reignite energy, lift mood, sharpen focus, deepen sleep, and revive sexual vitality, so you can be yourself again.'
     },
     {
         id: 1,
         name: 'Low-Dose Naltrexone (LDN)',
-        img: waterfall,
+        img: ldn,
         desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.'
     },
     {
         id: 2,
         name: 'Sexual Health for Men & Women',
-        img: woman,
+        img: sexual,
         desc: 'Help men and women boost desire, performance, comfort, and confidence - so intimacy feels natural, enjoyable, and truly you again.'
     },
     {
         id: 3,
         name: 'Weight Loss',
-        img: waterfall,
+        img: weightLoss,
         desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.'
     },
     {
         id: 4,
         name: 'Hair Growth',
-        img: waterfall,
+        img: hairGrowth,
         desc: 'Help bring back thicker, fuller hair - so you love what you see in the mirror.'
     },
     {
         id: 5,
         name: 'Dermatology',
-        img: waterfall,
+        img: dermatology,
         desc: 'Target your skin’s root issues - acne, dark spots, rosacea, aging, and scars - so your skin looks radiant, glowing and visibly renewed.'
     },
     {
         id: 6,
         name: 'Pediatrics',
-        img: waterfall,
+        img: pediatrics,
         desc: 'We take off the hard work for you by making medicine easier for kids - right dose, kid-friendly flavor, and gentler options.'
     },
     {
         id: 7,
         name: 'Veterinary',
-        img: waterfall,
+        img: veterinary,
         desc: 'Makes meds easier for your furry best friend with pet-safe doses in yummy, easy-to-give flavors.'
     }
 ]
@@ -103,7 +109,7 @@ const handleLeave = () => {
 <style lang="scss" scoped>
 .home-services--wrapper {
     width: 100%;
-    padding: 64px 32px;
+    padding: var(--dls-2cm) 32px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
     height: 100%;
@@ -114,11 +120,11 @@ const handleLeave = () => {
         display: flex;
         border-radius: 30px;
         overflow: hidden;
-        height: 70vh;
+        height: 630px;
 
         &--left {
             flex: 1 0 50%;
-            background: var(--dls-color-c8a682);
+            background: var(--dls-color-sandy);
             padding: 10px 50px;
             display: flex;
             flex-direction: column;
@@ -127,8 +133,8 @@ const handleLeave = () => {
             justify-content: center;
 
             .image {
-                width: 40%;
-                height: auto;
+                width: auto;
+                height: 40%;
             }
 
             .desc {
@@ -157,7 +163,7 @@ const handleLeave = () => {
             flex: 1 0 50%; 
             position: relative;
             overflow: hidden;
-            background: var(--dls-color-95583c);
+            background: var(--dls-color-pottersclay);
             display: flex;
             flex-direction: column;
             gap: 32px;
@@ -190,7 +196,7 @@ const handleLeave = () => {
                 z-index: 1;
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                justify-content: space-between;
                 height: 100%;
 
                 &--item {
@@ -219,15 +225,11 @@ const handleLeave = () => {
     @media (max-width: 1024px) {
         .home-services {
             flex-direction: column;
-            height: 90vh;
+            height: 80vh;
 
             &--left {
                 padding: 16px 64px;
                 height: 50%;
-
-                .image {
-                    width: 25%;
-                }
 
                 .desc {
                     font-size: 20px;
@@ -266,10 +268,6 @@ const handleLeave = () => {
         .home-services {
             &--left {
                 padding: 16px 32px;
-
-                .image {
-                    width: 30%;
-                }
             }
 
             &--right {
@@ -278,28 +276,6 @@ const handleLeave = () => {
         }
     }
 
-    @media (max-width: 425px) {
-        .home-services {
-            &--left {
-                .image {
-                    width: 40%;
-                }
-            }
-        }
-    }
-
-    @media (max-height: 768px) and (min-width: 1025px){
-        .home-services {
-            height: 80vh;
-
-            &--right {
-                .service-list {
-                    &--item {
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
-    }
+    @media (max-width: 425px) {}
 }
 </style>

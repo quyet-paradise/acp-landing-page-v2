@@ -53,7 +53,7 @@
 
 <style lang="scss" scoped>
 .what-is {
-    padding: 100px 60px;
+    padding: 0 60px var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="home-contact--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-contact">
-            <h2 class="home-contact--text">Join our list for <br /> insights, news and <br /> special offers.</h2>
+            <div class="home-contact--text headline-1">Join our list for <br /> insights, news and <br /> special offers.</div>
             <el-form
                 ref="formRef" 
                 class="home-contact--form"
@@ -14,7 +14,7 @@
                         message: 'Please input name',
                         trigger: 'blur',
                     }]">
-                    <el-input v-model="contactForm.name" placeholder="NAME"></el-input>
+                    <el-input v-model="contactForm.name" placeholder="FIRST NAME"></el-input>
                 </el-form-item>
 
                 <el-form-item
@@ -70,17 +70,17 @@ const submitForm = (formEl: FormInstance | undefined) => {
 <style lang="scss" scoped>
 .home-contact--wrapper {
     width: 100%;
-    padding: 32px;
+    padding: 32px 0;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 
     .home-contact {
         width: 100%;
         padding: 48px;
-        background: var(--dls-color-sunlight);
+        background: var(--dls-color-sunshine);
         border-radius: 30px;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         overflow: hidden;
 
         &--text {
@@ -95,6 +95,19 @@ const submitForm = (formEl: FormInstance | undefined) => {
         }
     }
 
+    @media (max-width: 1400px) {
+        padding: 32px;
+
+        .home-contact {
+            align-items: center;
+            padding: 48px 32px;
+
+            &--form {
+                flex-direction: column;
+            }
+        }
+    }
+
     @media (max-width: 1024px) {
         .home-contact {
             padding: 32px;
@@ -104,6 +117,13 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
             br {
                 display: none;
+            }
+
+            &--text {
+                font-size: 48px;
+                line-height: 120%;
+                text-align: center;
+                letter-spacing: -4px;
             }
         }
     }
@@ -116,6 +136,11 @@ const submitForm = (formEl: FormInstance | undefined) => {
             &--form {
                 width: 100%;
                 flex-direction: column;
+            }
+
+            &--text {
+                font-size: 32px;
+                letter-spacing: -3px;
             }
         }
     }
@@ -170,13 +195,23 @@ const submitForm = (formEl: FormInstance | undefined) => {
     font-family: "Jost";
     font-weight: 400;
     color: var(--dls-color-burgundy);
-    background-color: var(--dls-color-sunlight);
+    background-color: var(--dls-color-sunshine);
     border: 1px solid var(--dls-color-burgundy);
 
     &:hover {
         background-color: var(--dls-color-burgundy);
-        border-color: var(--dls-color-sunlight);
-        color: var(--dls-color-sunlight);
+        border-color: var(--dls-color-sunshine);
+        color: var(--dls-color-sunshine);
+    }
+}
+
+@media (max-width: 1400px) {
+    .el-input {
+        min-width: 250px;
+    }
+
+    .el-form--inline .el-form-item {
+        margin-right: 0;
     }
 }
 </style>

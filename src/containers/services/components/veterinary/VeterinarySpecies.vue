@@ -351,7 +351,7 @@ const handleChangeTab = (type: string) => {
 
 <style lang="scss" scoped>
 .species-section {
-    padding: 80px 60px 100px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

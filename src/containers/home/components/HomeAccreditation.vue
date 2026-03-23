@@ -13,7 +13,7 @@
 <style lang="scss" scoped>
 .home-accreditation {
     width: 100%;
-    padding: 32px 32px 120px 32px;
+    padding: var(--dls-2cm) 32px;
     display: flex;
     flex-direction: column;
     gap: 48px;

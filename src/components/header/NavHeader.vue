@@ -147,7 +147,7 @@ const handleRouting = (routeName: string) => {
                 border: 1px solid transparent;
 
                 &:hover {
-                    background: var(--dls-color-sunlight);
+                    background: var(--dls-color-sunshine);
                     text-decoration: underline;
                 }
             }
@@ -158,7 +158,7 @@ const handleRouting = (routeName: string) => {
 
 <style lang="scss">
 .box-item-menu-header {
-    background: var(--dls-color-sunlight) !important;
+    background: var(--dls-color-sunshine) !important;
     padding-top: 20px !important;
     border: 0 !important;
 

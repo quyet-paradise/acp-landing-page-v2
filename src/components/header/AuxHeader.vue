@@ -116,7 +116,7 @@ const handleRouting = (routeName: string) => {
         padding: 0 64px;
         display: flex;
         justify-content: flex-end;
-        background: var(--dls-color-sunlight);
+        background: var(--dls-color-sunshine);
         align-items: center;
         gap: 8px;
         height: var(--dls-aux-header-height);

@@ -75,7 +75,7 @@
     line-height: 1.06;
     letter-spacing: -0.01em;
     max-width: 800px;
-    color: var(--dls-color-sunlight);
+    color: var(--dls-color-sunshine);
 }
 
 .hero-subtitle {
