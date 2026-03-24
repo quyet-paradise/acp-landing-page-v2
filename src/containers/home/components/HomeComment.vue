@@ -3,7 +3,7 @@
         <div class="home-comment">
             <div class="home-comment--top">
                 <div class="title">WHAT CLIENTS ARE SAYING:</div>
-                <div class="book-consultation-btn-v1">CONTACT US</div>
+                <div class="book-consultation-btn">CONTACT US</div>
             </div>
 
             <div class="home-comment--content" data-aos="fade-down">
@@ -153,7 +153,7 @@ const onNextBtn = () => {
                     font-size: 16px;
                 }
 
-                .book-consultation-btn-v1 {
+                .book-consultation-btn {
                     display: none;
                 }
             }

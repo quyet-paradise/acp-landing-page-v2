@@ -13,7 +13,7 @@
                 <div class="content">
                     <div class="content--detail">{{ currentCommitment.content }}</div>
 
-                    <div class="book-consultation-btn-v2">CONTACT US</div>
+                    <div class="book-consultation-btn">CONTACT US</div>
                 </div>
 
                 <img @click="handleNext" class="next-btn" src="@/assets/images/facility/right-btn.svg" alt="right-arrow">

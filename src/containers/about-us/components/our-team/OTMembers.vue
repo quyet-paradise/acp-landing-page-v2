@@ -230,7 +230,7 @@
     font-size: 11px;
     letter-spacing: .15em;
     text-transform: uppercase;
-    color: var(--text-accent);
+    color: var(--dls-color-redclay);
     font-weight: 500;
     margin-bottom: 20px;
     display: flex;

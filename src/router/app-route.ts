@@ -12,6 +12,9 @@ const PediatricsService = () => import('@/containers/services/PediatricsService.
 const VeterinanyService = () => import('@/containers/services/VeterinaryService.vue')
 const OurTeam = () => import('@/containers/about-us/OurTeam.vue')
 const OurFacility = () => import('@/containers/about-us/OurFacility.vue')
+const ProfessionalPartnership = () => import('@/containers/about-us/ProfessionalPartnership.vue')
+const Faq = () => import('@/containers/about-us/Faq.vue')
+const ContactUs = () => import('@/containers/about-us/ContactUs.vue')
 
 const routes = [
     { 
@@ -79,6 +82,24 @@ const routes = [
         name: ROUTE_NAME.OUR_FACILITY, 
         component: OurFacility,
         meta: { title: ` ⊹ ${ROUTE_NAME.OUR_FACILITY}` }
+    },
+    { 
+        path: PATH.PROFESSIONAL_PARTNERSHIP, 
+        name: ROUTE_NAME.PROFESSIONAL_PARTNERSHIP, 
+        component: ProfessionalPartnership,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PROFESSIONAL_PARTNERSHIP}` }
+    },
+    { 
+        path: PATH.FAQ, 
+        name: ROUTE_NAME.FAQ, 
+        component: Faq,
+        meta: { title: ` ⊹ ${ROUTE_NAME.FAQ}` }
+    },
+     { 
+        path: PATH.CONTACT_US, 
+        name: ROUTE_NAME.CONTACT_US, 
+        component: ContactUs,
+        meta: { title: ` ⊹ ${ROUTE_NAME.CONTACT_US}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
