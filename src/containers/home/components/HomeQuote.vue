@@ -1,7 +1,7 @@
 <template>
     <div class="home-quote" data-aos="fade-up" data-aos-delay="200">
         <h2 class="home-quote--title">Artisan Pharmacy was built for women. Empowering you to reclaim vitality, extend your healthspan, and age beautifully, with formulations as individuals as you are.</h2>
-        <div class="book-consultation-btn-v2 mt-16px">CONTACT US</div>
+        <div class="book-consultation-btn mt-32px">CONTACT US</div>
         <div class="divider"></div>
     </div>
 </template>

@@ -48,26 +48,12 @@
     font-weight: 300;
 }
 
-.book-consultation-btn-v1 {
-    background: var(--dls-color-sunshine);
+.book-consultation-btn {
     color: var(--dls-color-burgundy);
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
     border: 1px solid var(--dls-color-sunshine);
-    font-size: 13px;
-
-    &:hover { 
-        opacity: .8;
-    }
-}
-
-.book-consultation-btn-v2 {
-    color: var(--dls-color-burgundy);
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 1px solid var(--dls-color-burgundy);
     background: var(--dls-color-sunshine);
     width: fit-content;
     transition: all .3s ease;
@@ -75,7 +61,6 @@
 
     &:hover {
         opacity: .8;
-        border: 1px solid var(--dls-color-sunshine);
     }
 }
 

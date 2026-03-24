@@ -14,9 +14,9 @@
                     <div class="item--popover">
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_TEAM)">OUR TEAM</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
-                        <div class="item--popover--text">PROFESSIONAL PARTNERSHIP</div>
-                        <div class="item--popover--text">FAQ</div>
-                        <div class="item--popover--text">CONTACT US</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.PROFESSIONAL_PARTNERSHIP)">PROFESSIONAL PARTNERSHIP</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.FAQ)">FAQ</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.CONTACT_US)">CONTACT US</div>
                     </div>
 
                     <template #reference>
@@ -83,7 +83,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn-v1">CONTACT US</div>
+                <div class="book-consultation-btn">CONTACT US</div>
             </div>
         </div>
     </div>
