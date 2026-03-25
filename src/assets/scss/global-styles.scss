@@ -114,3 +114,72 @@ h4 {
     font-weight: 500;
     margin-bottom: 8px;
 }
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 36px;
+    background: var(--yellow);
+    color: var(--brown-dark);
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 60px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .25);
+}
+
+.hero-cta svg {
+    width: 16px;
+    height: 16px;
+    transition: transform .3s;
+}
+
+.hero-cta:hover svg {
+    transform: translateX(4px);
+}
+
+.section-pad {
+    padding: var(--dls-2cm) 60px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.overline {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-family: 'SpeziaBookB';
+    font-size: clamp(32px, 3.5vw, 50px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--dls-color-burgundy);
+    margin-bottom: 24px;
+}
+
+.section-body {
+    font-size: 15.5px;
+    line-height: 1.85;
+    font-weight: 300;
+    color: var(--dls-color-burgundy);
+    opacity: 0.82;
+}
+
+@media (max-width: 900px) {
+    .section-pad {
+        padding: 72px 28px;
+    }
+}

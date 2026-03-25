@@ -55,8 +55,8 @@
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
-                        <div class="item--popover--text">WHAT IS COMPOUNDING</div>
-                        <div class="item--popover--text">WHY CHOOSE US?</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
                         <div class="item--popover--text">NEW PATIENT INTAKE</div>
                         <div class="item--popover--text">FILL MY RX / TRANSFER RX</div>
                     </div>
@@ -83,7 +83,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn">CONTACT US</div>
+                <div class="book-consultation-btn">BOOK A CONSULTATION</div>
             </div>
         </div>
     </div>

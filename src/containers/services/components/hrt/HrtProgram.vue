@@ -14,9 +14,8 @@
         <div class="program-steps">
             <div class="program-step" data-aos="fade-up" data-aos-delay="100">
                 <div class="ps-circle"><span>1</span></div>
-                <h4>Consultation</h4>
-                <p>We listen to your symptoms, wellness goals, and medical history to understand your individual
-                    situation.</p>
+                <h4>Start Here</h4>
+                <p>Book a consultation with us — whether you have a prescriber or are exploring for the first time. If you need testing, we'll get you an at-home kit. No Rx needed.</p>
             </div>
             <div class="program-step" data-aos="fade-up" data-aos-delay="200">
                 <div class="ps-circle"><span>2</span></div>
@@ -35,20 +34,17 @@
             <div class="program-step" data-aos="fade-up" data-aos-delay="400">
                 <div class="ps-circle"><span>4</span></div>
                 <h4>Custom Compounding</h4>
-                <p>We prepare the exact dose and combination your prescriber orders, in your preferred delivery form —
-                    cream, gel, lozenge, capsule, suppositories, or patch.</p>
+                <p>We prepare the exact dose and combination your prescriber orders, in your preferred delivery form — topical creams/gels, vaginal creams/gels, lozenges, capsules, or suppositories.</p>
             </div>
             <div class="program-step" data-aos="fade-up" data-aos-delay="500">
                 <div class="ps-circle"><span>5</span></div>
                 <h4>Follow-Up &amp; Fine-Tuning</h4>
-                <p>Your prescriber repeats labs and adjusts your formula as needed. We reformulate according to their
-                    updated instructions.</p>
+                <p>Your prescriber repeats labs and adjusts your formula as needed. We reformulate according to their updated instructions.</p>
             </div>
             <div class="program-step" data-aos="fade-up" data-aos-delay="600">
                 <div class="ps-circle"><span>6</span></div>
                 <h4>Ongoing Support</h4>
-                <p>Your dedicated pharmacist is here for refills, questions, and coordination with your prescriber — for
-                    as long as you need us.</p>
+                <p>Your dedicated pharmacist is here for refills, questions, and coordination with your prescriber — for as long as you need us.</p>
             </div>
         </div>
     </section>
@@ -110,7 +106,7 @@
 }
 
 .program-step:hover .ps-circle {
-    border-color: var(--dls-color-burgundy);
+    border-color: var(--dls-color-burgundylight);
     background: var(--dls-color-white);
 }
 
@@ -122,7 +118,7 @@
 
 .program-step h4 {
     font-family: 'SpeziaBookB';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
     margin-bottom: 10px;
@@ -131,7 +127,7 @@
 }
 
 .program-step p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     color: var(--dls-color-burgundy);
     font-weight: 300;

@@ -1,23 +1,22 @@
 <template>
     <section class="hero">
         <img class="hero-image" src="/images/services/hero-image/hrt.jpg" alt="hrt">
-
         <div class="hero-overlay"></div>
-
         <div class="hero-content">
-            <div class="breadcrumb">
-                <a href="/">Home</a><span>›</span><a href="#">Services</a><span>›</span>Hormone Replacement Therapy
-            </div>
-
+            <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="#">Services</a><span>›</span>Hormone
+                Replacement Therapy</div>
             <h1>Hormone Replacement Therapy</h1>
-
             <p class="hero-subtitle">Individually compounded hormone preparations — customized to your body, your lab
                 results, and your prescriber's plan.</p>
-
-            <a href="#" class="hero-cta">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg></a>
+            <p class="hero-subtitle" style="color:var(--dls-color-sunshine);font-weight:400;margin-top:8px;font-size:17px">Don't
+                have a prescriber yet? Start with a hormone test. We'll guide you from there.</p>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:36px">
+                <a href="#hormone-packages" class="hero-cta">Book a Hormone Consultation<svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg></a>
+            </div>
         </div>
     </section>
 </template>
@@ -36,7 +35,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center center;
 }
 
 .hero-overlay {
@@ -95,35 +94,8 @@
 }
 
 .hero-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 36px;
     background: var(--dls-color-sunshine);
     color: var(--dls-color-burgundy);
-    padding: 18px 40px;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    border-radius: 60px;
-    transition: transform .3s, box-shadow .3s;
-}
-
-.hero-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, .25);
-}
-
-.hero-cta svg {
-    width: 16px;
-    height: 16px;
-    transition: transform .3s;
-}
-
-.hero-cta:hover svg {
-    transform: translateX(4px);
 }
 
 @media(max-width:1024px) {}
@@ -132,7 +104,7 @@
     .hero-content {
         left: 24px;
         right: 24px;
-        bottom: 56px
+        bottom: 56px;
     }
 }
 </style>

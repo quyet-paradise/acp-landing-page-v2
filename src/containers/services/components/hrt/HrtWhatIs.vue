@@ -53,7 +53,7 @@
 
 <style lang="scss" scoped>
 .what-is {
-    padding: 0 60px var(--dls-2cm) 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }
@@ -124,7 +124,7 @@
 }
 
 .what-is-card p {
-    font-size: 16px;
+    font-size: 14.5px;
     line-height: 1.65;
     color: var(--dls-color-burgundy);
     font-weight: 300;

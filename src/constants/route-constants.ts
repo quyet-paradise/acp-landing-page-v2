@@ -12,7 +12,9 @@ export const ROUTE_NAME = {
     OUR_FACILITY: 'Our Facility',
     PROFESSIONAL_PARTNERSHIP: 'Professional Partnership',
     FAQ: 'FAQ',
-    CONTACT_US: 'Contact Us'
+    CONTACT_US: 'Contact Us',
+    WHAT_IS_COMPOUNDING: 'What Is Compounding',
+    WHY_CHOOSE_US: 'Why Choose Us'
 }
 
 export const PATH = {
@@ -29,5 +31,7 @@ export const PATH = {
     OUR_FACILITY: '/our-facility',
     PROFESSIONAL_PARTNERSHIP: '/professional-partnership',
     FAQ: '/faq',
-    CONTACT_US: '/contact-us'
+    CONTACT_US: '/contact-us',
+    WHAT_IS_COMPOUNDING: '/patients/what-is-compounding',
+    WHY_CHOOSE_US: '/patients/why-choose-us'
 }
