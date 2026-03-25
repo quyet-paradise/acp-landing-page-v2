@@ -11,10 +11,9 @@
                     fill="none" />
                 <path d="M32 10l6-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
             </svg>
-            <h2 data-aos="fade-up">Could Compounded HRT Be Right for You?</h2>
+            <h2 data-aos="fade-up">Conditions Prescribers May Address with HRT*</h2>
             <p class="conditions-sub" data-aos="fade-up" data-aos-delay="100">Your prescriber determines whether HRT is
-                appropriate for your
-                individual situation. Common reasons patients are prescribed compounded hormones include:</p>
+                appropriate for your individual situation. Common reasons patients are prescribed compounded hormones include:</p>
 
             <div class="gender-tabs">
                 <button class="gender-btn active" data-tab="women" @click="handleChangeTab('women')" id="btn-women">For
@@ -120,9 +119,7 @@
                 </div>
             </div>
 
-            <p class="cond-note">*Compounded HRT preparations are not FDA-approved. Benefits vary from person to person.
-                Your prescriber determines whether HRT is appropriate based on your individual lab results, symptoms,
-                and medical history. We customize every prescription to your prescriber's exact specifications.</p>
+            <p class="cond-note">Compounded medications are not reviewed or approved by the U.S. Food and Drug Administration (FDA) for safety or effectiveness. Compounded prescriptions are customized to meet the specific needs of an individual patient pursuant to a valid prescription.</p>
         </div>
     </section>
 </template>
@@ -284,7 +281,7 @@ const handleChangeTab = (gender: string) => {
 
 .cond-name {
     font-family: 'SpeziaBookB';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-white);
     margin-bottom: 10px;
@@ -292,7 +289,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .cond-desc {
-    font-size: 16px;
+    font-size: 13.5px;
     line-height: 1.6;
     color: rgba(255, 253, 245, .72);
     font-weight: 300;
@@ -301,7 +298,7 @@ const handleChangeTab = (gender: string) => {
 .cond-note {
     text-align: center;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 13.5px;
     font-style: italic;
     color: rgba(255, 253, 245, .5);
     font-weight: 300;

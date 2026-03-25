@@ -57,7 +57,7 @@
 
 <style lang="scss" scoped>
 .forms {
-    padding: var(--dls-2cm) 60px 0 60px;
+    padding: var(--dls-2cm) 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }
@@ -93,6 +93,7 @@
     border: 1px solid var(--dls-color-border);
     text-align: center;
     transition: background .3s;
+    border-right: none;
 }
 
 .form-item:last-child {
@@ -123,7 +124,7 @@
 
 .form-item h4 {
     font-family: 'SpeziaBookB';
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
     margin-bottom: 8px;
@@ -132,7 +133,7 @@
 }
 
 .form-item p {
-    font-size: 16px;
+    font-size: 13.5px;
     line-height: 1.55;
     color: var(--dls-color-burgundy);
     font-weight: 300;
@@ -143,7 +144,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .form-item:nth-child(3) {
+    .form-item:nth-child(2) {
         border-right: 1px solid var(--dls-color-border);
     }
 }

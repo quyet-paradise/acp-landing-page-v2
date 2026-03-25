@@ -14,6 +14,54 @@
         <div class="faq-list">
             <div class="faq-item">
                 <div class="faq-q" id="faq-1" @click="handleOpenQ('1')">
+                    <h4>Do I need a doctor's prescription to get tested?</h4>
+                    <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg></div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-a-inner">No. Our at-home hormone test kits are available without a prescription or
+                        referral. You purchase the kit, complete it at home, and our pharmacist reviews your results
+                        with you one-on-one. If hormone therapy is appropriate, we connect you with a prescriber who
+                        specializes in hormone health.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" id="faq-2" @click="handleOpenQ('2')">
+                    <h4>What if I don't have a prescriber yet?</h4>
+                    <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg></div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-a-inner">That's exactly what our testing and consultation program is for. We help
+                        you get tested, understand your results, and connect you with a prescriber who specializes in
+                        hormone therapy. They receive your lab results upfront, and your compounded prescription comes
+                        right back to us.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" id="faq-3" @click="handleOpenQ('3')">
+                    <h4>How much does hormone testing cost?</h4>
+                    <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg></div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-a-inner">Our test kit + consultation packages range from $249 to $649 depending on
+                        the panel you choose. Every package includes the at-home test kit and a personal consultation
+                        with our pharmacist. Already have lab results? Book a consultation-only appointment for
+                        $75–$125.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" id="faq-4" @click="handleOpenQ('4')">
                     <h4>How soon might I notice changes?</h4>
                     <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -28,7 +76,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-q" id="faq-2" @click="handleOpenQ('2')">
+                <div class="faq-q" id="faq-5" @click="handleOpenQ('5')">
                     <h4>Is HRT only for women?</h4>
                     <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -43,7 +91,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-q" id="faq-3" @click="handleOpenQ('3')">
+                <div class="faq-q" id="faq-6" @click="handleOpenQ('6')">
                     <h4>Will I gain weight on HRT?</h4>
                     <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -58,7 +106,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-q" id="faq-4" @click="handleOpenQ('4')">
+                <div class="faq-q" id="faq-7" @click="handleOpenQ('7')">
                     <h4>How long do people typically stay on HRT?</h4>
                     <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -73,7 +121,7 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-q" id="faq-5" @click="handleOpenQ('5')">
+                <div class="faq-q" id="faq-8" @click="handleOpenQ('8')">
                     <h4>Are compounded hormones the same as FDA-approved hormones?</h4>
                     <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -103,12 +151,12 @@ const handleOpenQ = (id: string) => {
     document.querySelectorAll('.faq-item').forEach((fi: any) => {
         fi.classList.remove('open')
         fi.querySelector('.faq-a').style.maxHeight = null
-      
+
     });
     // Open clicked if it was closed
     if (!isOpen) {
-      item.classList.add('open');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
     }
 }
 </script>
@@ -158,6 +206,7 @@ const handleOpenQ = (id: string) => {
     color: var(--dls-color-burgundy);
     line-height: 1.3;
     letter-spacing: -1px;
+    margin: 12px 0;
 }
 
 .faq-toggle {
@@ -205,5 +254,10 @@ const handleOpenQ = (id: string) => {
 
 @media(max-width:1024px) {}
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    .faq {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
 </style>

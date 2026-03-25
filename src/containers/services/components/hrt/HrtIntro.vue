@@ -22,7 +22,7 @@
 
 <style lang="scss" scoped>
 .intro {
-    padding: var(--dls-2cm) 60px;
+    padding: 0 60px;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 }

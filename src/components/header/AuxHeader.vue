@@ -40,8 +40,8 @@
                 <div class="patients">
                     <div class="title" @click="onShowPatients">Patients</div>
                     <div v-if="isShowPatientsItem" class="list-item">
-                        <div class="item">WHAT IS COMPOUNDING</div>
-                        <div class="item">WHY CHOOSE US?</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
                         <div class="item">NEW PATIENT INTAKE</div>
                         <div class="item">FILL MY RX / TRANSFER RX</div>
                     </div>
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="btn">CONTACT US</div>
+            <div class="btn">BOOK A CONSULTATION</div>
         </div>
     </div>
 </template>

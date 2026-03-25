@@ -1,11 +1,10 @@
 <template>
     <div class="cta-banner">
         <div>
-            <h2>Ready to Explore Personalized Hormone Therapy?</h2>
-            <p>Schedule a consultation with our team. We'll work alongside your prescriber to compound a preparation
-                tailored to your individual needs.</p>
+            <h2>Ready to Find Out What's Really Going On?</h2>
+            <p>Whether you have a prescriber or you're just getting started, we're here to help. Book a consultation, get tested, and let us guide you to feeling like yourself again.</p>
         </div>
-        <a href="#" class="cta-btn">Contact Us<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        <a href="#hormone-packages" class="cta-btn">Book a Consultation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
             </svg></a>
@@ -60,6 +59,7 @@
     max-width: 520px;
     position: relative;
     z-index: 1;
+    margin: 0;
 }
 
 .cta-banner p {

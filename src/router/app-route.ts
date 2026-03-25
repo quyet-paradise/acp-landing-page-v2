@@ -15,6 +15,8 @@ const OurFacility = () => import('@/containers/about-us/OurFacility.vue')
 const ProfessionalPartnership = () => import('@/containers/about-us/ProfessionalPartnership.vue')
 const Faq = () => import('@/containers/about-us/Faq.vue')
 const ContactUs = () => import('@/containers/about-us/ContactUs.vue')
+const WhatIsCompounding = () => import('@/containers/patients/WhatIsCompounding.vue')
+const WhyChooseUs = () => import('@/containers/patients/WhyChooseUs.vue')
 
 const routes = [
     { 
@@ -95,11 +97,23 @@ const routes = [
         component: Faq,
         meta: { title: ` ⊹ ${ROUTE_NAME.FAQ}` }
     },
-     { 
+    { 
         path: PATH.CONTACT_US, 
         name: ROUTE_NAME.CONTACT_US, 
         component: ContactUs,
         meta: { title: ` ⊹ ${ROUTE_NAME.CONTACT_US}` }
+    },
+    { 
+        path: PATH.WHAT_IS_COMPOUNDING, 
+        name: ROUTE_NAME.WHAT_IS_COMPOUNDING, 
+        component: WhatIsCompounding,
+        meta: { title: ` ⊹ ${ROUTE_NAME.WHAT_IS_COMPOUNDING}` }
+    },
+    { 
+        path: PATH.WHY_CHOOSE_US, 
+        name: ROUTE_NAME.WHY_CHOOSE_US, 
+        component: WhyChooseUs,
+        meta: { title: ` ⊹ ${ROUTE_NAME.WHY_CHOOSE_US}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
