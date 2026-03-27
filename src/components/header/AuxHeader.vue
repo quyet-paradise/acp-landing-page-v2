@@ -13,7 +13,7 @@
 
             <div class="nav">
                 <div class="about-us">
-                    <div class="title" @click="onShowAboutUs">About Us</div>
+                    <div class="title" @click="onShowItem('about-us')">About Us</div>
                     <div v-if="isShowAboutUsItem" class="list-item">
                         <div class="item" @click="handleRouting(ROUTE_NAME.OUR_TEAM)">OUR TEAM</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="services">
-                    <div class="title" @click="onShowServices">Services</div>
+                    <div class="title" @click="onShowItem('services')">Services</div>
                     <div v-if="isShowServicesItem" class="list-item">
                         <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (HRT)</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
@@ -37,8 +37,15 @@
                     </div>
                 </div>
 
+                <div class="consultation">
+                    <div class="title" @click="onShowItem('consultation')">Consultation</div>
+                    <div v-if="isShowConsultationsItem" class="list-item">
+                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE THERAPY</div>
+                    </div>
+                </div>
+
                 <div class="patients">
-                    <div class="title" @click="onShowPatients">Patients</div>
+                    <div class="title" @click="onShowItem('patients')">Patients</div>
                     <div v-if="isShowPatientsItem" class="list-item">
                         <div class="item" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
@@ -48,7 +55,7 @@
                 </div>
 
                 <div class="providers">
-                    <div class="title" @click="onShowProviders">Providers</div>
+                    <div class="title" @click="onShowItem('providers')">Providers</div>
                     <div v-if="isShowProvidersItem" class="list-item">
                         <div class="item">SEND PRESCRIPTION</div>
                         <div class="item">WHY ARTISAN?</div>
@@ -56,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="btn">BOOK A CONSULTATION</div>
+            <div class="btn" @click="handleRouting(ROUTE_NAME.CONTACT_US_PAGE)">CONTACT US</div>
         </div>
     </div>
 </template>
@@ -71,33 +78,48 @@ const isShowAboutUsItem = ref<boolean>(false)
 const isShowServicesItem = ref<boolean>(false)
 const isShowPatientsItem = ref<boolean>(false)
 const isShowProvidersItem = ref<boolean>(false)
+const isShowConsultationsItem = ref<boolean> (false)
 
-const onShowAboutUs = () => {
-    isShowAboutUsItem.value = !isShowAboutUsItem.value
-    isShowServicesItem.value = false
-    isShowPatientsItem.value = false
-    isShowProvidersItem.value = false
-}
-
-const onShowServices = () => {
-    isShowServicesItem.value = !isShowServicesItem.value
-    isShowAboutUsItem.value = false
-    isShowPatientsItem.value = false
-    isShowProvidersItem.value = false
-}
-
-const onShowPatients = () => {
-    isShowPatientsItem.value = !isShowPatientsItem.value
-    isShowServicesItem.value = false
-    isShowAboutUsItem.value = false
-    isShowProvidersItem.value = false
-}
-
-const onShowProviders = () => {
-    isShowProvidersItem.value = !isShowProvidersItem.value
-    isShowServicesItem.value = false
-    isShowPatientsItem.value = false
-    isShowAboutUsItem.value = false
+const onShowItem = (key: string) => {
+    switch (key) {
+        case 'about-us':
+            isShowAboutUsItem.value = !isShowAboutUsItem.value
+            isShowServicesItem.value = false
+            isShowPatientsItem.value = false
+            isShowProvidersItem.value = false
+            isShowConsultationsItem.value = false
+            break
+        case 'services':
+            isShowServicesItem.value = !isShowServicesItem.value
+            isShowAboutUsItem.value = false
+            isShowPatientsItem.value = false
+            isShowProvidersItem.value = false
+            isShowConsultationsItem.value = false
+            break
+        case 'patients':
+            isShowPatientsItem.value = !isShowPatientsItem.value
+            isShowServicesItem.value = false
+            isShowAboutUsItem.value = false
+            isShowProvidersItem.value = false
+            isShowConsultationsItem.value = false
+            break
+        case 'providers':
+            isShowProvidersItem.value = !isShowProvidersItem.value
+            isShowServicesItem.value = false
+            isShowPatientsItem.value = false
+            isShowAboutUsItem.value = false
+            isShowConsultationsItem.value = false
+            break
+        case 'consultation':
+            isShowConsultationsItem.value = !isShowConsultationsItem.value
+            isShowAboutUsItem.value = false
+            isShowPatientsItem.value = false
+            isShowProvidersItem.value = false
+            isShowServicesItem.value = false
+            break
+        default:
+            break
+    }
 }
 
 const handleRouting = (routeName: string) => {

@@ -2,7 +2,8 @@ import { PATH, ROUTE_NAME } from '../constants/route-constants'
 
 const Home = () => import('@/containers/home/HomePage.vue')
 
-const HormoneReplacementTherapyService = () => import('@/containers/services/HormoneReplacementTherapyService.vue')
+// const HormoneReplacementTherapyService = () => import('@/containers/services/HormoneReplacementTherapyService.vue')
+const HormoneReplacementTherapyServiceOld = () => import('@/containers/services/HRTServiceOld.vue')
 const LowDoseNaltrexoneService = () => import('@/containers/services/LowDoseNaltrexoneService.vue')
 const SexualHealthService = () => import('@/containers/services/SexualHealthService.vue')
 const WeightLossService = () => import('@/containers/services/WeightLossService.vue')
@@ -17,6 +18,8 @@ const Faq = () => import('@/containers/about-us/Faq.vue')
 const ContactUs = () => import('@/containers/about-us/ContactUs.vue')
 const WhatIsCompounding = () => import('@/containers/patients/WhatIsCompounding.vue')
 const WhyChooseUs = () => import('@/containers/patients/WhyChooseUs.vue')
+const HormoneTherapyConsultation = () => import('@/containers/consultation/HormoneTherapyConsultation.vue')
+const ContactUsPage = () => import('@/containers/contact-us/ContactUs.vue')
 
 const routes = [
     { 
@@ -28,7 +31,7 @@ const routes = [
     { 
         path: PATH.HORMONE_REPLACEMENT_THERAPY_SERVICE, 
         name: ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE, 
-        component: HormoneReplacementTherapyService,
+        component: HormoneReplacementTherapyServiceOld,
         meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE}` }
     },
     { 
@@ -114,6 +117,18 @@ const routes = [
         name: ROUTE_NAME.WHY_CHOOSE_US, 
         component: WhyChooseUs,
         meta: { title: ` ⊹ ${ROUTE_NAME.WHY_CHOOSE_US}` }
+    },
+    { 
+        path: PATH.HORMONE_THERAPY_CONSULTATION, 
+        name: ROUTE_NAME.HORMONE_THERAPY_CONSULTATION, 
+        component: HormoneTherapyConsultation,
+        meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_THERAPY_CONSULTATION}` }
+    },
+    { 
+        path: PATH.CONTACT_US_PAGE, 
+        name: ROUTE_NAME.CONTACT_US_PAGE, 
+        component: ContactUsPage,
+        meta: { title: ` ⊹ ${ROUTE_NAME.CONTACT_US_PAGE}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
