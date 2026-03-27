@@ -14,7 +14,9 @@ export const ROUTE_NAME = {
     FAQ: 'FAQ',
     CONTACT_US: 'Contact Us',
     WHAT_IS_COMPOUNDING: 'What Is Compounding',
-    WHY_CHOOSE_US: 'Why Choose Us'
+    WHY_CHOOSE_US: 'Why Choose Us',
+    HORMONE_THERAPY_CONSULTATION: 'Book a Hormone Consultation',
+    CONTACT_US_PAGE: 'Contact Us'
 }
 
 export const PATH = {
@@ -31,7 +33,9 @@ export const PATH = {
     OUR_FACILITY: '/our-facility',
     PROFESSIONAL_PARTNERSHIP: '/professional-partnership',
     FAQ: '/faq',
-    CONTACT_US: '/contact-us',
+    CONTACT_US: '/about-us/contact-us',
     WHAT_IS_COMPOUNDING: '/patients/what-is-compounding',
-    WHY_CHOOSE_US: '/patients/why-choose-us'
+    WHY_CHOOSE_US: '/patients/why-choose-us',
+    HORMONE_THERAPY_CONSULTATION: '/consultation/hormone-therapy',
+    CONTACT_US_PAGE: '/contact-us'
 }

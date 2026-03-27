@@ -1,7 +1,7 @@
 <template>
     <div class="nav-header" id="navHeader" data-aos="fade-up">
         <div class="nav-header--content">
-            <img @click="goToPage(ROUTE_NAME.HOME)" class="logo" src="/images/nav/logo.png" alt="logo">
+            <img @click="goToPage(ROUTE_NAME.HOME)" class="logo" src="/images/nav/logo.png" alt="logo" />
 
             <div class="menu">
                 <el-popover
@@ -48,6 +48,22 @@
                 </el-popover>
 
                 <el-popover
+                    ref="consultationNavRef"
+                    :show-arrow="false"
+                    placement="bottom-start"
+                    :width="200"
+                    popper-class="box-item-menu-header">
+
+                    <div class="item--popover">
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE THERAPY</div>
+                    </div>
+
+                    <template #reference>
+                        <div class="item">CONSULTATION</div>
+                    </template>
+                </el-popover>
+
+                <el-popover
                     ref="patientsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
@@ -83,7 +99,7 @@
                     </template>
                 </el-popover>
 
-                <div class="book-consultation-btn">BOOK A CONSULTATION</div>
+                <div class="book-consultation-btn" @click="handleRouting(ROUTE_NAME.CONTACT_US_PAGE)">CONTACT US</div>
             </div>
         </div>
     </div>
@@ -98,12 +114,14 @@ const aboutUsNavRef = ref()
 const servicesNavRef = ref()
 const patientsNavRef = ref()
 const providersNavRef = ref()
+const consultationNavRef = ref()
 
 const hideAllPopover = () => {
     aboutUsNavRef.value.hide()
     servicesNavRef.value.hide()
     patientsNavRef.value.hide()
     providersNavRef.value.hide()
+    consultationNavRef.value.hide()
 }
 
 const handleRouting = (routeName: string) => {
@@ -149,6 +167,18 @@ const handleRouting = (routeName: string) => {
                 &:hover {
                     background: var(--dls-color-sunshine);
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1440px) {
+        &--content {
+            .menu {
+                gap: 8px;
+
+                .item {
+                    padding: 10px 12px;
                 }
             }
         }
