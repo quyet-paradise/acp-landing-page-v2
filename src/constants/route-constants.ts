@@ -12,7 +12,7 @@ export const ROUTE_NAME = {
     OUR_FACILITY: 'Our Facility',
     PROFESSIONAL_PARTNERSHIP: 'Professional Partnership',
     FAQ: 'FAQ',
-    CONTACT_US: 'Contact Us',
+    CONTACT_US: 'Contact Us - About Us',
     WHAT_IS_COMPOUNDING: 'What Is Compounding',
     WHY_CHOOSE_US: 'Why Choose Us',
     HORMONE_THERAPY_CONSULTATION: 'Book a Hormone Consultation',

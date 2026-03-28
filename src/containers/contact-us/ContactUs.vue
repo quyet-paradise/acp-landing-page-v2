@@ -2,7 +2,8 @@
     <div class="contact-us">
         <ContactUsHero />
         <ContactUsForms />
-        <ContactUsInfo />
+        <!-- <ContactUsInfo /> -->
+         <ContactUsMap />
         <NewletterForm />
     </div>
 </template>
@@ -12,7 +13,8 @@ import { defineAsyncComponent } from 'vue'
 
 const ContactUsHero = defineAsyncComponent(() => import('./components/ContactUsHero.vue'))
 const ContactUsForms = defineAsyncComponent(() => import('./components/ContactUsForms.vue'))
-const ContactUsInfo = defineAsyncComponent(() => import('./components/ContactUsInfo.vue'))
+// const ContactUsInfo = defineAsyncComponent(() => import('./components/ContactUsInfo.vue'))
+const ContactUsMap = defineAsyncComponent(() => import('./components/ContactUsMap.vue'))
 const NewletterForm = defineAsyncComponent(() => import('@/components/contact/NewletterForm.vue'))
 </script>
 
