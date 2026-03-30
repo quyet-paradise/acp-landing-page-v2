@@ -43,7 +43,7 @@
                     </div>
 
                     <template #reference>
-                        <div class="item">SERVICES</div>
+                        <div class="item">COMPOUNDING</div>
                     </template>
                 </el-popover>
 
@@ -55,11 +55,11 @@
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
-                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE THERAPY</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE CONSULTATION</div>
                     </div>
 
                     <template #reference>
-                        <div class="item">CONSULTATION</div>
+                        <div class="item">SERVICES</div>
                     </template>
                 </el-popover>
 
@@ -71,10 +71,11 @@
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.GETTING_STATED)">GETTING STARTED</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.FILL_MY_RX)">REFILL MY RX / TRANSFER RX</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.NEW_PATIENT_INTAKE)">NEW PATIENT INTAKE</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
-                        <div class="item--popover--text">NEW PATIENT INTAKE</div>
-                        <div class="item--popover--text">FILL MY RX / TRANSFER RX</div>
                     </div>
 
                     <template #reference>
