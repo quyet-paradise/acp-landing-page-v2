@@ -18,8 +18,12 @@ const Faq = () => import('@/containers/about-us/Faq.vue')
 const ContactUs = () => import('@/containers/about-us/ContactUs.vue')
 const WhatIsCompounding = () => import('@/containers/patients/WhatIsCompounding.vue')
 const WhyChooseUs = () => import('@/containers/patients/WhyChooseUs.vue')
-const HormoneTherapyConsultation = () => import('@/containers/consultation/HormoneTherapyConsultation.vue')
+// const HormoneTherapyConsultation = () => import('@/containers/consultation/HormoneTherapyConsultation.vue')
+const HormoneConsultation = () => import('@/containers/consultation/HormoneConsultation.vue')
 const ContactUsPage = () => import('@/containers/contact-us/ContactUs.vue')
+const GettingStarted = () => import('@/containers/patients/GettingStarted.vue')
+const NewPatientIntake = () => import('@/containers/patients/NewPatientIntake.vue')
+const FillMyRx = () => import('@/containers/patients/FillMyRx.vue')
 
 const routes = [
     { 
@@ -121,7 +125,7 @@ const routes = [
     { 
         path: PATH.HORMONE_THERAPY_CONSULTATION, 
         name: ROUTE_NAME.HORMONE_THERAPY_CONSULTATION, 
-        component: HormoneTherapyConsultation,
+        component: HormoneConsultation,
         meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_THERAPY_CONSULTATION}` }
     },
     { 
@@ -129,6 +133,24 @@ const routes = [
         name: ROUTE_NAME.CONTACT_US_PAGE, 
         component: ContactUsPage,
         meta: { title: ` ⊹ ${ROUTE_NAME.CONTACT_US_PAGE}` }
+    },
+    { 
+        path: PATH.GETTING_STATED, 
+        name: ROUTE_NAME.GETTING_STATED, 
+        component: GettingStarted,
+        meta: { title: ` ⊹ ${ROUTE_NAME.GETTING_STATED}` }
+    },
+    { 
+        path: PATH.NEW_PATIENT_INTAKE, 
+        name: ROUTE_NAME.NEW_PATIENT_INTAKE, 
+        component: NewPatientIntake,
+        meta: { title: ` ⊹ ${ROUTE_NAME.NEW_PATIENT_INTAKE}` }
+    },
+    { 
+        path: PATH.FILL_MY_RX, 
+        name: ROUTE_NAME.FILL_MY_RX, 
+        component: FillMyRx,
+        meta: { title: ` ⊹ ${ROUTE_NAME.FILL_MY_RX}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

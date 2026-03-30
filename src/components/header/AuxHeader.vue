@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="services">
-                    <div class="title" @click="onShowItem('services')">Services</div>
+                    <div class="title" @click="onShowItem('services')">Compounding</div>
                     <div v-if="isShowServicesItem" class="list-item">
                         <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">HORMONE REPLACEMENT THERAPY (HRT)</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">LOW-DOSE NALTREXONE (LDN)</div>
@@ -38,19 +38,20 @@
                 </div>
 
                 <div class="consultation">
-                    <div class="title" @click="onShowItem('consultation')">Consultation</div>
+                    <div class="title" @click="onShowItem('consultation')">Services</div>
                     <div v-if="isShowConsultationsItem" class="list-item">
-                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE THERAPY</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE CONSULTATION</div>
                     </div>
                 </div>
 
                 <div class="patients">
                     <div class="title" @click="onShowItem('patients')">Patients</div>
                     <div v-if="isShowPatientsItem" class="list-item">
+                        <div class="item" @click="handleRouting(ROUTE_NAME.GETTING_STATED)">GETTING STARTED</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.FILL_MY_RX)">REFILL MY RX / TRANSFER RX</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.NEW_PATIENT_INTAKE)">NEW PATIENT INTAKE</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
-                        <div class="item">NEW PATIENT INTAKE</div>
-                        <div class="item">FILL MY RX / TRANSFER RX</div>
                     </div>
                 </div>
 

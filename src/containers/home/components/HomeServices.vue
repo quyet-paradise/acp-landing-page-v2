@@ -48,54 +48,48 @@ type Service = {
 const services: Service[] = [
     {
         id: 0,
-        name: 'Consultations - Hormone Therapy',
-        img: hrt,
-        desc: 'Consultations description'
-    },
-    {
-        id: 1,
         name: 'Hormone Replacement Therapy',
         img: hrt,
         desc: 'Help restore hormonal balance to reignite energy, lift mood, sharpen focus, deepen sleep, and revive sexual vitality, so you can be yourself again.'
     },
     {
-        id: 2,
+        id: 1,
         name: 'Low-Dose Naltrexone (LDN)',
         img: ldn,
         desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.'
     },
     {
-        id: 3,
+        id: 2,
         name: 'Sexual Health for Men & Women',
         img: sexual,
         desc: 'Help men and women boost desire, performance, comfort, and confidence - so intimacy feels natural, enjoyable, and truly you again.'
     },
     {
-        id: 4,
+        id: 3,
         name: 'Weight Loss',
         img: weightLoss,
         desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.'
     },
     {
-        id: 5,
+        id: 4,
         name: 'Hair Growth',
         img: hairGrowth,
         desc: 'Help bring back thicker, fuller hair - so you love what you see in the mirror.'
     },
     {
-        id: 6,
+        id: 5,
         name: 'Dermatology',
         img: dermatology,
         desc: 'Target your skin’s root issues - acne, dark spots, rosacea, aging, and scars - so your skin looks radiant, glowing and visibly renewed.'
     },
     {
-        id: 7,
+        id: 6,
         name: 'Pediatrics',
         img: pediatrics,
         desc: 'We take off the hard work for you by making medicine easier for kids - right dose, kid-friendly flavor, and gentler options.'
     },
     {
-        id: 8,
+        id: 7,
         name: 'Veterinary',
         img: veterinary,
         desc: 'Makes meds easier for your furry best friend with pet-safe doses in yummy, easy-to-give flavors.'
