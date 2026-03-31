@@ -18,71 +18,7 @@
     </div>
 </template>
 
-<script lang="ts" setup>
-import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
-
-const scrollPosition = ref<number>(0)
-
-const handleScroll = () => {
-    scrollPosition.value = window.scrollY || window.pageYOffset
-};
-
-onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
-})
-
-onBeforeUnmount(() => {
-    window.removeEventListener('scroll', handleScroll)
-})
-
-watch(scrollPosition, (newValue) => {
-    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const logoScaling = document.getElementById('logoScaling')
-
-    if (width < 1024) return
-    
-    if (logoScaling) {
-        // React to the scroll position changes
-        if (newValue >= 100 && newValue < 200) {
-            logoScaling.style.height = '270px'
-            logoScaling.style.left = '45%'
-            logoScaling.style.bottom = '60px'
-        } else if (newValue >= 200 && newValue < 300) {
-            logoScaling.style.height = '240px'
-            logoScaling.style.left = '40%'
-            logoScaling.style.bottom = '75px'
-        } else if (newValue >= 300 && newValue < 400) {
-            logoScaling.style.height = '210px'
-            logoScaling.style.left = '35%'
-            logoScaling.style.bottom = '90px'
-        } else if (newValue >= 400 && newValue < 500) {
-            logoScaling.style.height = '180px'
-            logoScaling.style.left = '30%'
-            logoScaling.style.bottom = '105px'
-        } else if (newValue >= 500 && newValue < 600) {
-            logoScaling.style.height = '150px'
-            logoScaling.style.left = '25%'
-            logoScaling.style.bottom = '120px'
-        } else if (newValue >= 600 && newValue < 700) {
-            logoScaling.style.height = '120px'
-            logoScaling.style.left = '20%'
-            logoScaling.style.bottom = '135px'
-        } else if (newValue >= 700 && newValue < 800) {
-            logoScaling.style.height = '90px'
-            logoScaling.style.left = '15%'
-            logoScaling.style.bottom = '150px'
-        } else if (newValue >= 800 && newValue < 1200) {
-            logoScaling.style.height = '60px'
-            logoScaling.style.left = '10%'
-            logoScaling.style.bottom = '165px'
-        } else {
-            logoScaling.style.height = '298px'
-            logoScaling.style.left = '50%'
-            logoScaling.style.bottom = '36px'
-        }
-    }
-})
-</script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 .home-banner {
@@ -128,7 +64,12 @@ watch(scrollPosition, (newValue) => {
             left: 50%;
             height: 298px;
             width: auto;
-            transform: translate(-50%, 0);
+            transform: translateX(-50%);
+            scale: 1;
+            opacity: 1;
+            
+            animation: fade-out-logo linear forwards;
+            animation-timeline: view();
         }
     }
 
@@ -151,6 +92,11 @@ watch(scrollPosition, (newValue) => {
         position: absolute;
         inset: 0;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .45) 100%);
+    }
+
+    @keyframes fade-out-logo {
+        30% { opacity: 1; left: 50%; bottom: 36px; scale: 1; }
+        100% { opacity: 0; left: -25%; bottom: -150px; scale: 0; }
     }
 
     @media (max-width: 1024px) {
