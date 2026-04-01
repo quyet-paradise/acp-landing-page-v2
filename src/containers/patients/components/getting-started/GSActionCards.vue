@@ -12,7 +12,7 @@
                 <h3>New to Artisan?<br>Let's Get Started</h3>
                 <p>We're excited to support your health journey. Complete our new patient intake form so we can learn
                     about you, your health goals, and your prescriptions.</p>
-                <div class="action-card-links"><a href="#" class="pill-btn">New Patient Intake Form <svg
+                <div class="action-card-links"><a href="#" class="pill-btn" @click="goToPage(ROUTE_NAME.NEW_PATIENT_INTAKE)">New Patient Intake Form <svg
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14M12 5l7 7-7 7" />
@@ -77,7 +77,10 @@
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .action-cards {
