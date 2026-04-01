@@ -73,7 +73,6 @@
                     <div class="item--popover">
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.GETTING_STATED)">GETTING STARTED</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.FILL_MY_RX)">REFILL MY RX / TRANSFER RX</div>
-                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.NEW_PATIENT_INTAKE)">NEW PATIENT INTAKE</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHAT_IS_COMPOUNDING)">WHAT IS COMPOUNDING</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHY_CHOOSE_US)">WHY CHOOSE US?</div>
                     </div>
