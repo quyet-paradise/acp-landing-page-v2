@@ -1,6 +1,6 @@
 <template>
     <div class="home-accreditation" data-aos="fade-up" data-aos-delay="200">
-        <div class="home-accreditation--title">Proud Member Of</div>
+        <h2 class="home-accreditation--title">Proud Member Of</h2>
         <div class="home-accreditation--imgs">
             <img class="apc" src="/images/accreditation/apc.png" alt="apc">
             <img class="ldn" src="/images/accreditation/ldn.png" alt="ldn">
@@ -22,12 +22,7 @@
 
     &--title {
         text-align: center;
-        font-size: 30px;
-        font-family: 'SpeziaBookB';
-        font-weight: 400;
-        color: var(--dls-color-burgundy);
-        line-height: 1.06;
-        letter-spacing: -2px;
+        margin: 0;
     }
 
     &--imgs {

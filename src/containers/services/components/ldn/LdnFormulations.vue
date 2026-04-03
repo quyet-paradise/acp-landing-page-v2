@@ -90,7 +90,7 @@
     font-family: 'SpeziaBookB';
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     text-align: center;
     margin-bottom: 16px;
 }
@@ -98,7 +98,7 @@
 .formulations-sub {
     text-align: center;
     font-size: 15px;
-    color: rgba(255, 253, 245, 0.7);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     margin-bottom: 56px;
 }
@@ -127,7 +127,7 @@
     font-family: 'SpeziaBookB';
     font-size: 20px;
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 12px;
     line-height: 1.25;
 }
@@ -135,7 +135,7 @@
 .form-card-why {
     font-size: 16px;
     line-height: 1.55;
-    color: rgba(255, 253, 245, 0.7);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     margin-bottom: 16px;
 }
@@ -147,7 +147,7 @@
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--dls-color-sunlight);
+    color: var(--dls-color-sunshine);
     letter-spacing: 0.03em;
 }
 
@@ -156,7 +156,7 @@
     margin-top: 36px;
     font-size: 16px;
     font-style: italic;
-    color: rgba(255, 253, 245, 0.6);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 

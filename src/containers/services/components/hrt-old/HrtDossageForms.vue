@@ -50,15 +50,6 @@
                 <h4>Suppository</h4>
                 <p>An alternative delivery route as directed by your prescriber</p>
             </div>
-            <div class="form-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <path d="M3 10h18" />
-                    </svg></div>
-                <h4>Patch</h4>
-                <p>Transdermal patch for consistent delivery as prescribed</p>
-            </div>
         </div>
     </section>
 </template>
@@ -94,7 +85,7 @@
 
 .forms-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
 }
 
