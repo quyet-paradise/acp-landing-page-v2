@@ -1,7 +1,7 @@
 <template>
     <div class="home-contact--wrapper" data-aos="fade-up" data-aos-delay="200">
         <div class="home-contact">
-            <div class="home-contact--text headline-1">Join our list for <br /> insights, news and <br /> special offers.</div>
+            <div class="home-contact--text">Join our list for <br /> insights, news and <br /> special offers.</div>
             <el-form
                 ref="formRef" 
                 class="home-contact--form"
@@ -85,6 +85,11 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
         &--text {
             margin: 0;
+            font-family: 'SpeziaBookB';
+            font-size: 64px;
+            color: var(--dls-color-burgundy);
+            line-height: 120%;
+            letter-spacing: -5px;
         }
 
         &--form {

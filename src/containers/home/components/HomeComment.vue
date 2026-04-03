@@ -76,7 +76,7 @@ const onNextBtn = () => {
 
     .home-comment {
         width: 100%;
-        background: var(--dls-color-taupe);
+        background: var(--dls-color-orangebrown);
         border-radius: 30px;
         padding: 32px;
         display: flex;

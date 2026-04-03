@@ -4,7 +4,7 @@
             <div class="home-services--left">
                 <img v-if="currentService" class="image" :src="currentService?.img" alt="img">
                 <div v-if="currentService" class="desc">{{ currentService?.desc }}</div>
-                <div v-if="currentService" class="learnmore-btn">LEARN MORE</div>
+                <div v-if="currentService" class="learnmore-btn" @click="goToPage(currentService?.route)">LEARN MORE</div>
             </div>
             <div class="home-services--right">
                 <img class="bg" src="@/assets/images/services/fountain-path.png" alt="bg">
@@ -37,12 +37,15 @@ import dermatology from '@/assets/images/services/icons/dermatology.png'
 import pediatrics from '@/assets/images/services/icons/pediatrics.png'
 import veterinary from '@/assets/images/services/icons/veterinary.png'
 import { ref } from 'vue'
+import { goToPage } from '@/utils/common-utils'
+import { ROUTE_NAME } from '@/constants/route-constants'
 
 type Service = {
     id: number,
     name: string,
     img: string,
-    desc: string
+    desc: string,
+    route: string
 }
 
 const services: Service[] = [
@@ -50,49 +53,57 @@ const services: Service[] = [
         id: 0,
         name: 'Hormone Replacement Therapy',
         img: hrt,
-        desc: 'Help restore hormonal balance to reignite energy, lift mood, sharpen focus, deepen sleep, and revive sexual vitality, so you can be yourself again.'
+        desc: 'Help restore hormonal balance to reignite energy, lift mood, sharpen focus, deepen sleep, and revive sexual vitality, so you can be yourself again.',
+        route: ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE
     },
     {
         id: 1,
         name: 'Low-Dose Naltrexone (LDN)',
         img: ldn,
-        desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.'
+        desc: 'Gently supports your immune system, calms inflammation, and helps you feel clearer and more resilient day to day.',
+        route: ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE
     },
     {
         id: 2,
         name: 'Sexual Health for Men & Women',
         img: sexual,
-        desc: 'Help men and women boost desire, performance, comfort, and confidence - so intimacy feels natural, enjoyable, and truly you again.'
+        desc: 'Help men and women boost desire, performance, comfort, and confidence - so intimacy feels natural, enjoyable, and truly you again.',
+        route: ROUTE_NAME.SEXUAL_HEALTH_SERVICE
     },
     {
         id: 3,
         name: 'Weight Loss',
         img: weightLoss,
-        desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.'
+        desc: 'Help you lose weight steadily by quieting cravings, boosting metabolism, and giving you more energy.',
+        route: ROUTE_NAME.WEIGHT_LOSS_SERVICE
     },
     {
         id: 4,
         name: 'Hair Growth',
         img: hairGrowth,
-        desc: 'Help bring back thicker, fuller hair - so you love what you see in the mirror.'
+        desc: 'Help bring back thicker, fuller hair - so you love what you see in the mirror.',
+        route: ROUTE_NAME.HAIR_GROWTH_SERVICE
     },
     {
         id: 5,
         name: 'Dermatology',
         img: dermatology,
-        desc: 'Target your skin’s root issues - acne, dark spots, rosacea, aging, and scars - so your skin looks radiant, glowing and visibly renewed.'
+        desc: 'Target your skin’s root issues - acne, dark spots, rosacea, aging, and scars - so your skin looks radiant, glowing and visibly renewed.',
+        route: ROUTE_NAME.DERMATOLOGY_SERVICE
     },
     {
         id: 6,
         name: 'Pediatrics',
         img: pediatrics,
-        desc: 'We take off the hard work for you by making medicine easier for kids - right dose, kid-friendly flavor, and gentler options.'
+        desc: 'We take off the hard work for you by making medicine easier for kids - right dose, kid-friendly flavor, and gentler options.',
+        route: ROUTE_NAME.PEDIATRICS_SERVICE
     },
     {
         id: 7,
         name: 'Veterinary',
         img: veterinary,
-        desc: 'Makes meds easier for your furry best friend with pet-safe doses in yummy, easy-to-give flavors.'
+        desc: 'Makes meds easier for your furry best friend with pet-safe doses in yummy, easy-to-give flavors.',
+        route: ROUTE_NAME.VETERINARY_SERVICE
     }
 ]
 
@@ -103,6 +114,7 @@ const handleEnter = (id: number) => {
 }
 const handleLeave = () => {
     //todo
+
 } 
 </script>
 
@@ -128,7 +140,7 @@ const handleLeave = () => {
             padding: 10px 50px;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 32px;
             align-items: center;
             justify-content: center;
 
@@ -144,6 +156,7 @@ const handleLeave = () => {
                 font-size: 24px;
                 color: var(--dls-color-burgundy);
                 letter-spacing: -2px;
+                min-height: calc(3.15em);
             }
 
             .learnmore-btn {
@@ -214,7 +227,7 @@ const handleLeave = () => {
                     }
 
                     &.is-active-item {
-                        text-decoration: underline;
+                        // text-decoration: underline;
                         text-decoration-thickness: 2px;
                     }
                 }

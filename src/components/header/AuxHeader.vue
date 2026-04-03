@@ -19,7 +19,6 @@
                         <div class="item" @click="handleRouting(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.PROFESSIONAL_PARTNERSHIP)">PROFESSIONAL PARTNERSHIP</div>
                         <div class="item" @click="handleRouting(ROUTE_NAME.FAQ)">FAQ</div>
-                        <div class="item" @click="handleRouting(ROUTE_NAME.CONTACT_US)">CONTACT US</div>
                     </div>
                 </div>
 

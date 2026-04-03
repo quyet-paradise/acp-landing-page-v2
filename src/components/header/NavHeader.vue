@@ -16,7 +16,6 @@
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.OUR_FACILITY)">OUR FACILITY</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.PROFESSIONAL_PARTNERSHIP)">PROFESSIONAL PARTNERSHIP</div>
                         <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.FAQ)">FAQ</div>
-                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.CONTACT_US)">CONTACT US</div>
                     </div>
 
                     <template #reference>
@@ -137,7 +136,7 @@ const handleRouting = (routeName: string) => {
     background: var(--dls-color-linen);
     padding: 16px 60px;
     transition: all .3s ease;
-    border-bottom: 1px solid var(--dls-color-border);
+    border-bottom: 1px solid var(--dls-color-burgundy);
 
     &--content {
         display: flex;

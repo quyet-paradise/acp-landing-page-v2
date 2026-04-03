@@ -79,16 +79,7 @@
             <div class="split-hero-left">
                 <!-- Decorative arch outlines -->
                 <div class="arches">
-                    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice">
-                        <!-- Three tall arches -->
-                        <path d="M120 600 V260 Q120 80 260 80 Q400 80 400 260 V600" stroke="rgba(160,82,45,0.28)"
-                            stroke-width="1.2" fill="none" />
-                        <path d="M200 600 V300 Q200 140 330 140 Q460 140 460 300 V600" stroke="rgba(160,82,45,0.22)"
-                            stroke-width="1.2" fill="none" />
-                        <path d="M280 600 V340 Q280 200 400 200 Q520 200 520 340 V600" stroke="rgba(160,82,45,0.18)"
-                            stroke-width="1.2" fill="none" />
-                    </svg>
+                    <img src="@/assets/images/services/fountain-path-yellow.png" alt="fountain-path">
                 </div>
                 <div class="hero-eyebrow">Our Environment</div>
                 <h3>A Clean,<br>Controlled<br>Space.</h3>
@@ -106,15 +97,7 @@
             <div class="split-hero-left">
                 <!-- Decorative arch outlines -->
                 <div class="arches">
-                    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice">
-                        <path d="M120 600 V260 Q120 80 260 80 Q400 80 400 260 V600" stroke="rgba(160,82,45,0.28)"
-                            stroke-width="1.2" fill="none" />
-                        <path d="M200 600 V300 Q200 140 330 140 Q460 140 460 300 V600" stroke="rgba(160,82,45,0.22)"
-                            stroke-width="1.2" fill="none" />
-                        <path d="M280 600 V340 Q280 200 400 200 Q520 200 520 340 V600" stroke="rgba(160,82,45,0.18)"
-                            stroke-width="1.2" fill="none" />
-                    </svg>
+                    <img src="@/assets/images/services/fountain-path-yellow.png" alt="fountain-path">
                 </div>
                 <div class="hero-eyebrow">Our Ingredients</div>
                 <h3>Finest<br>Ingredients.</h3>
@@ -316,7 +299,7 @@ const scrollRight = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'SpeziaBookB';
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -328,37 +311,36 @@ const scrollRight = () => {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--cream-warm);
+    background: var(--dls-color-warmstone);
 }
 
 .split-text.bg-linen {
-    background: var(--linen);
+    background: var(--dls-color-linen);
 }
 
 .split-eyebrow {
-    font-family: 'Instrument Sans', sans-serif;
+    font-family: 'SpeziaBookB';
     font-size: 0.68rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--red-clay);
+    color: var(--dls-color-redclay);
     margin-bottom: 1.2rem;
 }
 
 .split-text h3 {
-    font-family: 'DM Serif Display', Georgia, serif;
+    font-family: 'SpeziaBookB';
     font-weight: 400;
     font-size: 1.85rem;
-    color: var(--burgundy-text);
+    color: var(--dls-color-burgundy);
     margin-bottom: 1.2rem;
     line-height: 1.2;
     letter-spacing: -0.01em;
 }
 
 .split-text p {
-    font-family: 'Lora', serif;
     font-size: 0.92rem;
     line-height: 1.8;
-    color: var(--brown-body);
+    color: var(--dls-color-burgundy);
     margin-bottom: 0.8rem;
 }
 
@@ -382,7 +364,7 @@ const scrollRight = () => {
     font-family: 'SpeziaBookB';
     font-weight: 400;
     font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-    color: var(--burgundy-text);
+    color: var(--dls-color-burgundy);
     letter-spacing: -0.01em;
 }
 
@@ -423,14 +405,14 @@ const scrollRight = () => {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--burgundy-text);
+    color: var(--dls-color-burgundy);
     margin-bottom: 0.8rem;
 }
 
 .standard-card p {
     font-size: 0.9rem;
     line-height: 1.75;
-    color: var(--brown-body);
+    color: var(--dls-color-burgundy);
 }
 
 /* ── TAUPE BANNER (per template brown/taupe sections) ── */
@@ -446,7 +428,7 @@ const scrollRight = () => {
     font-family: 'SpeziaBookB';
     font-weight: 400;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
-    color: var(--dls-color-linen);
+    color: var(--dls-color-burgundy);
     max-width: 750px;
     margin: 0 auto 1.5rem;
     line-height: 1.45;
@@ -463,19 +445,17 @@ const scrollRight = () => {
 
 .pill {
     padding: 0.55rem 1.3rem;
-    border: 1px solid rgba(250, 246, 238, 0.35);
+    border: 1px solid var(--dls-color-burgundy);
     border-radius: 50px;
-    font-family: 'SpeziaBookB';
     font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--dls-color-linen);
+    color: var(--dls-color-burgundy);
     transition: all 0.3s;
 }
 
 .pill:hover {
-    background: rgba(250, 246, 238, 0.12);
-    border-color: rgba(250, 246, 238, 0.5);
+    opacity: .7;
 }
 
 /* ── PROCESS STEPS (4-col per template) ── */
@@ -576,7 +556,7 @@ const scrollRight = () => {
 /* ── CTA (rounded pill button per template) ── */
 .cta-section {
     text-align: center;
-    padding: 0 60px var(--dls-2cm) 60px; 
+    padding: 0 60px var(--dls-2cm) 60px;
 }
 
 .cta-btn {
@@ -586,8 +566,8 @@ const scrollRight = () => {
     text-transform: uppercase;
     font-weight: 600;
     padding: 1.1rem 2.8rem;
-    background: var(--dls-color-burgundy);
-    color: var(--dls-color-linen);
+    background: var(--dls-color-sunshine);
+    color: var(--dls-color-burgundy);
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.35s;
@@ -595,6 +575,7 @@ const scrollRight = () => {
 
 .cta-btn:hover {
     background: var(--dls-color-burgundy);
+    color: var(--dls-color-sunshine);
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(55, 18, 19, 0.2);
 }
@@ -624,9 +605,10 @@ const scrollRight = () => {
     pointer-events: none;
 }
 
-.split-hero-left .arches svg {
+.split-hero-left .arches img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .split-hero-left .hero-eyebrow {

@@ -8,7 +8,7 @@
         <div class="home-banner--info">
             <div class="home-banner--info--title">
                 <h1 class="title">Personalized <br /> Medicine. <br /> Ageless Beauty.</h1>
-                <div class="learnmore-btn">LEARN MORE</div>
+                <!-- <div class="learnmore-btn">LEARN MORE</div> -->
             </div>
 
             <img id="logoScaling" class="home-banner--info--logo" src="/images/home-banner/logo.png" alt="logo">
@@ -40,7 +40,7 @@
             left: 64px;
 
             .title {
-                color: var(--dls-color-sunlight);
+                color: var(--dls-color-pale);
                 margin: 0;
             }
 
