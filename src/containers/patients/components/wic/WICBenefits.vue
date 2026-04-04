@@ -62,7 +62,7 @@
 }
 
 .benefits-inner .section-heading {
-    color: var(--dls-color-linen);
+    color: var(--dls-color-lemonice);
     max-width: 600px;
 }
 
@@ -106,7 +106,7 @@
 .benefit-card p {
     font-size: 13.5px;
     line-height: 1.8;
-    color: rgba(252, 249, 220, 0.6);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 

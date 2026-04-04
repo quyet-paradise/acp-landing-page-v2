@@ -101,7 +101,7 @@
     line-height: 1.7;
     max-width: 500px;
     font-weight: 300;
-    color: rgba(252, 249, 220, 0.75);
+    color: var(--dls-color-lemonice);
 }
 
 @media (max-width: 1024px) {}

@@ -65,7 +65,7 @@
 .cta-banner p {
     font-size: 16px;
     line-height: 1.6;
-    color: rgba(255, 253, 245, .75);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     margin-top: 16px;
     max-width: 480px;

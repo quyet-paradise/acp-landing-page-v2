@@ -44,17 +44,19 @@
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(252, 249, 220, 0.5);
+    color: var(--dls-color-lemonice);
     margin-bottom: 32px;
 }
 
 .breadcrumb a {
-    color: rgba(252, 249, 220, 0.7);
+    color: var(--dls-color-lemonice);
     transition: color 0.2s;
+    text-decoration: none;
 }
 
 .breadcrumb a:hover {
-    color: var(--dls-color-linen);
+    color: var(--dls-color-pale);
+    text-decoration: underline;
 }
 
 .breadcrumb .sep {
@@ -77,7 +79,7 @@
     line-height: 1.7;
     max-width: 520px;
     font-weight: 300;
-    color: rgba(252, 249, 220, 0.7);
+    color: var(--dls-color-lemonice);
 }
 
 @media (max-width: 900px) {

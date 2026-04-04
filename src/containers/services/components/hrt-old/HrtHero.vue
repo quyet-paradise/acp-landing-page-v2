@@ -76,7 +76,7 @@
     font-weight: 400;
     line-height: 1.06;
     max-width: 800px;
-    color: var(--dls-color-sunshine);
+    color: var(--dls-color-pale);
 }
 
 .hero-subtitle {

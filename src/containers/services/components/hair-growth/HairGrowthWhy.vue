@@ -3,7 +3,7 @@
         <div class="why-compound-inner">
             <div>
                 <div
-                    style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--brown);font-weight:500;margin-bottom:8px;">THE ARTISAN ADVANTAGE</div>
+                    style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--dls-color-burgundy);font-weight:500;margin-bottom:8px;">THE ARTISAN ADVANTAGE</div>
                 <h2 data-aos="fade-up">Why Compounding Makes a Difference</h2>
                 <p data-aos="fade-up" data-aos-delay="100">Commercially manufactured hair-loss medications come in a limited range of
                     strengths and formats. In our compounding lab, we prepare the exact active ingredients,

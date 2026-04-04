@@ -182,7 +182,7 @@ const handleChangeTab = (gender: string) => {
     font-family: 'SpeziaBookB';
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     text-align: center;
     margin-bottom: 16px;
 }
@@ -190,7 +190,7 @@ const handleChangeTab = (gender: string) => {
 .conditions-sub {
     text-align: center;
     font-size: 15px;
-    color: rgba(255, 253, 245, .7);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     margin-bottom: 56px;
     max-width: 640px;
@@ -233,7 +233,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .gender-btn.active {
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
 }
 
 .gender-btn.active::after {
@@ -283,7 +283,7 @@ const handleChangeTab = (gender: string) => {
     font-family: 'SpeziaBookB';
     font-size: 18px;
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 10px;
     line-height: 1.25;
 }
@@ -300,7 +300,7 @@ const handleChangeTab = (gender: string) => {
     margin-top: 40px;
     font-size: 13.5px;
     font-style: italic;
-    color: rgba(255, 253, 245, .5);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     line-height: 1.7;
     max-width: 680px;

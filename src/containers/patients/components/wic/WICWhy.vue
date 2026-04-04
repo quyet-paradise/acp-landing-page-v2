@@ -65,7 +65,7 @@
 }
 
 .why-inner .section-heading {
-    color: var(--dls-color-linen);
+    color: var(--dls-color-lemonice);
 }
 
 .why-grid {
@@ -95,7 +95,7 @@
     font-family: 'SpeziaBookB';
     font-size: 48px;
     font-weight: 300;
-    color: var(--taupe);
+    color: var(--dls-color-taupe);
     opacity: 0.3;
     line-height: 1;
     margin-bottom: 16px;
@@ -105,7 +105,7 @@
     font-family: 'SpeziaBookB';
     font-weight: 500;
     font-size: 21px;
-    color: var(--linen);
+    color: var(--dls-color-lemonice);
     margin-bottom: 12px;
     line-height: 1.3;
     letter-spacing: -1px;

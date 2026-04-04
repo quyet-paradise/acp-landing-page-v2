@@ -81,7 +81,7 @@
     font-size: clamp(44px, 6vw, 80px);
     font-weight: 300;
     line-height: 1.06;
-    color: var(--dls-color-sunshine);
+    color: var(--dls-color-pale);
     max-width: 780px;
 }
 

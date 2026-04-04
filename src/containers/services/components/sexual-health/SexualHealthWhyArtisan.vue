@@ -3,7 +3,7 @@
         <div class="why-artisan-inner">
             <div>
                 <div
-                    style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--dls-color-sunlight);font-weight:500;margin-bottom:8px;">
+                    style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--dls-color-sunshine);font-weight:500;margin-bottom:8px;">
                     THE ARTISAN DIFFERENCE</div>
                 <h2 data-aos="fade-up">Why Compound for Sexual Health?</h2>
                 <p data-aos="fade-up" data-aos-delay="100">Your prescriber may determine that a customized compounded preparation is appropriate for your
@@ -92,14 +92,14 @@
     font-family: 'SpeziaBookB';
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 28px;
 }
 
 .why-artisan p {
     font-size: 17px;
     line-height: 1.75;
-    color: rgba(255, 253, 245, 0.85);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 
@@ -138,14 +138,14 @@
 .why-point-icon svg {
     width: 20px;
     height: 20px;
-    color: var(--dls-color-sunlight);
+    color: var(--dls-color-sunshine);
 }
 
 .why-point h4 {
     font-family: 'SpeziaBookB';
     font-size: 18px;
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 4px;
     margin-top: 0;
     letter-spacing: -1px;

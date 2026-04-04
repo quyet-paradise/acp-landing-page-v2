@@ -41,7 +41,7 @@
 .cta-section p {
     font-size: 15px;
     line-height: 1.7;
-    color: rgba(252, 249, 220, 0.65);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     max-width: 480px;
     margin: 0 auto 40px;
