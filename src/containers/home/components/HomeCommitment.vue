@@ -130,7 +130,7 @@ const handleNext = () => {
                     font-family: 'SpeziaBookB';
                     font-size: 42px;
                     line-height: 105%;
-                    letter-spacing: -7%;
+                    letter-spacing: -3px;
                     color: var(--dls-color-burgundy);
                 }
             }

@@ -2,7 +2,7 @@
     <section class="how-section">
         <div class="how-inner">
             <div class="how-text">
-                <div class="section-label" style="color: var(--yellow-muted);">THE PROCESS</div>
+                <div class="section-label" style="color: var(--dls-color-sunshine);">THE PROCESS</div>
                 <h2 data-aos="fade-up">How It Works</h2>
                 <p data-aos="fade-up" data-aos-delay="100">Based on your prescriber's order, our pharmacist compounds a precise micro dose of the prescribed
                     active ingredient plus absorption enhancers into a flavored sublingual solution. Place the measured
@@ -85,14 +85,14 @@
     font-family: "SpeziaBookB";
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 32px;
 }
 
 .how-text p {
     font-size: 17px;
     line-height: 1.75;
-    color: rgba(255, 253, 245, 0.88);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 
@@ -139,7 +139,7 @@
     font-family: "SpeziaBookB";
     font-size: 18px;
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 6px;
     margin-top: 0;
     letter-spacing: -0.5px;

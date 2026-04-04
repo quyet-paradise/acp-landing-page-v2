@@ -2,10 +2,9 @@
     <section class="values-editorial">
         <div class="values-inner">
             <h2 data-aos="fade-up"
-                style="font-size:clamp(32px,4vw,56px);text-align:center;max-width:800px;margin:0 auto">Crafted with
-                Care, Backed by Science, Delivered with Heart.</h2>
+                style="font-size:clamp(32px,4vw,56px);text-align:center;max-width:800px;margin:0 auto">Crafted with Care, Backed by Science, Delivered with Heart.</h2>
             <p data-aos="fade-up" data-aos-delay="200"
-                style="text-align:center;font-size:18px;line-height:1.8;color:rgba(252,249,220,.65);font-weight:300;max-width:680px;margin:36px auto 0">
+                style="text-align:center;font-size:18px;line-height:1.8;color:var(--dls-color-lemonice);font-weight:300;max-width:680px;margin:36px auto 0">
                 Every member of our team shares a single purpose — to ensure that your treatment is prepared with the
                 finest ingredients, the highest standards, and a deep respect for your individual journey.</p>
         </div>

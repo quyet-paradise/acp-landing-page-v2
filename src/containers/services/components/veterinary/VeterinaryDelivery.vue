@@ -2,7 +2,7 @@
     <section class="delivery">
         <div class="delivery-inner">
             <svg class="mortar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                style="color:var(--dls-color-sunlight);opacity:.5">
+                style="color:var(--dls-color-sunshine);opacity:.5">
                 <path d="M24 6c-1 0-2 .5-2.5 1.5L18 14h12l-3.5-6.5C26 6.5 25 6 24 6z" stroke="currentColor"
                     stroke-width="1.5" fill="none" />
                 <path d="M12 18c0 0-2 1-2 4s1 6 4 8c3 2 6 3 10 3s7-1 10-3c3-2 4-5 4-8s-2-4-2-4H12z"
@@ -106,7 +106,7 @@
     font-family: "SpeziaBookB";
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     text-align: center;
     margin-bottom: 16px;
 }
@@ -114,7 +114,7 @@
 .delivery-sub {
     text-align: center;
     font-size: 15px;
-    color: rgba(255, 253, 245, .7);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     margin-bottom: 56px;
 }
@@ -148,7 +148,7 @@
     font-family: "SpeziaBookB";
     font-size: 16px;
     font-weight: 400;
-    color: var(--dls-color-white);
+    color: var(--dls-color-lemonice);
     margin-bottom: 8px;
     line-height: 1.3;
     letter-spacing: -1px;
@@ -157,7 +157,7 @@
 .delivery-card p {
     font-size: 13px;
     line-height: 1.55;
-    color: rgba(255, 253, 245, .7);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 
@@ -165,7 +165,7 @@
     text-align: center;
     margin-top: 32px;
     font-size: 13.5px;
-    color: rgba(255, 253, 245, .55);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
 }
 

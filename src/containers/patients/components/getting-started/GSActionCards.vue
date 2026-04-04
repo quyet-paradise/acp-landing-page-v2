@@ -84,7 +84,7 @@ import { goToPage } from '@/utils/common-utils'
 
 <style lang="scss" scoped>
 .action-cards {
-    padding: 0 64px;
+    padding: 0 64px var(--dls-1p5cm) 64px;
 }
 
 .action-cards-inner {

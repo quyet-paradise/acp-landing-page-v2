@@ -92,14 +92,14 @@
     font-size: clamp(40px, 5vw, 60px);
     font-weight: 400;
     line-height: 1.1;
-    color: var(--dls-color-linen);
+    color: var(--dls-color-pale);
     margin-bottom: 20px;
 }
 
 .hero-subtitle {
     font-size: 17px;
     line-height: 1.7;
-    color: rgba(250, 248, 222, .7);
+    color: var(--dls-color-lemonice);
     max-width: 560px;
 }
 
