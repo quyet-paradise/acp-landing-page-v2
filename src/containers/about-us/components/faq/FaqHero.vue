@@ -20,11 +20,11 @@
     padding: 160px 60px 140px;
     background: var(--dls-color-burgundy);
     overflow: hidden;
-    min-height: 520px;
     background-image: url('/images/faq/banner.jpg');
     background-size: cover;
-    background-position: center;
-    min-height: 380px;
+    height: 85vh;
+    min-height: 580px;
+    max-height: 900px;
 }
 
 .hero-pattern {

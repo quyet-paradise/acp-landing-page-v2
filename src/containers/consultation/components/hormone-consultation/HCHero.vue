@@ -15,7 +15,9 @@
 
 <style lang="scss" scoped>
 .zen-hero {
-    min-height: 92vh;
+    height: 85vh;
+    min-height: 580px;
+    max-height: 900px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
