@@ -18,7 +18,9 @@
 <style lang="scss" scoped>
 .hero {
     position: relative;
-    min-height: 600px;
+    height: 85vh;
+    min-height: 580px;
+    max-height: 900px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
