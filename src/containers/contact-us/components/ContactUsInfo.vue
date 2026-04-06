@@ -84,7 +84,7 @@
 }
 
 .info-item h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 17px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

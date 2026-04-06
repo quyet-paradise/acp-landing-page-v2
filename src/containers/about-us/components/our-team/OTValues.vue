@@ -51,7 +51,7 @@
 }
 
 .values-inner h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     color: var(--dls-color-sunshine);
     line-height: 1.1;

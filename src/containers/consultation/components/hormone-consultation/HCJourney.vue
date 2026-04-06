@@ -79,7 +79,7 @@
 }
 
 .zen-journey h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 3vw, 38px);
     font-weight: 400;
     text-align: center;
@@ -135,7 +135,7 @@
 }
 
 .zen-step-dot span {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 16px;
     color: var(--dls-color-burgundy);
     font-weight: 400;
@@ -151,7 +151,7 @@
 }
 
 .zen-step-body h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

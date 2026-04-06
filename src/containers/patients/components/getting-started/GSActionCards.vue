@@ -128,7 +128,7 @@ import { goToPage } from '@/utils/common-utils'
 }
 
 .action-card h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 24px;
     margin-bottom: 14px;
     line-height: 1.25;

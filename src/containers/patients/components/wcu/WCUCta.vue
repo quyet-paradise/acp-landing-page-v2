@@ -23,7 +23,7 @@
 }
 
 .cta-section h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(30px, 4vw, 52px);
     font-weight: 300;
     color: var(--dls-color-burgundy);

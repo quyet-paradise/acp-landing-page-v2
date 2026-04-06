@@ -48,7 +48,7 @@
 }
 
 .zen-pricing h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(22px, 2.4vw, 30px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -93,7 +93,7 @@
 }
 
 .zen-price-card .price {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 30px;
     color: var(--dls-color-burgundy);
     line-height: 1;

@@ -149,7 +149,7 @@
 }
 
 .form-card h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     font-weight: 500;
     color: var(--dls-color-burgundy);

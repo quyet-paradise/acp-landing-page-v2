@@ -122,7 +122,7 @@ const handleOpenQ = (id: string) => {
 }
 
 .faq-heading {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     line-height: 1.25;
     margin-bottom: 56px;
@@ -151,7 +151,7 @@ const handleOpenQ = (id: string) => {
 }
 
 .faq-question h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     font-weight: 400;
     flex: 1;

@@ -70,7 +70,7 @@
 }
 
 .step-num {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 64px;
     font-weight: 300;
     color: var(--dls-color-taupe);
@@ -80,7 +80,7 @@
 }
 
 .process-step h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     font-weight: 500;
     color: var(--dls-color-burgundy);

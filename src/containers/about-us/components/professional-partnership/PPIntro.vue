@@ -27,7 +27,7 @@
 }
 
 .intro-headline {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.15;
     color: var(--dls-color-burgundy);

@@ -48,7 +48,7 @@
 }
 
 .welcome-heading {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(26px, 2.8vw, 38px);
     line-height: 1.3;
     margin-bottom: 24px;

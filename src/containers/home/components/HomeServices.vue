@@ -152,7 +152,7 @@ const handleLeave = () => {
             .desc {
                 line-height: 105%;
                 text-align: center;
-                font-family: 'SpeziaBookB';
+                font-family: var(--dls-font-spezia-book-b);
                 font-size: 24px;
                 color: var(--dls-color-burgundy);
                 letter-spacing: -2px;
@@ -160,7 +160,7 @@ const handleLeave = () => {
             }
 
             .learnmore-btn {
-                font-family: 'Jost';
+                font-family: var(--dls-font-jost);
                 font-size: 19px;
                 color: var(--dls-color-burgundy);
                 font-weight: 500;
@@ -193,7 +193,7 @@ const handleLeave = () => {
             }
 
             .title {
-                font-family: 'Jost';
+                font-family: var(--dls-font-jost);
                 font-weight: 400;
                 line-height: 250%;
                 letter-spacing: -0.5%;
@@ -213,7 +213,7 @@ const handleLeave = () => {
                 height: 100%;
 
                 &--item {
-                    font-family: 'SpeziaBookB';
+                    font-family: var(--dls-font-spezia-book-b);
                     font-size: 27px;
                     font-weight: 400;
                     line-height: 120%;

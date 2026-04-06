@@ -25,7 +25,7 @@
 }
 
 .map-header h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3.5vw, 44px);
     font-weight: 400;
     font-style: italic;

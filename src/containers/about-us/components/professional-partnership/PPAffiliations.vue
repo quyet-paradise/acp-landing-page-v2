@@ -101,7 +101,7 @@
 }
 
 .aff-name {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(22px, 3vw, 28px);
     font-weight: 400;
     line-height: 1.25;

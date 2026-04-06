@@ -60,7 +60,7 @@
 }
 
 .program h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -111,13 +111,13 @@
 }
 
 .ps-circle span {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 26px;
     color: var(--dls-color-burgundy);
 }
 
 .program-step h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

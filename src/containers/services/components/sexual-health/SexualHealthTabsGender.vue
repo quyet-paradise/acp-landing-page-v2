@@ -233,7 +233,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .tab-btn {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(22px, 2.5vw, 34px);
     font-weight: 400;
     color: var(--dls-color-taupe);
@@ -332,7 +332,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .treatment-goal {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 24px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

@@ -45,7 +45,7 @@
 }
 
 .pull-quote {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 2.8vw, 36px);
     font-weight: 400;
     font-style: italic;

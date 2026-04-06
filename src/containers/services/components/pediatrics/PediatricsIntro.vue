@@ -18,7 +18,7 @@
 }
 
 .intro-text {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(26px, 3vw, 42px);
     line-height: 1.35;
     color: var(--dls-color-burgundy);
@@ -33,6 +33,7 @@
     line-height: 1.75;
     max-width: 820px;
     font-weight: 300;
+    color: var(--dls-color-burgundy);
 }
 
 .divider {

@@ -16,7 +16,7 @@
   text-align: center;
 }
 .quote-strip blockquote {
-  font-family: 'SpeziaBookB';
+  font-family: var(--dls-font-spezia-book-b);
   font-size: clamp(24px, 3vw, 38px);
   font-weight: 400;
   line-height: 1.4;
@@ -40,7 +40,7 @@
 .quote-strip cite {
   display: block;
   margin-top: 24px;
-  font-family: 'Jost';
+  font-family: var(--dls-font-jost);
   font-size: 13px;
   letter-spacing: .1em;
   text-transform: uppercase;

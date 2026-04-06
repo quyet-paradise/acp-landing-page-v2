@@ -223,7 +223,7 @@ const scrollRight = () => {
 }
 
 .page-title h1 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     font-size: clamp(2.4rem, 5vw, 3.8rem);
     color: var(--dls-color-burgundy);
@@ -240,7 +240,7 @@ const scrollRight = () => {
 }
 
 .facility-intro .lead {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 1.1rem;
     line-height: 1.7;
     color: var(--dls-color-burgundy);
@@ -299,7 +299,7 @@ const scrollRight = () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -319,7 +319,7 @@ const scrollRight = () => {
 }
 
 .split-eyebrow {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 0.68rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -328,7 +328,7 @@ const scrollRight = () => {
 }
 
 .split-text h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     font-size: 1.85rem;
     color: var(--dls-color-burgundy);
@@ -361,7 +361,7 @@ const scrollRight = () => {
 }
 
 .standards-header h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     font-size: clamp(1.8rem, 3.5vw, 2.5rem);
     color: var(--dls-color-burgundy);
@@ -425,7 +425,7 @@ const scrollRight = () => {
 }
 
 .taupe-banner h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     color: var(--dls-color-burgundy);
@@ -530,13 +530,13 @@ const scrollRight = () => {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.3rem;
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 1.3rem;
     color: var(--dls-color-redclay);
 }
 
 .process-step h4 {
-    font-family: 'Jost';
+    font-family: var(--dls-font-jost);
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -622,7 +622,7 @@ const scrollRight = () => {
 }
 
 .split-hero-left h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
     font-size: clamp(2.2rem, 4.5vw, 3.6rem);
     color: var(--dls-color-sunshine);

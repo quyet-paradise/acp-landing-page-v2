@@ -73,7 +73,7 @@
 }
 
 .why-compound h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 2.8vw, 38px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -128,7 +128,7 @@
 }
 
 .why-highlight h4 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 17px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

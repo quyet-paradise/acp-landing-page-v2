@@ -51,7 +51,7 @@
                 <p><strong>Not sure which panel?</strong> Start with a free discovery call and we'll help you choose
                     based on your symptoms.</p>
                 <p
-                    style="margin-top:12px;font-style:italic;font-family:'SpeziaBookB';font-size:17px;color:var(--dls-color-burgundy)">
+                    style="margin-top:12px;font-style:italic;font-family:var(--dls-font-spezia-book-b);font-size:17px;color:var(--dls-color-burgundy)">
                     Already have recent labs? Bring them in — consultation-only: $85.</p>
             </div>
         </div>
@@ -73,7 +73,7 @@
 }
 
 .zen-packages h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 3vw, 38px);
     font-weight: 400;
     text-align: center;
@@ -149,7 +149,7 @@
 }
 
 .zen-pkg-price {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 48px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

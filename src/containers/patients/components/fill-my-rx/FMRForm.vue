@@ -218,7 +218,7 @@ const addRxRow = () => {
 .tab-btn {
     flex: 1;
     padding: 20px 24px;
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     color: rgba(55, 18, 19, .5);
     background: #fff;
@@ -253,7 +253,7 @@ const addRxRow = () => {
 }
 
 .form-section-title {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     color: var(--dls-color-burgundy);
     margin-bottom: 8px;
@@ -380,7 +380,7 @@ const addRxRow = () => {
 }
 
 .rx-row-num {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 16px;
     color: var(--dls-color-olive);
     margin-bottom: 8px;

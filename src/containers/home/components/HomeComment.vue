@@ -92,7 +92,7 @@ const onNextBtn = () => {
             padding: 12px 0;
 
             .title {
-                font-family: 'Jost';
+                font-family: var(--dls-font-jost);
                 font-weight: 400;
                 font-size: 19px;
                 color: var(--dls-color-sunlight);
@@ -111,14 +111,14 @@ const onNextBtn = () => {
                 max-width: 860px;
                 text-align: center;
                 color: var(--dls-color-sunlight);
-                font-family: 'SpeziaBookB';
+                font-family: var(--dls-font-spezia-book-b);
                 font-size: 48px;
                 line-height: 120%;
                 letter-spacing: -3px;
             }
 
             .name {
-                font-family: 'Jost';
+                font-family: var(--dls-font-jost);
                 font-weight: 400;
                 font-size: 24px;
                 color: var(--dls-color-sunlight);
