@@ -89,7 +89,7 @@
 }
 
 .why-artisan h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
     color: var(--dls-color-lemonice);
@@ -142,7 +142,7 @@
 }
 
 .why-point h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-lemonice);

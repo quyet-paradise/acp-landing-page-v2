@@ -39,7 +39,7 @@
 }
 
 .safety-section h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(26px, 2.5vw, 34px);
     font-weight: 400;
     color: var(--dls-color-burgundy);

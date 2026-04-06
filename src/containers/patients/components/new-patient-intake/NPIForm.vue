@@ -280,7 +280,7 @@
                     <div class="sig-pad" id="sigPad" :style="{
                         color: isSigned ? 'var(--dls-color-olive)' : 'rgba(55, 18, 19, .3)',
                         fontSize: isSigned ? '24px' : '14px',
-                        fontFamily: isSigned ? 'SpeziaBookB' : ''
+                        fontFamily: isSigned ? 'var(--dls-font-spezia-book-b)' : ''
                     }" @click="isSigned = true">{{ isSigned ? '✓ Signed' : 'Click or draw to sign' }}</div>
                     <div class="sig-clear"
                         @click="isSigned = false">
@@ -383,13 +383,13 @@ const isShowPetFields = computed<boolean>(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     flex-shrink: 0;
 }
 
 .form-card-header h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 24px;
     color: var(--dls-color-burgundy);
 }
@@ -677,7 +677,7 @@ const isShowPetFields = computed<boolean>(() => {
 }
 
 .help-strip-text h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     color: var(--dls-color-linen);
     margin-bottom: 6px;

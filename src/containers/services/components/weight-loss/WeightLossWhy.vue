@@ -47,7 +47,7 @@
 }
 
 .why-section h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -78,7 +78,7 @@
 }
 
 .benefit-num {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 48px;
     color: var(--dls-color-taupe);
     opacity: 0.4;
@@ -87,7 +87,7 @@
 }
 
 .benefit-card h3 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

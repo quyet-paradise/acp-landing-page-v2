@@ -94,7 +94,7 @@
 }
 
 .packages h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -172,7 +172,7 @@
 }
 
 .pkg-price {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 48px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

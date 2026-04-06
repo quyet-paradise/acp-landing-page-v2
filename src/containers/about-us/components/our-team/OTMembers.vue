@@ -117,7 +117,7 @@
 }
 
 .team-section-header h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(14px, 1.2vw, 16px);
     font-weight: 400;
     text-transform: uppercase;
@@ -127,7 +127,7 @@
 }
 
 .team-section-header h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(32px, 3.5vw, 52px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -203,7 +203,7 @@
     position: absolute;
     bottom: 24px;
     left: 28px;
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 120px;
     color: rgba(255, 253, 245, .12);
     line-height: 1;
@@ -246,7 +246,7 @@
 }
 
 .member-name {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 40px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -255,7 +255,7 @@
 }
 
 .member-role {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 17px;
     font-weight: 400;
     color: var(--dls-color-redclay);

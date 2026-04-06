@@ -76,7 +76,7 @@
 }
 
 .hero h1 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(42px, 5.5vw, 72px);
     font-weight: 400;
     line-height: 1.06;

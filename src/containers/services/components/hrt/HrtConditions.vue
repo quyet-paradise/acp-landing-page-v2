@@ -179,7 +179,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .conditions h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     color: var(--dls-color-white);
@@ -208,7 +208,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .gender-btn {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(18px, 2vw, 26px);
     font-weight: 400;
     color: rgba(255, 253, 245, .5);
@@ -280,7 +280,7 @@ const handleChangeTab = (gender: string) => {
 }
 
 .cond-name {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-white);

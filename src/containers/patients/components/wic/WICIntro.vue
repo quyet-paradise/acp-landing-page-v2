@@ -41,7 +41,7 @@
 }
 
 .intro-lead {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 2.6vw, 34px);
     font-weight: 400;
     font-style: italic;

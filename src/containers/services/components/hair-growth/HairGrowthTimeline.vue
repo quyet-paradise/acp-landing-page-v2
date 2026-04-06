@@ -55,7 +55,7 @@
 }
 
 .timeline-section h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -123,7 +123,7 @@
 }
 
 .tl-ring span {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 15px;
     color: var(--dls-color-burgundy);
     letter-spacing: .02em;
@@ -132,7 +132,7 @@
 }
 
 .timeline-item h4 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 19px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

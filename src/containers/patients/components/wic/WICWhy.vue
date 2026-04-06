@@ -92,8 +92,7 @@
 }
 
 .why-card .card-num {
-    font-family: 'SpeziaBookB';
-    font-size: 48px;
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 300;
     color: var(--dls-color-taupe);
     opacity: 0.3;
@@ -102,7 +101,7 @@
 }
 
 .why-card h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-weight: 500;
     font-size: 21px;
     color: var(--dls-color-lemonice);

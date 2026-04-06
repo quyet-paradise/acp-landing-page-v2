@@ -114,7 +114,7 @@
 }
 
 .contact-address {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 22px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -135,7 +135,7 @@
 }
 
 .info-block-value {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -162,7 +162,7 @@
 }
 
 .hours-note {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -175,7 +175,7 @@
 }
 
 .form-title {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 52px;
     font-weight: 400;
     font-style: italic;
@@ -206,7 +206,7 @@
 
 .form-input,
 .form-select {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 15px;
     font-weight: 300;
     padding: 10px 0;
@@ -238,7 +238,7 @@
 }
 
 .form-textarea {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 15px;
     font-weight: 300;
     padding: 16px;

@@ -54,7 +54,7 @@
         <!-- TIMELINE -->
         <div style="margin-top:72px;max-width:900px;margin-left:auto;margin-right:auto">
             <h3 data-aos="fade-up"
-                style="font-family:'SpeziaBookB';font-size:clamp(22px,2.6vw,32px);font-weight:400;text-align:center;color:var(--dls-color-burgundy);margin-bottom:16px">
+                style="font-family:var(--dls-font-spezia-book-b);font-size:clamp(22px,2.6vw,32px);font-weight:400;text-align:center;color:var(--dls-color-burgundy);margin-bottom:16px">
                 Your Timeline: Testing to Treatment</h3>
             <p data-aos="fade-up" data-aos-delay="100"
                 style="text-align:center;font-size:16px;line-height:1.7;color:var(--dls-color-burgundy);font-weight:300;max-width:640px;margin:0 auto 40px">
@@ -66,7 +66,7 @@
                     <div
                         style="width:80px;height:80px;border-radius:50%;background:var(--dls-color-creamlight);border:2px solid var(--dls-color-redclay);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
                         <span
-                            style="font-family:'SpeziaBookB';font-size:13px;color:var(--dls-color-redclay);font-weight:400">Day
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:13px;color:var(--dls-color-redclay);font-weight:400">Day
                             1</span>
                     </div>
                     <p style="font-size:13px;font-weight:500;color:var(--dls-color-burgundy);margin-bottom:4px">Free
@@ -80,7 +80,7 @@
                     <div
                         style="width:80px;height:80px;border-radius:50%;background:var(--dls-color-creamlight);border:2px solid var(--dls-color-redclay);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
                         <span
-                            style="font-family:'SpeziaBookB';font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
                             2–5</span>
                     </div>
                     <p style="font-size:13px;font-weight:500;color:var(--dls-color-burgundy);margin-bottom:4px">Collect
@@ -94,7 +94,7 @@
                     <div
                         style="width:80px;height:80px;border-radius:50%;background:var(--dls-color-creamlight);border:2px solid var(--dls-color-redclay);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
                         <span
-                            style="font-family:'SpeziaBookB';font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
                             10–14</span>
                     </div>
                     <p style="font-size:13px;font-weight:500;color:var(--dls-color-burgundy);margin-bottom:4px">Results
@@ -108,7 +108,7 @@
                     <div
                         style="width:80px;height:80px;border-radius:50%;background:var(--dls-color-creamlight);border:2px solid var(--dls-color-redclay);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
                         <span
-                            style="font-family:'SpeziaBookB';font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:13px;color:var(--dls-color-redclay);font-weight:400">Days
                             14–21</span>
                     </div>
                     <p style="font-size:13px;font-weight:500;color:var(--dls-color-burgundy);margin-bottom:4px">
@@ -122,7 +122,7 @@
                     <div
                         style="width:80px;height:80px;border-radius:50%;background:var(--dls-color-sunshine);border:2px solid var(--dls-color-redclay);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
                         <span
-                            style="font-family:'SpeziaBookB';font-size:13px;color:var(--dls-color-burgundy);font-weight:400">Days
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:13px;color:var(--dls-color-burgundy);font-weight:400">Days
                             21–25</span>
                     </div>
                     <p style="font-size:13px;font-weight:500;color:var(--dls-color-burgundy);margin-bottom:4px">Pick Up
@@ -135,7 +135,7 @@
             </div>
 
             <p data-aos="fade-up" data-aos-delay="300"
-                style="text-align:center;margin-top:40px;font-family:'SpeziaBookB';font-size:20px;color:var(--dls-color-burgundy);font-weight:400;line-height:1.4">
+                style="text-align:center;margin-top:40px;font-family:var(--dls-font-spezia-book-b);font-size:20px;color:var(--dls-color-burgundy);font-weight:400;line-height:1.4">
                 <em>In about 3–4 weeks, you could be holding your personalized prescription.</em>
             </p>
         </div>
@@ -152,7 +152,7 @@
 }
 
 .program h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -213,13 +213,13 @@
 }
 
 .ps-circle span {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 26px;
     color: var(--dls-color-redclay);
 }
 
 .program-step h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

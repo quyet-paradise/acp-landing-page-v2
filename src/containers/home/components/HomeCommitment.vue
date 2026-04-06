@@ -117,7 +117,7 @@ const handleNext = () => {
 
                 .name {
                     width: 100%;
-                    font-family: 'Jost';
+                    font-family: var(--dls-font-jost);
                     font-weight: 400;
                     font-size: 19px;
                     line-height: 250%;
@@ -127,7 +127,7 @@ const handleNext = () => {
                 }
 
                 .title {
-                    font-family: 'SpeziaBookB';
+                    font-family: var(--dls-font-spezia-book-b);
                     font-size: 42px;
                     line-height: 105%;
                     letter-spacing: -3px;
@@ -143,7 +143,7 @@ const handleNext = () => {
                 &--detail {
                     width: 100%;
                     line-height: 105%;
-                    font-family: 'SpeziaBookB';
+                    font-family: var(--dls-font-spezia-book-b);
                     font-size: 24px;
                     color: var(--dls-color-burgundy);
                     letter-spacing: -1.5px;

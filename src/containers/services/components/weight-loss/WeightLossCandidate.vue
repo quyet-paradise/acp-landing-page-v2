@@ -56,7 +56,7 @@
 }
 
 .candidate-section h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(30px, 3vw, 42px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -97,7 +97,7 @@
 }
 
 .expect-card h3 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 26px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -117,7 +117,7 @@
 }
 
 .expect-num {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     color: var(--dls-color-taupe);
     flex-shrink: 0;

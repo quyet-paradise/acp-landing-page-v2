@@ -22,7 +22,7 @@
 }
 
 .intro-text {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(26px, 3vw, 42px);
     line-height: 1.35;
     color: var(--dls-color-burgundy);

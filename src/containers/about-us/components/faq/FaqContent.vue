@@ -333,7 +333,7 @@ const toggleFaq = (id: string) => {
 }
 
 .faq-section-title {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(36px, 4vw, 56px);
     font-weight: 300;
     color: var(--dls-color-burgundy);
@@ -362,7 +362,7 @@ const toggleFaq = (id: string) => {
 }
 
 .faq-category-heading {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 3vw, 34px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -398,7 +398,7 @@ const toggleFaq = (id: string) => {
 }
 
 .faq-question h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(22px, 2.5vw, 30px);
     font-weight: 400;
     color: var(--dls-color-burgundy);

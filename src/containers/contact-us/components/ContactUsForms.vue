@@ -694,7 +694,7 @@ onMounted(() => {
 }
 
 .contact-card-header h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(24px, 2.5vw, 32px);
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -869,7 +869,7 @@ onMounted(() => {
 }
 
 .cal-header h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -995,7 +995,7 @@ onMounted(() => {
 }
 
 .confirmation h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 26px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -1021,7 +1021,7 @@ onMounted(() => {
 }
 
 .questionnaire-note .qn-title {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 17px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -1067,7 +1067,7 @@ onMounted(() => {
 }
 
 .payment-header h4 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 18px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -1101,7 +1101,7 @@ onMounted(() => {
 }
 
 .payment-amount .pay-price {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 24px;
     color: var(--dls-color-burgundy);
 }
@@ -1366,7 +1366,7 @@ onMounted(() => {
 }
 
 .appt-name {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 16px;
     font-weight: 400;
     color: var(--dls-color-burgundy);
@@ -1392,7 +1392,7 @@ onMounted(() => {
 }
 
 .appt-price-tag {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 16px;
     letter-spacing: 0;
     text-transform: none;

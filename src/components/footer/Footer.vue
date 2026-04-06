@@ -79,7 +79,7 @@
                 gap: 2px;
 
                 .item {
-                    font-family: 'Jost';
+                    font-family: var(--dls-font-jost);
                     font-size: 13px;
                     color: var(--dls-color-burgundy);
                     line-height: 200%;
@@ -102,7 +102,7 @@
         }
 
         &--legal {
-            font-family: 'Jost';
+            font-family: var(--dls-font-jost);
             font-size: 13px;
             color: var(--dls-color-burgundy);
             line-height: 145%;

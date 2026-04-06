@@ -59,7 +59,7 @@
 }
 
 .what-is h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -115,7 +115,7 @@
 }
 
 .what-is-card h3 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

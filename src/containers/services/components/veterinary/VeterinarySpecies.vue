@@ -9,7 +9,7 @@
                 fill="none" />
             <path d="M32 10l6-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
-        <h2 style="font-family:'SpeziaBookB';font-size:clamp(28px,3vw,42px);font-weight:400;text-align:center;color:var(--dls-color-burgundy);margin-bottom:16px" data-aos="fade-up">Conditions Veterinarians Prescribe Compounded Preparations For</h2>
+        <h2 style="font-family:var(--dls-font-spezia-book-b);font-size:clamp(28px,3vw,42px);font-weight:400;text-align:center;color:var(--dls-color-burgundy);margin-bottom:16px" data-aos="fade-up">Conditions Veterinarians Prescribe Compounded Preparations For</h2>
         <p style="text-align:center;font-size:15px;color:var(--dls-color-burgundy);font-weight:300;margin-bottom:48px" data-aos="fade-up" data-aos-delay="100">Select a category to explore available compounding options</p>
 
         <div class="species-tabs">
@@ -364,7 +364,7 @@ const handleChangeTab = (type: string) => {
 }
 
 .species-btn {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(18px, 2vw, 26px);
     font-weight: 400;
     color: var(--dls-color-taupe);
@@ -447,7 +447,7 @@ const handleChangeTab = (type: string) => {
 }
 
 .cond-name {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 20px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

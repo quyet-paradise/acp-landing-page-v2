@@ -85,7 +85,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
         &--text {
             margin: 0;
-            font-family: 'SpeziaBookB';
+            font-family: var(--dls-font-spezia-book-b);
             font-size: 64px;
             color: var(--dls-color-burgundy);
             line-height: 120%;
@@ -173,13 +173,13 @@ const submitForm = (formEl: FormInstance | undefined) => {
         padding: 1px 0;
 
         .el-input__inner {
-            font-family: 'Jost';
+            font-family: var(--dls-font-jost);
             font-size: 16px;
             color: var(--dls-color-burgundy);
 
             &::placeholder {
                 color: var(--dls-color-burgundy);
-                font-family: 'Jost';
+                font-family: var(--dls-font-jost);
                 font-size: 16px;
             }
         }
@@ -197,7 +197,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 .el-button {
     padding: 20px 16px;
     font-size: 16px;
-    font-family: "Jost";
+    font-family: var(--dls-font-jost);
     font-weight: 400;
     color: var(--dls-color-burgundy);
     background-color: var(--dls-color-sunshine);

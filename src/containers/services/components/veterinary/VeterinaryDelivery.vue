@@ -103,7 +103,7 @@
 }
 
 .delivery h2 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     color: var(--dls-color-lemonice);
@@ -145,7 +145,7 @@
 }
 
 .delivery-card h4 {
-    font-family: "SpeziaBookB";
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 16px;
     font-weight: 400;
     color: var(--dls-color-lemonice);

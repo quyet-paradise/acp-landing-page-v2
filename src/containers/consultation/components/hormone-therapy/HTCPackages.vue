@@ -62,14 +62,14 @@
                 <p><strong>Not sure which panel?</strong> Start with a free discovery call and we'll help you choose
                     based on your symptoms.</p>
                 <p
-                    style="margin-top:12px;font-style:italic;font-family:'SpeziaBookB';font-size:17px;color:var(--dls-color-burgundy)">
+                    style="margin-top:12px;font-style:italic;font-family:var(--dls-font-spezia-book-b);font-size:17px;color:var(--dls-color-burgundy)">
                     Already have recent labs? Bring them in — no kit purchase necessary. Consultation-only: $85.</p>
             </div>
 
             <!-- WHAT DOES COMPOUNDED HRT COST? -->
             <div style="max-width:700px;margin:64px auto 0;text-align:center" data-aos="fade-up" data-aos-delay="300">
                 <h3
-                    style="font-family:'SpeziaBookB';font-size:clamp(22px,2.4vw,30px);font-weight:400;color:var(--dls-color-burgundy);margin-bottom:16px">
+                    style="font-family:var(--dls-font-spezia-book-b);font-size:clamp(22px,2.4vw,30px);font-weight:400;color:var(--dls-color-burgundy);margin-bottom:16px">
                     What Does Compounded HRT Cost?</h3>
                 <p
                     style="font-size:15px;line-height:1.7;color:var(--dls-color-burgundy);font-weight:300;margin-bottom:32px">
@@ -83,7 +83,7 @@
                             style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dls-color-redclay);font-weight:600;margin-bottom:8px">
                             Topical Cream/Gel</p>
                         <p
-                            style="font-family:'SpeziaBookB';font-size:32px;color:var(--dls-color-burgundy);line-height:1">
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:32px;color:var(--dls-color-burgundy);line-height:1">
                             $45–$90</p>
                         <p style="font-size:12px;color:var(--dls-color-burgundy);font-weight:300;margin-top:4px">per
                             month</p>
@@ -94,7 +94,7 @@
                             style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dls-color-redclay);font-weight:600;margin-bottom:8px">
                             Oral Capsules</p>
                         <p
-                            style="font-family:'SpeziaBookB';font-size:32px;color:var(--dls-color-burgundy);line-height:1">
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:32px;color:var(--dls-color-burgundy);line-height:1">
                             $40–$80</p>
                         <p style="font-size:12px;color:var(--dls-color-burgundy);font-weight:300;margin-top:4px">per
                             month</p>
@@ -105,7 +105,7 @@
                             style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dls-color-redclay);font-weight:600;margin-bottom:8px">
                             Troches/Lozenges</p>
                         <p
-                            style="font-family:'SpeziaBookB';font-size:32px;color:var(--dls-color-burgundy);line-height:1">
+                            style="font-family:var(--dls-font-spezia-book-b);font-size:32px;color:var(--dls-color-burgundy);line-height:1">
                             $50–$120</p>
                         <p style="font-size:12px;color:var(--dls-color-burgundy);font-weight:300;margin-top:4px">per
                             month</p>
@@ -137,7 +137,7 @@
 }
 
 .packages h2 {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: clamp(28px, 3vw, 42px);
     font-weight: 400;
     text-align: center;
@@ -214,7 +214,7 @@
 }
 
 .pkg-price {
-    font-family: 'SpeziaBookB';
+    font-family: var(--dls-font-spezia-book-b);
     font-size: 48px;
     font-weight: 400;
     color: var(--dls-color-burgundy);

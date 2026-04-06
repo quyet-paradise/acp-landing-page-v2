@@ -143,7 +143,7 @@ const handleRouting = (routeName: string) => {
         height: var(--dls-aux-header-height);
 
         &--item {
-            font-family: 'Jost';
+            font-family: var(--dls-font-jost);
             font-weight: 500;
             font-size: 11px;
             line-height: 145%;
@@ -196,7 +196,7 @@ const handleRouting = (routeName: string) => {
             padding: 64px 32px 0 32px;
 
             .title {
-                font-family: "SpeziaBookB";
+                font-family: var(--dls-font-spezia-book-b);
                 font-size: 36px;
                 line-height: 190%;
                 letter-spacing: -7%;
@@ -221,7 +221,7 @@ const handleRouting = (routeName: string) => {
             text-align: center;
             border-top: 1px solid var(--dls-color-burgundy);
             cursor: pointer;
-            font-family: 'Jost';
+            font-family: var(--dls-font-jost);
             font-size: 16px;
             line-height: 145%;
             letter-spacing: -0.5%;
