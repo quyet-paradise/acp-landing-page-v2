@@ -42,7 +42,7 @@ const commitments: Commitment[] = [
         title: 'Relationship-first',
         bg: '/images/commitment/bg/bg-1.png',
         img: commitment1,
-        content: 'In a world of 15-minute doctor visits and impersonal chain pharmacies, Artisan offers consultations, follow-ups, and genuine partnership in each patient’s health journey.'
+        content: "Every patient deserves to feel heard.Artisan offers consultations, follow-ups, and genuine partnership in each patient's health journey."
     },
     {
         id: 1,
