@@ -160,6 +160,31 @@
             }
         }
     }
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+
+        .footer {
+            gap: 64px;
+
+            &--menu {
+                .logo {
+                    height: 205px;
+                }
+
+                .col-item {
+                    .item {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &--legal {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 </style>

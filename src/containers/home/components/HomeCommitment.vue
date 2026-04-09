@@ -130,7 +130,7 @@ const handleNext = () => {
                     font-family: var(--dls-font-spezia-book-b);
                     font-size: 42px;
                     line-height: 105%;
-                    letter-spacing: -3px;
+                    letter-spacing: -7%;
                     color: var(--dls-color-burgundy);
                 }
             }
@@ -146,7 +146,7 @@ const handleNext = () => {
                     font-family: var(--dls-font-spezia-book-b);
                     font-size: 24px;
                     color: var(--dls-color-burgundy);
-                    letter-spacing: -1.5px;
+                    letter-spacing: -7%;
                 }
             }
 
@@ -220,6 +220,40 @@ const handleNext = () => {
 
                 .next-btn {
                     right: -20px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: 0;
+
+        .home-commitment {
+            height: 1204px;
+
+            &--right {
+                padding: 98px;
+
+                .header {
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .title {
+                        font-size: 60px;
+                    }
+                }
+
+                .content {
+                    &--detail {
+                        font-size: 30px;
+                        max-width: 80%;
+                    }
+                }
+
+                .next-btn {
+                    right: 98px;
                 }
             }
         }

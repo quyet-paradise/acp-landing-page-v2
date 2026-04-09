@@ -41,5 +41,22 @@
     @media (max-width: 1024px) {}
 
     @media (max-width: 425px) {}
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+
+        &--title {
+            font-size: 76px;
+            line-height: 105%;
+            letter-spacing: -7%;
+        }
+
+        &--imgs {
+            .pcca, .apc, .ldn {
+                height: 135px;
+            }
+        }
+    }
 }
 </style>

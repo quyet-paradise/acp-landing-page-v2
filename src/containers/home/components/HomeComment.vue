@@ -97,6 +97,7 @@ const onNextBtn = () => {
                 font-size: 19px;
                 color: var(--dls-color-sunlight);
                 line-height: 105%;
+                letter-spacing: -0.5%;
             }
         }
 
@@ -113,8 +114,8 @@ const onNextBtn = () => {
                 color: var(--dls-color-sunlight);
                 font-family: var(--dls-font-spezia-book-b);
                 font-size: 48px;
-                line-height: 120%;
-                letter-spacing: -3px;
+                line-height: 105%;
+                letter-spacing: -7%;
             }
 
             .name {
@@ -179,6 +180,28 @@ const onNextBtn = () => {
             &--content {
                 .content {
                     font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: 0 98px;
+
+        .home-comment {
+            padding: 48px;
+
+            &--top { 
+                .title {
+                    font-size: 24px;
+                }
+            }
+
+            &--content {
+                .content {
+                    max-width: 50%;
+                    font-size: 50px;
                 }
             }
         }

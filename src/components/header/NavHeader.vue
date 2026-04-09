@@ -8,7 +8,7 @@
                     ref="aboutUsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
-                    :width="200"
+                    :width="250"
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
@@ -27,7 +27,7 @@
                     ref="servicesNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
-                    :width="300"
+                    :width="350"
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
@@ -50,7 +50,7 @@
                     ref="consultationNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
-                    :width="200"
+                    :width="250"
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
@@ -66,7 +66,7 @@
                     ref="patientsNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
-                    :width="200"
+                    :width="250"
                     popper-class="box-item-menu-header">
 
                     <div class="item--popover">
@@ -159,9 +159,11 @@ const handleRouting = (routeName: string) => {
                 cursor: pointer;
                 color: var(--dls-color-burgundy);
                 font-size: 13px;
-                padding: 10px 20px;
+                padding: 8px 20px;
                 border-radius: 4px;
                 border: 1px solid transparent;
+                line-height: 145%;
+                letter-spacing: -0.5%;
 
                 &:hover {
                     background: var(--dls-color-sunshine);
@@ -178,6 +180,18 @@ const handleRouting = (routeName: string) => {
 
                 .item {
                     padding: 10px 12px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1921px) {
+        padding: 16px 98px;
+
+        &--content {
+            .menu {
+                .item {
+                    font-size: 16px;
                 }
             }
         }
@@ -205,9 +219,19 @@ const handleRouting = (routeName: string) => {
             font-weight: 400;
             cursor: pointer;
             width: 100%;
+            line-height: 145%;
+            letter-spacing: -0.5%;
 
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+
+    @media (min-width: 1921px) {
+        .item--popover {
+            &--text {
+                font-size: 16px;
             }
         }
     }

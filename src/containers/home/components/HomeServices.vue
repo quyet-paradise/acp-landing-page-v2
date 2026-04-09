@@ -155,7 +155,7 @@ const handleLeave = () => {
                 font-family: var(--dls-font-spezia-book-b);
                 font-size: 24px;
                 color: var(--dls-color-burgundy);
-                letter-spacing: -2px;
+                letter-spacing: -7%;
                 min-height: calc(3.15em);
             }
 
@@ -165,6 +165,8 @@ const handleLeave = () => {
                 color: var(--dls-color-burgundy);
                 font-weight: 500;
                 cursor: pointer;
+                line-height: 145%;
+                letter-spacing: -0.5%;
 
                 &:hover {
                     text-decoration: underline;
@@ -290,5 +292,46 @@ const handleLeave = () => {
     }
 
     @media (max-width: 425px) {}
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+
+        .home-services { 
+            height: 943px;
+
+            &--left {
+                padding: 24px 98px;
+                gap: 16px;
+
+                .image {
+                    height: 60%;
+                }
+
+                .desc {
+                    font-size: 30px;
+                }
+
+                .learnmore-btn {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            &--right {
+                padding: 24px 54px;
+
+                .title {
+                    font-size: 16px;
+                }
+
+                .service-list { 
+                    &--item {
+                        font-size: 54px;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>

@@ -51,13 +51,15 @@
 .book-consultation-btn {
     color: var(--dls-color-burgundy);
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     cursor: pointer;
     border: 1px solid var(--dls-color-sunshine);
     background: var(--dls-color-sunshine);
     width: fit-content;
     transition: all .3s ease;
     font-size: 13px;
+    line-height: 145%;
+    letter-spacing: -0.5%;
 
     &:hover {
         opacity: .8;
@@ -182,5 +184,11 @@ h4 {
 @media (max-width: 900px) {
     .section-pad {
         padding: 72px 28px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .book-consultation-btn {
+        font-size: 16px;
     }
 }

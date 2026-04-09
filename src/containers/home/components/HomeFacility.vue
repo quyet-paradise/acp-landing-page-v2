@@ -181,5 +181,21 @@ const scrollRight = () => {
             }
         }
     }
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        
+        .home-facility {
+            padding: var(--dls-2cm) 98px;
+
+            &--title {
+                .name {
+                    font-size: 76px;
+                    line-height: 105%;
+                    letter-spacing: -7%;
+                }
+            }
+        }
+    }
 }
 </style>

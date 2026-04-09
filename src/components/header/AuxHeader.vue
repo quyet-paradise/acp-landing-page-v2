@@ -144,10 +144,10 @@ const handleRouting = (routeName: string) => {
 
         &--item {
             font-family: var(--dls-font-jost);
-            font-weight: 500;
+            font-weight: 400;
             font-size: 11px;
             line-height: 145%;
-            letter-spacing: .08em;
+            letter-spacing: -0.5%;
             color: var(--dls-color-burgundy);
             text-transform: uppercase;
 
@@ -235,6 +235,16 @@ const handleRouting = (routeName: string) => {
 
         .menu-btn {
             display: block;
+        }
+    }
+
+    @media (min-width: 1921px) {
+        .aux-header {
+            padding: 0 98px;
+
+            &--item {
+                font-size: 16px;
+            }
         }
     }
 }

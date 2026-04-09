@@ -129,5 +129,20 @@
             }
         }
     }
+
+    @media (min-width: 1921px) {
+        &--info {
+            &--title {
+                top: 98px;
+                left: 98px;
+            
+                .title {
+                    font-size: 76px;
+                    line-height: 105%;
+                    letter-spacing: -7%;
+                }
+            }
+        }
+    }
 }
 </style>

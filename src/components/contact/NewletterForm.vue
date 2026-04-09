@@ -70,7 +70,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 <style lang="scss" scoped>
 .home-contact--wrapper {
     width: 100%;
-    padding: 32px 0;
+    padding: var(--dls-2cm) 0;
     max-width: var(--dls-max-width);
     margin: 0 auto;
 
@@ -88,8 +88,8 @@ const submitForm = (formEl: FormInstance | undefined) => {
             font-family: var(--dls-font-spezia-book-b);
             font-size: 64px;
             color: var(--dls-color-burgundy);
-            line-height: 120%;
-            letter-spacing: -5px;
+            line-height: 105%;
+            letter-spacing: -7%;
         }
 
         &--form {
@@ -158,6 +158,23 @@ const submitForm = (formEl: FormInstance | undefined) => {
             }
         }
     }
+
+    @media (min-width: 1921px) {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+
+        .home-contact { 
+            padding: 64px;
+
+            &--text {
+                font-size: 76px;
+            }
+
+            &--form {
+                gap: 32px;
+            }
+        }
+    }
 }
 </style>
 
@@ -217,6 +234,12 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
     .el-form--inline .el-form-item {
         margin-right: 0;
+    }
+}
+
+@media (min-width: 1921px) {
+    .el-input {
+        min-width: 350px;
     }
 }
 </style>
