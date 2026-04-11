@@ -54,7 +54,7 @@
     left: 60px;
     right: 60px;
     z-index: 2;
-    max-width: 1200px;
+    max-width: var(--dls-max-width-2);
 }
 
 .breadcrumb {
