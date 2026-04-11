@@ -19,7 +19,8 @@ export const ROUTE_NAME = {
     CONTACT_US_PAGE: 'Contact Us',
     GETTING_STATED: 'Getting Started',
     NEW_PATIENT_INTAKE: 'New Patient Intake Form',
-    FILL_MY_RX: 'Fill My Rx'
+    FILL_MY_RX: 'Fill My Rx',
+    WHY_ARTISAN: 'Why Artisan'
 }
 
 export const PATH = {
@@ -43,5 +44,6 @@ export const PATH = {
     CONTACT_US_PAGE: '/contact-us',
     GETTING_STATED: '/patients/getting-started',
     NEW_PATIENT_INTAKE: '/patients/new-patient-intake',
-    FILL_MY_RX: '/patients/fill-my-rx'
+    FILL_MY_RX: '/patients/fill-my-rx',
+    WHY_ARTISAN: '/providers/why-artisan'
 }

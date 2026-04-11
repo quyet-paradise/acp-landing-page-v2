@@ -57,7 +57,7 @@
                     <div class="title" @click="onShowItem('providers')">Providers</div>
                     <div v-if="isShowProvidersItem" class="list-item">
                         <div class="item">SEND PRESCRIPTION</div>
-                        <div class="item">WHY ARTISAN?</div>
+                        <div class="item" @click="handleRouting(ROUTE_NAME.WHY_ARTISAN)">WHY ARTISAN?</div>
                     </div>
                 </div>
             </div>

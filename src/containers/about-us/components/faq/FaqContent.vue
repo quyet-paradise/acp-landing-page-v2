@@ -291,7 +291,7 @@
      DISCLAIMER
      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
     <div
-        style="max-width:1200px; margin:0 auto; padding:0 60px 60px; font-size:12px; color:var(--dls-color-burgundy); opacity:0.45; line-height:1.7; font-weight:300; font-style:italic;">
+        style="max-width:var(--dls-max-width-2); margin:0 auto; padding:0 60px 60px; font-size:12px; color:var(--dls-color-burgundy); opacity:0.45; line-height:1.7; font-weight:300; font-style:italic;">
         A prescription from a licensed practitioner is required for compounded medications.
     </div>
 </template>
