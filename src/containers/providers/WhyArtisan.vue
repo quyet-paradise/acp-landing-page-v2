@@ -938,6 +938,10 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
         gap: 48px;
     }
 
+    .expertise-cols {
+        grid-template-columns: 1fr !important;
+    }
+
     .compliance-grid,
     .specialties-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -965,7 +969,7 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
     .specialties-grid,
     .rx-methods,
     .expertise-cols {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .cta-banner {
