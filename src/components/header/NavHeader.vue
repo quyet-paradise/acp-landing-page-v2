@@ -90,7 +90,7 @@
 
                     <div class="item--popover">
                         <div class="item--popover--text">SEND PRESCRIPTION</div>
-                        <div class="item--popover--text">WHY ARTISAN?</div>
+                        <div class="item--popover--text" @click="handleRouting(ROUTE_NAME.WHY_ARTISAN)">WHY ARTISAN?</div>
                     </div>
 
                     <template #reference>
