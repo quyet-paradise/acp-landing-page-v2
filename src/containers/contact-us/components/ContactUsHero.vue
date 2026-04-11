@@ -12,10 +12,17 @@
 <style lang="scss" scoped>
 .hero {
     position: relative;
-    background: var(--dls-color-burgundy);
+    background-color: var(--dls-color-burgundy);
+    background-image: url('/images/contact/contact-us-hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: var(--dls-2cm) 60px;
     text-align: center;
     overflow: hidden;
+    height: 85vh;
+    min-height: 580px;
+    max-height: 900px;
 }
 
 .hero::before {
@@ -46,13 +53,13 @@
     text-transform: uppercase;
     margin-bottom: 28px;
     opacity: .6;
-    color: var(--dls-color-creamlight);
+    color: var(--dls-color-lemonice);
     position: relative;
     z-index: 1;
 }
 
 .hero .breadcrumb a {
-    color: var(--dls-color-creamlight);
+    color: var(--dls-color-lemonice);
     text-decoration: none;
 }
 
@@ -70,7 +77,7 @@
     font-size: clamp(42px, 5.5vw, 72px);
     font-weight: 400;
     line-height: 1.1;
-    color: var(--dls-color-sunshine);
+    color: var(--dls-color-pale);
     max-width: 700px;
     margin: 0 auto 20px;
     position: relative;
@@ -80,7 +87,7 @@
 .hero-subtitle {
     font-size: 18px;
     line-height: 1.7;
-    color: rgba(255, 253, 245, .75);
+    color: var(--dls-color-lemonice);
     font-weight: 300;
     max-width: 560px;
     margin: 0 auto;

@@ -1,6 +1,6 @@
 <template>
     <section class="hero">
-        <img class="hero-image" src="/images/services/hero-image/ldn.jpg" alt="hero-image">
+        <img class="hero-image" src="/images/services/hero-image/ldn-new.jpg" alt="hero-image">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="breadcrumb">
