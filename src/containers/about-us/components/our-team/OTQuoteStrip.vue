@@ -25,6 +25,7 @@
   margin: 0 auto;
   font-style: italic;
   position: relative;
+  letter-spacing: -7%;
 }
 .quote-strip blockquote::before {
   content: '\201C';
@@ -60,5 +61,20 @@
 
 @media (max-width: 768px) {
     .quote-strip { padding: 60px 24px; }
+}
+
+@media (min-width: 1921px) {
+  .quote-strip {
+    max-width: 100%;
+    padding: var(--dls-2cm) 98px var(--dls-1p5cm) 98px;
+  }
+
+  .quote-divider {
+    max-width: calc(100% - 2 * 98px);
+  }
+
+  .quote-strip cite {
+    font-size: 16px;
+  }
 }
 </style>

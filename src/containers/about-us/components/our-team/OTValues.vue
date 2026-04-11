@@ -55,6 +55,7 @@
     font-weight: 400;
     color: var(--dls-color-sunshine);
     line-height: 1.1;
+    letter-spacing: -7%;
 }
 
 @media (max-width: 1024px) {
@@ -72,6 +73,20 @@
 @media (max-width: 768px) {
     .values-editorial {
         padding: 80px 24px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .values-editorial {
+        padding: 120px 98px;
+    }
+
+    .values-inner { 
+        max-width: 100%;
+    }
+
+    .values-inner p {
+        font-size: 24px !important;
     }
 }
 </style>

@@ -28,11 +28,11 @@
                     Artisan Pharmacy came to life. The name says it all: a pharmacy where every compounded medication is
                     crafted with care, precision, and purpose. When she isn't behind the lab bench, Vanessa's happiest
                     moments are the simple ones spent with the family that inspired this journey in the first place.</p>
-                <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
+                <!-- <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg></button>
+                    </svg></button> -->
             </div>
         </article>
 
@@ -49,11 +49,11 @@
                 <p class="member-bio">Dr. Carter brings specialized expertise in bioidentical hormone replacement and
                     anti-aging medicine. She collaborates closely with prescribers and patients to optimize protocols,
                     ensuring every compound is clinically precise and personally meaningful.</p>
-                <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
+                <!-- <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg></button>
+                    </svg></button> -->
             </div>
         </article>
 
@@ -70,11 +70,11 @@
                 <p class="member-bio">Noah supports our clinical team with a focus on integrative wellness, weight
                     management, and preventive health. His patient-centered philosophy means every treatment plan is
                     built around real goals — and designed to be sustainable long-term.</p>
-                <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
+                <!-- <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg></button>
+                    </svg></button> -->
             </div>
         </article>
 
@@ -93,11 +93,11 @@
                     point of contact at Artisan. From scheduling consultations to coordinating with prescribers, he
                     ensures every patient experience is seamless, warm, and attentive — from the very first call to
                     every refill.</p>
-                <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
+                <!-- <button class="bio-toggle" onclick="this.closest('.member').classList.toggle('bio-open')">Read more<svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg></button>
+                    </svg></button> -->
             </div>
         </article>
     </section>
@@ -121,7 +121,7 @@
     font-size: clamp(14px, 1.2vw, 16px);
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .15em;
+    letter-spacing: -7%;
     color: var(--dls-color-redclay);
     margin-bottom: 12px;
 }
@@ -133,6 +133,7 @@
     color: var(--dls-color-burgundy);
     line-height: 1.15;
     max-width: 600px;
+    letter-spacing: -7%;
 }
 
 /* Individual team member */
@@ -252,6 +253,7 @@
     color: var(--dls-color-burgundy);
     line-height: 1.15;
     margin-bottom: 8px;
+    letter-spacing: -7%;
 }
 
 .member-role {
@@ -261,6 +263,7 @@
     color: var(--dls-color-redclay);
     font-style: italic;
     margin-bottom: 8px;
+    letter-spacing: -7%;
 }
 
 .member-credentials {
@@ -405,6 +408,29 @@
 
     .member.layout-c {
         max-width: 100%;
+    }
+}
+
+@media (min-width: 1921px) {
+    .team-section {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+    }
+
+    .team-section-header h2 {
+        font-size: 24px;
+    }
+
+    .member-info-label {
+        font-size: 16px;
+    }
+
+    .member-role {
+        font-size: 24px;
+    }
+
+    .member-bio {
+        font-size: 24px;
     }
 }
 </style>

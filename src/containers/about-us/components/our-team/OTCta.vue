@@ -28,6 +28,7 @@
     line-height: 1.15;
     max-width: 700px;
     margin: 0 auto;
+    letter-spacing: -7%;
 }
 
 .cta-editorial h2 em {
@@ -88,6 +89,21 @@
     .cta-editorial {
         padding-left: 24px;
         padding-right: 24px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .cta-editorial {
+        max-width: 100%;
+        padding: var(--dls-2cm) 98px;
+    }
+
+    .cta-editorial p {
+        font-size: 24px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
     }
 }
 </style>

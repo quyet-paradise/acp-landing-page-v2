@@ -66,7 +66,7 @@
   font-weight: 400;
   line-height: 1.02;
   color: var(--dls-color-burgundy);
-  letter-spacing: -.01em;
+  letter-spacing: -7%;
 }
 
 .hero-editorial h1 em {
@@ -128,6 +128,21 @@
   .hero-editorial {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .hero-editorial {
+    max-width: 100%;
+    padding: var(--dls-2cm) 98px 0;
+  }
+
+  .hero-breadcrumb {
+    font-size: 16px;
+  }
+
+  .hero-text-col {
+    padding-right: 98px;
   }
 }
 </style>
