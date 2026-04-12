@@ -8,8 +8,7 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 data-aos="fade-up" data-aos-delay="100">Your Patients Deserve <em>a Pharmacy Partner</em> Who Cares as Much as You Do</h1>
-                <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">A compounding pharmacy built around clinical partnership — not just order
-                    fulfillment.</p>
+                <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">A compounding pharmacy built around clinical partnership — not just order fulfillment.</p>
             </div>
         </section>
 
@@ -350,13 +349,15 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
 
 .hero {
     position: relative;
-    min-height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     background: var(--dls-color-burgundy);
+    height: 85vh;
+    min-height: 580px;
+    max-height: 900px;
 }
 
 .hero-img-placeholder {
@@ -373,10 +374,13 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 80px 40px;
     max-width: 820px;
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    right: 60px;
+    color: var(--dls-color-creamlight);
+    z-index: 2;
 }
 
 .hero-label {
@@ -407,7 +411,6 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
     line-height: 1.7;
     color: rgba(252, 249, 220, 0.8);
     max-width: 600px;
-    margin: 0 auto;
     font-weight: 300;
 }
 
@@ -962,7 +965,9 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
     }
 
     .hero-content {
-        padding: 60px 24px;
+        left: 24px;
+        right: 24px;
+        bottom: 48px;
     }
 
     .compliance-grid,
