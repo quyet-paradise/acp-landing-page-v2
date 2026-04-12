@@ -22,6 +22,9 @@
   padding: var(--dls-2cm) 60px 0;
   max-width: var(--dls-max-width);
   margin: 0 auto;
+  height: 85vh;
+  min-height: 580px;
+  max-height: 900px;
 }
 
 .hero-breadcrumb {
@@ -50,7 +53,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  min-height: 520px;
+  height: calc(85vh - 64px - var(--dls-2cm)); // total height - breadcumbs - padding
 }
 
 .hero-text-col {
@@ -100,8 +103,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 520px;
-  object-position:center bottom;
+  object-position: center;
 }
 
 @media (max-width: 1024px) {

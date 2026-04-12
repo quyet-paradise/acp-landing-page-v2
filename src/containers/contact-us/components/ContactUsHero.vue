@@ -18,11 +18,14 @@
     background-position: center;
     background-size: cover;
     padding: var(--dls-2cm) 60px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     height: 85vh;
     min-height: 580px;
     max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero::before {
@@ -53,13 +56,13 @@
     text-transform: uppercase;
     margin-bottom: 28px;
     opacity: .6;
-    color: var(--dls-color-lemonice);
+    color: var(--dls-color-burgundy);
     position: relative;
     z-index: 1;
 }
 
 .hero .breadcrumb a {
-    color: var(--dls-color-lemonice);
+    color: var(--dls-color-burgundy);
     text-decoration: none;
 }
 
@@ -77,9 +80,8 @@
     font-size: clamp(42px, 5.5vw, 72px);
     font-weight: 400;
     line-height: 1.1;
-    color: var(--dls-color-pale);
+    color: var(--dls-color-burgundy);
     max-width: 700px;
-    margin: 0 auto 20px;
     position: relative;
     z-index: 1;
 }
@@ -87,10 +89,9 @@
 .hero-subtitle {
     font-size: 18px;
     line-height: 1.7;
-    color: var(--dls-color-lemonice);
+    color: var(--dls-color-burgundy);
     font-weight: 300;
     max-width: 560px;
-    margin: 0 auto;
     position: relative;
     z-index: 1;
 }
