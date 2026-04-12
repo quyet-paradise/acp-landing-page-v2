@@ -4,14 +4,9 @@
     <div class="hero-editorial-inner">
       <div class="hero-text-col">
         <h1 data-aos="fade-up">The People Behind Personalized Medicine</h1>
-        <div class="hero-line" data-aos="fade-in" data-aos-delay="300"></div>
-      </div>
-      <div class="hero-img-col" data-aos="fade-in" data-aos-delay="200">
-        <img
-          src="/images/our-team/banner.jpg"
-          alt="Compounded capsules">
       </div>
     </div>
+    <div class="hero-overlay"></div>
   </section>
 </template>
 
@@ -19,12 +14,24 @@
 
 <style lang="scss" scoped>
 .hero-editorial {
-  padding: var(--dls-2cm) 60px 0;
-  max-width: var(--dls-max-width);
-  margin: 0 auto;
+  width: 100%;
   height: 85vh;
   min-height: 580px;
   max-height: 900px;
+  background-color: var(--dls-color-burgundy);
+  background-image: url("/images/our-team/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 98px;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .45) 100%);
+  z-index: 1;
 }
 
 .hero-breadcrumb {
@@ -33,6 +40,8 @@
   text-transform: uppercase;
   margin-bottom: 48px;
   opacity: .5;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-breadcrumb a {
@@ -50,17 +59,8 @@
 }
 
 .hero-editorial-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  height: calc(85vh - 64px - var(--dls-2cm)); // total height - breadcumbs - padding
-}
-
-.hero-text-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 80px;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-editorial h1 {
@@ -68,8 +68,9 @@
   font-size: clamp(48px, 6vw, 80px);
   font-weight: 400;
   line-height: 1.02;
-  color: var(--dls-color-burgundy);
+  color: var(--dls-color-pale);
   letter-spacing: -.01em;
+  max-width: 700px;
 }
 
 .hero-editorial h1 em {
@@ -86,43 +87,10 @@
   max-width: 440px;
 }
 
-.hero-line {
-  width: 60px;
-  height: 1px;
-  background: var(--dls-color-redclay);
-  margin-top: 40px;
-}
-
-.hero-img-col {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0 0 0 80px;
-}
-
-.hero-img-col img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 @media (max-width: 1024px) {
   .hero-editorial-inner {
     grid-template-columns: 1fr;
     gap: 48px;
-  }
-
-  .hero-text-col {
-    padding-right: 0;
-  }
-
-  .hero-img-col {
-    border-radius: 0 0 60px 0;
-    max-height: 400px;
-  }
-
-  .hero-img-col img {
-    min-height: 400px;
   }
 }
 
