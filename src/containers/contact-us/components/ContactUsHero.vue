@@ -56,13 +56,13 @@
     text-transform: uppercase;
     margin-bottom: 28px;
     opacity: .6;
-    color: var(--dls-color-burgundy);
+    color: var(--dls-color-pale);
     position: relative;
     z-index: 1;
 }
 
 .hero .breadcrumb a {
-    color: var(--dls-color-burgundy);
+    color: var(--dls-color-pale);
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@
     font-size: clamp(42px, 5.5vw, 72px);
     font-weight: 400;
     line-height: 1.1;
-    color: var(--dls-color-burgundy);
+    color: var(--dls-color-pale);
     max-width: 700px;
     position: relative;
     z-index: 1;
@@ -89,7 +89,7 @@
 .hero-subtitle {
     font-size: 18px;
     line-height: 1.7;
-    color: var(--dls-color-burgundy);
+    color: var(--dls-color-pale);
     font-weight: 300;
     max-width: 560px;
     position: relative;
