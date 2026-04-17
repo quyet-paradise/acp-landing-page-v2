@@ -376,11 +376,11 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
 .hero-content {
     max-width: 820px;
     position: absolute;
-    bottom: 80px;
+    top: 50%;
     left: 60px;
-    right: 60px;
     color: var(--dls-color-creamlight);
     z-index: 2;
+    transform: translateY(-50%);
 }
 
 .hero-label {
