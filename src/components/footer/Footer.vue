@@ -24,11 +24,11 @@
                 <div class="divider"></div>
 
                 <div class="col-item">
-                    <div class="item link">ABOUT US</div>
-                    <div class="item link">SERVICES</div>
-                    <div class="item link">PATIENTS</div>
-                    <div class="item link">PROVIDERS</div>
-                    <div class="item link">CONTACT US</div>
+                    <div class="item link" @click="goToPage(ROUTE_NAME.OUR_TEAM)">ABOUT US</div>
+                    <div class="item link" @click="goToPage(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">SERVICES</div>
+                    <div class="item link" @click="goToPage(ROUTE_NAME.GETTING_STATED)">PATIENTS</div>
+                    <div class="item link" @click="goToPage(ROUTE_NAME.WHY_ARTISAN)">PROVIDERS</div>
+                    <div class="item link" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)">CONTACT US</div>
                 </div>
 
                 <div class="divider"></div>
@@ -42,7 +42,10 @@
     
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .footer--wrapper {
@@ -60,7 +63,7 @@
         gap: 32px;
         align-items: center;
         border-top: 1px solid var(--dls-color-burgundy);
-        padding-top: 64px;
+        padding-top: 48px;
 
         &--menu {
             width: 100%;

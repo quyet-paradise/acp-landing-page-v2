@@ -13,7 +13,7 @@
                 <div class="content">
                     <div class="content--detail">{{ currentCommitment.content }}</div>
 
-                    <div class="book-consultation-btn">CONTACT US</div>
+                    <div class="book-consultation-btn" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)">CONTACT US</div>
                 </div>
 
                 <img @click="handleNext" class="next-btn" src="@/assets/images/facility/right-btn.svg" alt="right-arrow">
@@ -24,6 +24,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
 import commitment1 from '/images/commitment/img/img-1.png'
 import commitment2 from '/images/commitment/img/img-2.png'
 import commitment3 from '/images/commitment/img/img-3.png'

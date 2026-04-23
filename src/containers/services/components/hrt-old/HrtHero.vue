@@ -9,10 +9,7 @@
             <h1>Hormone Replacement Therapy</h1>
             <p class="hero-subtitle">Individually compounded hormone preparations — customized to your body, your lab
                 results, and your prescriber's plan.</p>
-            <a href="#" class="hero-cta">Book Consultation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg></a>
+            <a href="#" class="hero-cta">Book Consultation</a>
         </div>
     </section>
 </template>
@@ -42,7 +39,8 @@
 
 .hero-content {
     position: absolute;
-    bottom: 100px;
+    bottom: 50%;
+    transform: translateY(50%);
     left: 60px;
     right: 60px;
     color: var(--dls-color-creamlight);

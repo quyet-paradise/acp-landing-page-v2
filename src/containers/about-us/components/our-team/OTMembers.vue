@@ -128,10 +128,10 @@
 
 .team-section-header h3 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(32px, 3.5vw, 52px);
-    font-weight: 400;
+    font-size: 50px;
     color: var(--dls-color-burgundy);
-    line-height: 1.15;
+    line-height: 105%;
+    letter-spacing: -7%;
     max-width: 600px;
 }
 
@@ -247,10 +247,10 @@
 
 .member-name {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(28px, 3vw, 40px);
-    font-weight: 400;
+    font-size: 50px;
     color: var(--dls-color-burgundy);
-    line-height: 1.15;
+    line-height: 105%;
+    letter-spacing: -7%;
     margin-bottom: 8px;
 }
 

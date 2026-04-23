@@ -3,17 +3,22 @@
         <h2 data-aos="fade-up">Still have questions? <em>We're here to help.</em></h2>
         <p data-aos="fade-up" data-aos-delay="100">Schedule a consultation with our pharmacist and discover how personalized medication can make
             a difference.</p>
-        <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="200">
+        <!-- <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="200">
             Contact Us
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                 stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
-        </a>
+        </a> -->
+
+        <div class="book-consultation-btn" style="margin: 0 auto;" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)" data-aos="fade-up" data-aos-delay="200">CONTACT US</div>
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .cta-section {
