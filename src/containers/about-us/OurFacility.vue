@@ -159,12 +159,14 @@
 
         <!-- CTA -->
         <section class="cta-section">
-            <a href="#" class="cta-btn">Contact Us</a>
+            <a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)"  class="cta-btn">Contact Us</a>
         </section>
     </div>
 </template>
 
 <script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
 const scrollLeft = () => {
     const scrollContainer: any = document.getElementById('scrollable')
 
@@ -229,6 +231,7 @@ const scrollRight = () => {
     color: var(--dls-color-burgundy);
     letter-spacing: -0.01em;
     line-height: 1.1;
+    margin: 0;
 }
 
 /* ── LEAD TEXT (1-column width per template) ── */
@@ -245,7 +248,7 @@ const scrollRight = () => {
     line-height: 1.7;
     color: var(--dls-color-burgundy);
     font-style: italic;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 .facility-intro .body-text {
@@ -574,8 +577,7 @@ const scrollRight = () => {
 }
 
 .cta-btn:hover {
-    background: var(--dls-color-burgundy);
-    color: var(--dls-color-sunshine);
+    text-decoration: underline;
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(55, 18, 19, 0.2);
 }

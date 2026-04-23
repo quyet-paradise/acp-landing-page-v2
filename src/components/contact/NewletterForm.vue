@@ -76,7 +76,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
     .home-contact {
         width: 100%;
-        padding: 48px;
+        padding: 32px 48px;
         background: var(--dls-color-sunshine);
         border-radius: 30px;
         display: flex;
@@ -88,8 +88,8 @@ const submitForm = (formEl: FormInstance | undefined) => {
             font-family: var(--dls-font-spezia-book-b);
             font-size: 64px;
             color: var(--dls-color-burgundy);
-            line-height: 120%;
-            letter-spacing: -5px;
+            line-height: 105%;
+            letter-spacing: -7%;
         }
 
         &--form {

@@ -3,14 +3,14 @@
         <h2 data-aos="fade-up">Ready to experience <em>compounding</em> done differently?</h2>
         <p data-aos="fade-up" data-aos-delay="100">Schedule a consultation with our team and discover how personalized medication can make
             a real difference.</p>
-        <a href="#" class="cta-btn" data-aos="fade-up" data-aos-delay="200">Contact Us<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg></a>
+        <a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)" class="cta-btn" data-aos="fade-up" data-aos-delay="200">Contact Us</a>
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .cta-editorial {

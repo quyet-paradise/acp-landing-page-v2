@@ -65,12 +65,11 @@
 
 .hero-editorial h1 {
   font-family: var(--dls-font-spezia-book-b);
-  font-size: clamp(48px, 6vw, 80px);
-  font-weight: 400;
-  line-height: 1.02;
+  font-size: 76px;
   color: var(--dls-color-pale);
-  letter-spacing: -.01em;
-  max-width: 700px;
+  line-height: 105%;
+  letter-spacing: -7%;
+  max-width: 575px;
 }
 
 .hero-editorial h1 em {
@@ -98,6 +97,10 @@
   .hero-editorial {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .hero-editorial h1 {
+    font-size: 60px;
   }
 }
 </style>

@@ -40,7 +40,8 @@
 
 .hero-content {
     position: absolute;
-    bottom: 100px;
+    bottom: 50%;
+    transform: translateY(50%);
     left: 60px;
     right: 60px;
     color: var(--dls-color-creamlight);

@@ -17,9 +17,9 @@
 }
 .quote-strip blockquote {
   font-family: var(--dls-font-spezia-book-b);
-  font-size: clamp(24px, 3vw, 38px);
-  font-weight: 400;
-  line-height: 1.4;
+  font-size: 30px;
+  line-height: 105%;
+  letter-spacing: -7%;
   color: var(--dls-color-burgundy);
   max-width: 900px;
   margin: 0 auto;
