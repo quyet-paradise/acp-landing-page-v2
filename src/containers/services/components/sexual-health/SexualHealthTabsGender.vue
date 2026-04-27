@@ -234,8 +234,9 @@ const handleChangeTab = (gender: string) => {
 
 .tab-btn {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(22px, 2.5vw, 34px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-taupe);
     background: none;
     border: none;
@@ -243,7 +244,6 @@ const handleChangeTab = (gender: string) => {
     cursor: pointer;
     position: relative;
     transition: color 0.4s;
-    letter-spacing: 0.01em;
 }
 
 .tab-btn::after {

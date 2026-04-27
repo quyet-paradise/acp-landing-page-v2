@@ -40,19 +40,19 @@
 
 .safety-section h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(26px, 2.5vw, 34px);
-    font-weight: 400;
+    font-size: 30px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     margin-bottom: 24px;
-    letter-spacing: -1px;
 }
 
 .safety-section p {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 24px;
+    line-height: 105%;
     font-weight: 300;
-    max-width: 640px;
-    margin: 0 auto;
+    letter-spacing: 0;
+    color: var(--dls-color-burgundy);
 }
 
 @media (max-width: 1024px) {}

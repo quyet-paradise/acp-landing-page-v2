@@ -70,8 +70,9 @@
 
 .safety h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(26px, 2.5vw, 34px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     text-align: center;
     margin-bottom: 40px;

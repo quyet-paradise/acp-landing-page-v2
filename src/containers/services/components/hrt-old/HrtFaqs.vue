@@ -123,8 +123,9 @@ const handleOpenQ = (id: string) => {
 
 .faq h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(28px, 3vw, 42px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     text-align: center;
     color: var(--dls-color-burgundy);
     margin-bottom: 48px;
@@ -154,11 +155,10 @@ const handleOpenQ = (id: string) => {
 
 .faq-q h4 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 30px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    line-height: 1.3;
-    letter-spacing: -1px;
     margin: 12px 0;
 }
 
