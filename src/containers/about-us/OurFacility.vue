@@ -226,17 +226,16 @@ const scrollRight = () => {
 
 .page-title h1 {
     font-family: var(--dls-font-spezia-book-b);
-    font-weight: 400;
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-size: 76px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-    margin: 0;
+    margin: 24px 0;
 }
 
 /* ── LEAD TEXT (1-column width per template) ── */
 .facility-intro {
-    max-width: 820px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     padding: 0 2rem 1rem;
@@ -244,16 +243,19 @@ const scrollRight = () => {
 
 .facility-intro .lead {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 30px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     font-style: italic;
     margin: 0;
 }
 
 .facility-intro .body-text {
-    font-size: 0.95rem;
-    line-height: 1.85;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
+    font-weight: 300;
     color: var(--dls-color-burgundy);
 }
 
@@ -355,7 +357,7 @@ const scrollRight = () => {
 .standards-section {
     max-width: var(--dls-max-width);
     margin: 0 auto;
-    padding: var(--dls-2cm) 60px;
+    padding: var(--dls-2cm) 60px 120px 60px;
 }
 
 .standards-header {
@@ -365,24 +367,21 @@ const scrollRight = () => {
 
 .standards-header h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-weight: 400;
-    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    letter-spacing: -0.01em;
 }
 
 .standards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
     max-width: 860px;
     margin: 0 auto;
+    border: 1px solid var(--dls-color-border);
 }
 
 .standard-card {
-    background: var(--dls-color-cream);
-    padding: 2.2rem 2rem;
-    border-top: 3px solid var(--dls-color-redclay);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.6s ease forwards;
@@ -390,6 +389,7 @@ const scrollRight = () => {
 
 .standard-card:nth-child(1) {
     animation-delay: 0.1s;
+    border-right: 1px solid var(--dls-color-border);
 }
 
 .standard-card:nth-child(2) {
@@ -404,24 +404,31 @@ const scrollRight = () => {
 }
 
 .standard-card h3 {
-    font-size: 0.82rem;
+    font-size: 16px;
+    line-height: 108%;
+    letter-spacing: 0;
     font-weight: 600;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--dls-color-burgundy);
-    margin-bottom: 0.8rem;
+    margin: 0;
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--dls-color-border);
 }
 
 .standard-card p {
-    font-size: 0.9rem;
-    line-height: 1.75;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
+    font-weight: 300;
     color: var(--dls-color-burgundy);
+    margin: 0;
+    padding: 16px 32px;
 }
 
 /* ── TAUPE BANNER (per template brown/taupe sections) ── */
 .taupe-banner {
     background: var(--dls-color-taupe);
-    padding: var(--dls-1p5cm) 60px;
+    padding: var(--dls-2cm) 60px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -429,13 +436,12 @@ const scrollRight = () => {
 
 .taupe-banner h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-weight: 400;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     max-width: 750px;
     margin: 0 auto 1.5rem;
-    line-height: 1.45;
-    letter-spacing: -0.01em;
 }
 
 .compliance-pills {
@@ -474,10 +480,10 @@ const scrollRight = () => {
 }
 
 .process-header h2 {
-    font-weight: 400;
-    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    letter-spacing: -0.01em;
 }
 
 .process-steps {
@@ -540,17 +546,19 @@ const scrollRight = () => {
 
 .process-step h4 {
     font-family: var(--dls-font-jost);
-    font-size: 0.75rem;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: -0.5%;
     font-weight: 600;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--dls-color-burgundy);
     margin-bottom: 0.6rem;
 }
 
 .process-step p {
-    font-size: 0.85rem;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: -0.5%;
     color: var(--dls-color-burgundy);
     max-width: 230px;
     margin: 0 auto;
@@ -626,18 +634,20 @@ const scrollRight = () => {
 .split-hero-left h3 {
     font-family: var(--dls-font-spezia-book-b);
     font-weight: 400;
-    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    font-size: 76px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-sunshine);
-    line-height: 1.12;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.8rem;
+    margin: 1.8rem 0;
     position: relative;
     z-index: 2;
 }
 
 .split-hero-left .hero-body {
-    font-size: 0.92rem;
-    line-height: 1.85;
+    font-size: 24px;
+    line-height: 105%;
+    letter-spacing: 0;
+    font-weight: 300;
     color: rgba(250, 246, 238, 0.72);
     max-width: 440px;
     margin-bottom: 2.2rem;
@@ -832,6 +842,14 @@ const scrollRight = () => {
     .standards-grid {
         grid-template-columns: 1fr;
         max-width: 460px;
+    }
+
+    .standard-card:nth-child(1) {
+        border-right: none;
+    }
+
+    .standard-card:nth-child(2) {
+        border-top: 1px solid var(--dls-color-border);
     }
 
     .process-steps {

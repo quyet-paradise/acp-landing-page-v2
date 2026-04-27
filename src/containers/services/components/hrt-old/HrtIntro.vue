@@ -36,16 +36,16 @@
 
 .intro-text {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(26px, 2.8vw, 40px);
-    line-height: 1.35;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    font-weight: 400;
-    letter-spacing: -2px;
 }
 
 .intro-body {
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);
 }

@@ -22,18 +22,19 @@
 
 .intro-text {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(26px, 3vw, 42px);
-    line-height: 1.35;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     max-width: 900px;
-    font-weight: 400;
     margin: 0;
 }
 
 .intro-body {
     margin-top: 32px;
-    font-size: 17px;
-    line-height: 1.75;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
     max-width: 820px;
     font-weight: 300;
     color: var(--dls-color-burgundy);

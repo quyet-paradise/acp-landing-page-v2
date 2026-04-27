@@ -363,8 +363,9 @@ const toggleFaq = (id: string) => {
 
 .faq-category-heading {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(24px, 3vw, 34px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     margin-bottom: 28px;
     padding-bottom: 16px;
@@ -386,7 +387,7 @@ const toggleFaq = (id: string) => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 0;
+    padding: 10px 0;
     cursor: pointer;
     user-select: none;
     transition: opacity 0.2s;
@@ -399,12 +400,11 @@ const toggleFaq = (id: string) => {
 
 .faq-question h3 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(22px, 2.5vw, 30px);
-    font-weight: 400;
+    font-size: 30px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    line-height: 48px;
     padding-right: 40px;
-    letter-spacing: -1px;
     margin: 0;
 }
 

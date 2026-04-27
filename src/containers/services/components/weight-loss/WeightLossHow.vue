@@ -83,15 +83,17 @@
 
 .how-section h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(30px, 3vw, 42px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-lemonice);
     margin-bottom: 32px;
 }
 
 .how-text p {
-    font-size: 17px;
-    line-height: 1.75;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
     color: var(--dls-color-lemonice);
     font-weight: 300;
 }

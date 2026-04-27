@@ -60,8 +60,9 @@
 
 .dosage h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(28px, 3vw, 42px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     text-align: center;
     color: var(--dls-color-burgundy);
     margin-bottom: 16px;

@@ -74,16 +74,17 @@
 
 .why-compound h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(28px, 2.8vw, 38px);
-    font-weight: 400;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     margin-bottom: 24px;
-    line-height: 1.2;
 }
 
 .why-compound p {
-    font-size: 17px;
-    line-height: 1.75;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);
 }

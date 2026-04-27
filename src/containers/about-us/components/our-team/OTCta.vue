@@ -22,10 +22,10 @@ import { goToPage } from '@/utils/common-utils'
 
 .cta-editorial h2 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(32px, 4vw, 56px);
-    font-weight: 400;
+    font-size: 76px;
+    line-height: 105%;
+    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
-    line-height: 1.15;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -36,8 +36,9 @@ import { goToPage } from '@/utils/common-utils'
 }
 
 .cta-editorial p {
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 24px;
+    line-height: 105%;
+    letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);
     margin-top: 20px;
@@ -60,7 +61,7 @@ import { goToPage } from '@/utils/common-utils'
     font-weight: 500;
     border-radius: 60px;
     transition: transform .3s, box-shadow .3s;
-    margin-top: 40px;
+    margin-top: 24px;
 }
 
 .cta-btn:hover {
