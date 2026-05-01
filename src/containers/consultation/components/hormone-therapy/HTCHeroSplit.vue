@@ -96,10 +96,6 @@
 }
 
 .hero-split-text h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(32px, 4vw, 56px);
-    font-weight: 400;
-    line-height: 1.1;
     color: var(--dls-color-burgundy);
     margin-bottom: 24px;
     position: relative;

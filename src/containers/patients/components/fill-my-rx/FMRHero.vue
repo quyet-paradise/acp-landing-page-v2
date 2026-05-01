@@ -22,7 +22,7 @@
     min-height: 580px;
     max-height: 900px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     overflow: hidden;
     background: url("/images/patients/fill-my-rx-banner.jpg") center/cover no-repeat;
 }
@@ -91,10 +91,6 @@
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: 400;
-    line-height: 1.1;
     color: var(--dls-color-burgundy);
     margin-bottom: 20px;
 }

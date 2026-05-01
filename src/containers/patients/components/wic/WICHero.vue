@@ -50,7 +50,8 @@
 
 .hero-content {
     position: absolute;
-    bottom: 80px;
+    bottom: 50%;
+    transform: translateY(50%);
     left: 60px;
     right: 60px;
     z-index: 2;
@@ -82,10 +83,6 @@
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(44px, 6vw, 80px);
-    font-weight: 300;
-    line-height: 1.06;
     color: var(--dls-color-linen);
     max-width: 780px;
 }
@@ -114,7 +111,6 @@
     .hero-content {
         left: 28px;
         right: 28px;
-        bottom: 48px;
     }
 }
 

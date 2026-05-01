@@ -71,10 +71,6 @@
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: 76px;
-    line-height: 105%;
-    letter-spacing: -7%;
     max-width: 700px;
     color: var(--dls-color-pale);
 }

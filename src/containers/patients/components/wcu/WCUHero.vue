@@ -10,7 +10,7 @@
                 <span>Why Choose Us</span>
             </div>
             <h1 data-aos="fade-up">Pharmacy the Way <em>It Should Be</em></h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">At Artisan, you're not a number. You're a person and your medication should be made for you, not the masses.</p>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100" style="color: #FFFFFF">At Artisan, you're not a number. You're a person and your medication should be made for you, not the masses.</p>
         </div>
     </section>
 </template>
@@ -45,7 +45,8 @@
 
 .hero-content {
     position: absolute;
-    bottom: 80px;
+    bottom: 50%;
+    transform: translateY(50%);
     left: 60px;
     right: 60px;
     z-index: 2;
@@ -77,10 +78,6 @@
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(44px, 6vw, 80px);
-    font-weight: 300;
-    line-height: 1.06;
     color: var(--dls-color-pale);
     max-width: 780px;
 }
@@ -109,7 +106,6 @@
     .hero-content {
         left: 28px;
         right: 28px;
-        bottom: 48px;
     }
 }
 

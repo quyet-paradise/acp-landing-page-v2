@@ -82,6 +82,26 @@ import { goToPage } from '@/utils/common-utils'
     transform: translateX(4px);
 }
 
+.cta-section .book-consultation-btn {
+    padding: 22px 48px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: var(--dls-color-sunshine);
+    color: var(--dls-color-burgundy);
+    transition: transform .3s, box-shadow .3s;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(63, 18, 8, .25);
+        opacity: 1;
+        text-decoration: none;
+    }
+}
+
 @media (max-width: 900px) {
     .cta-section {
         padding: 60px 28px;

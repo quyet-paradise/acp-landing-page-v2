@@ -9,7 +9,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
             <div class="faq-question" id="faq-1" @click="toggleFaq('1')">
                 <h3>What is compounding, and what sets Artisan apart?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner">
@@ -29,7 +29,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-question" id="faq-2" @click="toggleFaq('2')">
                 <h3>What do you mean by pharmaceutical-grade ingredients?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -45,7 +45,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-question" id="faq-3" @click="toggleFaq('3')">
                 <h3>What types of compounding do you specialize in?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner">
@@ -62,7 +62,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
             <div class="faq-question" id="faq-4" @click="toggleFaq('4')">
                 <h3>How do I know my compounded medication is safe?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner">
@@ -85,7 +85,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
             <div class="faq-question" id="faq-5" @click="toggleFaq('5')">
                 <h3>Do I need a prescription for compounded medications?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -99,7 +99,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
             <div class="faq-question" id="faq-6" @click="toggleFaq('6')">
                 <h3>What if my doctor is unfamiliar with prescribing compounds?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -114,7 +114,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
             <div class="faq-question" id="faq-7" @click="toggleFaq('7')">
                 <h3>How do I transfer my prescription to Artisan?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -129,7 +129,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
             <div class="faq-question" id="faq-8" @click="toggleFaq('8')">
                 <h3>Can my provider contact you directly?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -145,7 +145,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
             <div class="faq-question" id="faq-9" @click="toggleFaq('9')">
                 <h3>How long does it take to fill a compounded prescription?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -160,7 +160,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
             <div class="faq-question" id="faq-10" @click="toggleFaq('10')">
                 <h3>What can cause a delay?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -179,7 +179,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
             <div class="faq-question" id="faq-11" @click="toggleFaq('11')">
                 <h3>Are compounded medications covered by insurance?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -201,7 +201,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-question" id="faq-12" @click="toggleFaq('12')">
                 <h3>Do you offer a military discount?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -221,7 +221,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-question" id="faq-13" @click="toggleFaq('13')">
                 <h3>Can I visit the pharmacy without an appointment?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -235,7 +235,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-question" id="faq-14" @click="toggleFaq('14')">
                 <h3>Do you offer pickup, delivery, or shipping?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -255,7 +255,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-question" id="faq-15" @click="toggleFaq('15')">
                 <h3>What is your return policy?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -274,7 +274,7 @@
         <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-question" id="faq-16" @click="toggleFaq('16')">
                 <h3>What if my order arrives damaged or defective?</h3>
-                <div class="faq-toggle"></div>
+                <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg></div>
             </div>
             <div class="faq-answer">
                 <div class="faq-answer-inner single-col">
@@ -291,7 +291,7 @@
      DISCLAIMER
      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
     <div
-        style="max-width:var(--dls-max-width-2); margin:0 auto; padding:0 60px 60px; font-size:12px; color:var(--dls-color-burgundy); opacity:0.45; line-height:1.7; font-weight:300; font-style:italic;">
+        style="max-width:var(--dls-max-width-2); margin:0 auto; padding:0 60px 40px; font-size:14px; color:var(--dls-color-burgundy); opacity:0.45; line-height:1.7; font-weight:300; font-style:italic;">
         A prescription from a licensed practitioner is required for compounded medications.
     </div>
 </template>
@@ -314,7 +314,7 @@ const toggleFaq = (id: string) => {
 
 <style lang="scss" scoped>
 .faq-section {
-    padding: var(--dls-2cm) 60px;
+    padding: 76px 60px 45px 60px;
     max-width: var(--dls-max-width-2);
     margin: 0 auto;
 }
@@ -363,35 +363,34 @@ const toggleFaq = (id: string) => {
 
 .faq-category-heading {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: 50px;
+    font-size: 30px;
     line-height: 105%;
     letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     margin-bottom: 28px;
     padding-bottom: 16px;
-    border-bottom: 2px solid var(--dls-color-burgundy);
     display: inline-block;
 }
 
 /* Accordion Item */
 .faq-item {
-    border-top: 1px solid rgba(200, 200, 200, 1);
+    border-top: 1px solid var(--dls-color-border);
     padding: 4px 0;
 }
 
 .faq-item:last-child {
-    border-bottom: 1px solid rgba(200, 200, 200, 1);
+    border-bottom: 1px solid var(--dls-color-border);
 }
 
 .faq-question {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 24px 0;
     cursor: pointer;
     user-select: none;
+    gap: 16px;
     transition: opacity 0.2s;
-    line-height: 48px;
 }
 
 .faq-question:hover {
@@ -400,47 +399,40 @@ const toggleFaq = (id: string) => {
 
 .faq-question h3 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: 30px;
-    line-height: 105%;
-    letter-spacing: -7%;
+    font-size: 19px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+    font-weight: 400;
     color: var(--dls-color-burgundy);
-    padding-right: 40px;
     margin: 0;
 }
 
-/* +/ icon */
 .faq-toggle {
-    flex-shrink: 0;
-    width: 28px;
-    height: 28px;
-    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--dls-color-border);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    transition: transform .3s, background .3s;
 }
 
-.faq-toggle::before,
-.faq-toggle::after {
-    content: '';
-    position: absolute;
+.faq-toggle svg {
+    width: 14px;
+    height: 14px;
+    color: var(--dls-color-burgundy);
+    transition: transform .3s;
+}
+
+.faq-item.active .faq-toggle {
     background: var(--dls-color-burgundy);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s;
 }
 
-.faq-toggle::before {
-    width: 20px;
-    height: 1.5px;
-}
-
-.faq-toggle::after {
-    width: 1.5px;
-    height: 20px;
-}
-
-/* Active state: + becomes */
-.faq-item.active .faq-toggle::after {
-    transform: rotate(90deg);
-    opacity: 0;
+.faq-item.active .faq-toggle svg {
+    color: var(--dls-color-lemonice);
+    transform: rotate(45deg);
 }
 
 /* Answer container */
@@ -452,22 +444,14 @@ const toggleFaq = (id: string) => {
 
 .faq-item.active .faq-answer {
     max-height: 800px;
-    padding-bottom: 36px;
+    padding-bottom: 24px;
 }
 
 .faq-answer-inner {
-    columns: 2;
-    column-gap: 48px;
-    font-size: 14.5px;
-    line-height: 1.85;
+    font-size: 15px;
+    line-height: 1.75;
     color: var(--dls-color-burgundy);
     font-weight: 300;
-    opacity: 0.8;
-}
-
-/* Single-column answers (short) */
-.faq-answer-inner.single-col {
-    columns: 1;
     max-width: 680px;
 }
 
@@ -488,11 +472,7 @@ const toggleFaq = (id: string) => {
 
 @media (max-width: 900px) {
     .faq-section {
-        padding: 72px 28px 40px;
-    }
-
-    .faq-answer-inner {
-        columns: 1;
+        padding: 72px 28px 30px;
     }
 
     .faq-question h3 {
@@ -502,7 +482,7 @@ const toggleFaq = (id: string) => {
 
 @media (max-width: 600px) {
     .faq-question h3 {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 </style>

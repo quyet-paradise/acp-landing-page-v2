@@ -31,20 +31,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: start;
+    align-items: center;
 }
 
 .intro-text {
     font-family: var(--dls-font-spezia-book-b);
     font-size: 50px;
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
     color: var(--dls-color-burgundy);
 }
 
 .intro-body {
-    font-size: 24px;
-    line-height: 108%;
+    font-size: 16px;
+    line-height: 145%;
     letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);

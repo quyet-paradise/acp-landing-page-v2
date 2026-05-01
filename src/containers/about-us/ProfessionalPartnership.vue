@@ -18,7 +18,7 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
 .professional-partnership {
     width: 100%;
     margin-top: calc(var(--dls-aux-header-height) + var(--dls-nav-header-height));
-    background: var(--dls-color-linen);
+    background: var(--dls-color-lemonice);
 
     @media (max-width: 1024px) {
         margin-top: var(--dls-aux-header-height);

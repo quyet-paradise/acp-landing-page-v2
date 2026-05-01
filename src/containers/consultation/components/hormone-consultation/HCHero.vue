@@ -78,13 +78,8 @@
 }
 
 .zen-hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(32px, 4vw, 56px);
-    font-weight: 400;
-    line-height: 1.12;
     color: var(--dls-color-pale);
     margin-bottom: 28px;
-    letter-spacing: -.01em;
     text-shadow: 0 2px 12px rgba(0, 0, 0, .3);
     position: relative;
     z-index: 1;

@@ -1,10 +1,10 @@
 <template>
     <section class="values-editorial">
         <div class="values-inner">
-            <h2 data-aos="fade-up"
-                style="font-size:76px;line-height: 105%;letter-spacing: -7%;text-align:center;max-width:800px;margin:0 auto">Crafted with Care, Backed by Science, Delivered with Heart.</h2>
+            <h2 class="headline-2" data-aos="fade-up"
+                style="text-align:center;max-width:800px;margin:0 auto">Crafted with Care, Backed by Science, Delivered with Heart.</h2>
             <p data-aos="fade-up" data-aos-delay="200"
-                style="text-align:center;font-size:24px;line-height:105%;letter-spacing: 0;color:var(--dls-color-lemonice);font-weight:300;max-width:680px;margin:36px auto 0">
+                style="text-align:center;color:var(--dls-color-lemonice);max-width:680px;margin:36px auto 0">
                 Every member of our team shares a single purpose — to ensure that your treatment is prepared with the
                 finest ingredients, the highest standards, and a deep respect for your individual journey.</p>
         </div>
@@ -51,10 +51,14 @@
 }
 
 .values-inner h2 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-weight: 400;
     color: var(--dls-color-sunshine);
-    line-height: 1.1;
+}
+
+.values-inner p {
+    font-family: var(--dls-font-jost);
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0.1em;
 }
 
 @media (max-width: 1024px) {

@@ -33,8 +33,8 @@
 
 .intro-body {
     margin-top: 32px;
-    font-size: 24px;
-    line-height: 108%;
+    font-size: 16px;
+    line-height: 145%;
     letter-spacing: 0;
     max-width: 800px;
     font-weight: 300;
