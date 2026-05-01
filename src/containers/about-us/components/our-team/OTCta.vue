@@ -1,6 +1,6 @@
 <template>
     <section class="cta-editorial">
-        <h2 data-aos="fade-up">Ready to experience <em>compounding</em> done differently?</h2>
+        <h2 class="headline-2" data-aos="fade-up">Ready to experience <em>compounding</em> done differently?</h2>
         <p data-aos="fade-up" data-aos-delay="100">Schedule a consultation with our team and discover how personalized medication can make
             a real difference.</p>
         <a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)" class="cta-btn" data-aos="fade-up" data-aos-delay="200">Contact Us</a>
@@ -21,11 +21,6 @@ import { goToPage } from '@/utils/common-utils'
 }
 
 .cta-editorial h2 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: 76px;
-    line-height: 105%;
-    letter-spacing: -7%;
-    color: var(--dls-color-burgundy);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -36,10 +31,10 @@ import { goToPage } from '@/utils/common-utils'
 }
 
 .cta-editorial p {
-    font-size: 24px;
-    line-height: 105%;
-    letter-spacing: 0;
-    font-weight: 300;
+    font-family: var(--dls-font-jost);
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 0.1em;
     color: var(--dls-color-burgundy);
     margin-top: 20px;
     max-width: 520px;

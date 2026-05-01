@@ -64,11 +64,7 @@
 }
 
 .hero-editorial h1 {
-  font-family: var(--dls-font-spezia-book-b);
-  font-size: 76px;
   color: var(--dls-color-pale);
-  line-height: 105%;
-  letter-spacing: -7%;
   max-width: 575px;
 }
 
@@ -97,10 +93,6 @@
   .hero-editorial {
     padding-left: 24px;
     padding-right: 24px;
-  }
-
-  .hero-editorial h1 {
-    font-size: 60px;
   }
 }
 </style>

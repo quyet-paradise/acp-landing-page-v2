@@ -82,8 +82,8 @@
 }
 
 .why-compound p {
-    font-size: 24px;
-    line-height: 108%;
+    font-size: 16px;
+    line-height: 145%;
     letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);

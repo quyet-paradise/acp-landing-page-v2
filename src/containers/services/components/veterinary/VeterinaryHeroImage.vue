@@ -68,10 +68,6 @@
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(38px, 5vw, 64px);
-    font-weight: 400;
-    line-height: 1.1;
     max-width: 750px;
     color: var(--dls-color-pale);
 }

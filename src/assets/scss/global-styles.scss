@@ -1,9 +1,18 @@
-.headline-1 {
+.headline-1,
+h1 {
     font-family: var(--dls-font-spezia-book-b);
     font-size: 76px;
     color: var(--dls-color-burgundy);
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
+
+    @media (max-width: 1024px) {
+        font-size: 50px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 .headline-2 {
@@ -11,7 +20,15 @@
     font-size: 50px;
     color: var(--dls-color-burgundy);
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
+
+    @media (max-width: 1024px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .headline-3 {
@@ -19,7 +36,11 @@
     font-size: 30px;
     color: var(--dls-color-burgundy);
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+    }
 }
 
 .headline-4 {
@@ -27,7 +48,7 @@
     font-size: 24px;
     color: var(--dls-color-burgundy);
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
 }
 
 .small-caps {
@@ -35,8 +56,9 @@
     font-size: 16px;
     color: var(--dls-color-burgundy);
     line-height: 145%;
-    letter-spacing: -0.5%;
+    letter-spacing: 0.1em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .long-paragraph {
@@ -63,15 +85,6 @@
         opacity: .8;
         text-decoration: underline;
     }
-}
-
-h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(42px, 5.5vw, 72px);
-    font-weight: 400;
-    line-height: 1.06;
-    color: var(--dls-color-burgundy);
-    letter-spacing: -3px;
 }
 
 h2 {

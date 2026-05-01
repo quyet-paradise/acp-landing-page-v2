@@ -125,7 +125,7 @@ const handleOpenQ = (id: string) => {
     font-family: var(--dls-font-spezia-book-b);
     font-size: 50px;
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
     text-align: center;
     color: var(--dls-color-burgundy);
     margin-bottom: 48px;
@@ -148,18 +148,19 @@ const handleOpenQ = (id: string) => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
+    padding: 24px 0;
     cursor: pointer;
     gap: 16px;
 }
 
 .faq-q h4 {
     font-family: var(--dls-font-spezia-book-b);
-    font-size: 30px;
-    line-height: 105%;
-    letter-spacing: -7%;
+    font-size: 19px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+    font-weight: 400;
     color: var(--dls-color-burgundy);
-    margin: 12px 0;
+    margin: 0;
 }
 
 .faq-toggle {
@@ -198,11 +199,11 @@ const handleOpenQ = (id: string) => {
 
 .faq-a-inner {
     padding: 0 0 24px;
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.75;
     color: var(--dls-color-burgundy);
     font-weight: 300;
-    max-width: 720px;
+    max-width: 680px;
 }
 
 @media(max-width:1024px) {}

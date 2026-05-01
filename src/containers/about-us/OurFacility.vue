@@ -189,7 +189,7 @@ const scrollRight = () => {
 .our-facility {
     width: 100%;
     margin-top: calc(var(--dls-aux-header-height) + var(--dls-nav-header-height));
-    background: var(--dls-color-linen);
+    background: var(--dls-color-lemonice);
 }
 
 /* ── BREADCRUMB (per template inner page) ── */
@@ -225,10 +225,6 @@ const scrollRight = () => {
 }
 
 .page-title h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: 76px;
-    line-height: 105%;
-    letter-spacing: -7%;
     color: var(--dls-color-burgundy);
     margin: 24px 0;
 }
@@ -257,6 +253,7 @@ const scrollRight = () => {
     letter-spacing: 0;
     font-weight: 300;
     color: var(--dls-color-burgundy);
+    margin-top: 32px;
 }
 
 /* ── HORIZONTAL LINE (template uses thin lines as dividers) ── */
@@ -369,7 +366,7 @@ const scrollRight = () => {
     font-family: var(--dls-font-spezia-book-b);
     font-size: 50px;
     line-height: 105%;
-    letter-spacing: -7%;
+    letter-spacing: -0.05em;
     color: var(--dls-color-burgundy);
 }
 
@@ -404,25 +401,28 @@ const scrollRight = () => {
 }
 
 .standard-card h3 {
-    font-size: 16px;
-    line-height: 108%;
-    letter-spacing: 0;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-family: var(--dls-font-spezia-book-b);
+    font-size: 30px;
+    line-height: 105%;
+    letter-spacing: -0.05em;
+    font-weight: 400;
     color: var(--dls-color-burgundy);
+    text-align: center;
     margin: 0;
-    padding: 16px 32px;
+    padding: 28px 32px;
     border-bottom: 1px solid var(--dls-color-border);
 }
 
 .standard-card p {
-    font-size: 24px;
-    line-height: 108%;
+    font-family: var(--dls-font-jost);
+    font-size: 16px;
+    line-height: 145%;
     letter-spacing: 0;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--dls-color-burgundy);
+    text-align: center;
     margin: 0;
-    padding: 16px 32px;
+    padding: 64px 48px;
 }
 
 /* ── TAUPE BANNER (per template brown/taupe sections) ── */
@@ -644,8 +644,8 @@ const scrollRight = () => {
 }
 
 .split-hero-left .hero-body {
-    font-size: 24px;
-    line-height: 105%;
+    font-size: 16px;
+    line-height: 145%;
     letter-spacing: 0;
     font-weight: 300;
     color: rgba(250, 246, 238, 0.72);

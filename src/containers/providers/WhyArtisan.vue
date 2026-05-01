@@ -393,10 +393,6 @@ const NewletterForm = defineAsyncComponent(() => import('@/components/contact/Ne
 }
 
 .hero h1 {
-    font-family: var(--dls-font-spezia-book-b);
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 300;
-    line-height: 1.15;
     color: var(--dls-color-sunshine);
     margin-bottom: 20px;
 }
