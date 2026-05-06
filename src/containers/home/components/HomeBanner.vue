@@ -14,7 +14,7 @@
             <img id="logoScaling" class="home-banner--info--logo" src="/images/home-banner/logo.png" alt="logo">
         </div>
 
-        <div class="home-banner--overlay"></div>
+        <!-- <div class="home-banner--overlay"></div> -->
     </div>
 </template>
 
