@@ -5,7 +5,7 @@
             <p>17400 Irvine Blvd, Suite H — in the heart of Old Town Tustin</p>
         </div>
         <div class="map-wrap">
-            <img src="/images/contact/map.jpg" alt="map">
+            <img src="/images/contact/map.jpeg" alt="map">
         </div>
     </section>
 </template>
