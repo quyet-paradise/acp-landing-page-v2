@@ -24,13 +24,13 @@
             <HomeCommitment />
         </main>
 
-        <main ref="homeFacilityRef">
+        <!-- <main ref="homeFacilityRef">
             <HomeFacility />
-        </main>
+        </main> -->
 
-        <main ref="homeCommentRef">
+        <!-- <main ref="homeCommentRef">
             <HomeComment />
-        </main>
+        </main> -->
 
         <main ref="homeAccreditationRef">
             <HomeAccreditation />
