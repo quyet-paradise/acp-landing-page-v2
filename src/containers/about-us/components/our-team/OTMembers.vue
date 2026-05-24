@@ -37,7 +37,7 @@
         </article>
 
         <!-- MEMBER 2 — Info Left, Photo Right -->
-        <article class="member layout-b" data-aos="fade-up">
+        <!-- <article class="member layout-b" data-aos="fade-up">
             <div class="member-photo-wrap">
                 <img src="/images/our-team/emily-caster.jpg" alt="Dr. Emily Carter" class="member-photo">
                 <div class="member-number">02</div>
@@ -55,10 +55,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg></button>
             </div>
-        </article>
+        </article> -->
 
         <!-- MEMBER 3 — Photo Left, Info Right -->
-        <article class="member layout-a" data-aos="fade-up">
+        <!-- <article class="member layout-a" data-aos="fade-up">
             <div class="member-photo-wrap">
                 <img src="/images/our-team/noah-bennet.jpg" alt="Noah Bennett" class="member-photo">
                 <div class="member-number">03</div>
@@ -76,10 +76,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg></button>
             </div>
-        </article>
+        </article> -->
 
         <!-- MEMBER 4 — Centered, unique layout -->
-        <article class="member layout-c" data-aos="fade-up">
+        <!-- <article class="member layout-c" data-aos="fade-up">
             <div class="member-photo-wrap">
                 <img src="/images/our-team/liam-turner.jpg" alt="Liam Turner" class="member-photo"
                     style="min-height:400px">
@@ -99,7 +99,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg></button>
             </div>
-        </article>
+        </article> -->
     </section>
 </template>
 

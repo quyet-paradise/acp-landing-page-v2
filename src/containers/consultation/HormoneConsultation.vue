@@ -4,8 +4,8 @@
         <HCInvitation />
         <HCFlow />
         <HCJourney />
-        <HCPackages />
-        <HCPricing />
+        <!-- <HCPackages />
+        <HCPricing /> -->
         <HCFaqs />
         <HCStickyBar />
     </div>
