@@ -18,8 +18,8 @@ const HCHero = defineAsyncComponent(() => import('./components/hormone-consultat
 const HCInvitation = defineAsyncComponent(() => import('./components/hormone-consultation/HCInvitation.vue'))
 const HCFlow = defineAsyncComponent(() => import('./components/hormone-consultation/HCFlow.vue'))
 const HCJourney = defineAsyncComponent(() => import('./components/hormone-consultation/HCJourney.vue'))
-const HCPackages = defineAsyncComponent(() => import('./components/hormone-consultation/HCPackages.vue'))
-const HCPricing = defineAsyncComponent(() => import('./components/hormone-consultation/HCPricing.vue'))
+// const HCPackages = defineAsyncComponent(() => import('./components/hormone-consultation/HCPackages.vue'))
+// const HCPricing = defineAsyncComponent(() => import('./components/hormone-consultation/HCPricing.vue'))
 const HCFaqs = defineAsyncComponent(() => import('./components/hormone-consultation/HCFaqs.vue'))
 const HCStickyBar = defineAsyncComponent(() => import('./components/hormone-consultation/HCStickyBar.vue'))
 
