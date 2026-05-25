@@ -55,10 +55,10 @@ const HomeNavHeader = defineAsyncComponent(() => import('@/components/header/Nav
 const HomeQuote = defineAsyncComponent(() => import('./components/HomeQuote.vue'))
 const HomeServices = defineAsyncComponent(() => import('./components/HomeServices.vue'))
 const HomeCommitment = defineAsyncComponent(() => import('./components/HomeCommitment.vue'))
-const HomeFacility = defineAsyncComponent(() => import('./components/HomeFacility.vue'))
+// const HomeFacility = defineAsyncComponent(() => import('./components/HomeFacility.vue'))
 const NewletterForm = defineAsyncComponent(() => import('@/components/contact/NewletterForm.vue'))
 const HomeAccreditation = defineAsyncComponent(() => import('./components/HomeAccreditation.vue'))
-const HomeComment = defineAsyncComponent(() => import('./components/HomeComment.vue'))
+// const HomeComment = defineAsyncComponent(() => import('./components/HomeComment.vue'))
 const Footer = defineAsyncComponent(() => import('@/components/footer/Footer.vue'))
 </script>
 
