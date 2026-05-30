@@ -5,10 +5,10 @@
                 <img class="logo" src="/images/footer/logo.png" alt="logo">
                 <div class="col-item">
                     <div class="item">17400 IRVINE BLVD, SUITE H <br /> TUSTIN, CA 92780</div>
-                    <div class="item mt-12px">MONDAY - FRIDAY: 10 AM - 5:30 PM</div>
+                    <div class="item mt-4px">MONDAY - FRIDAY: 10 AM - 5:30 PM</div>
                     <div class="item">SATURDAY: 10 AM - 2PM</div>
                     <div class="item">SUNDAY: CLOSED</div>
-                    <div class="item mt-12px">PHONE: 714-622-8460</div>
+                    <div class="item mt-4px">PHONE: 714-622-8460</div>
                     <div class="item">FAX: 714-622-8460</div>
                     <div class="item">CONTACT@ARTISAN-RX.COM</div>
                 </div>
@@ -72,7 +72,7 @@
             align-items: flex-start;
 
             .logo {
-                height: 235px;
+                height: 170px;
                 width: auto;
             }
 
@@ -85,7 +85,7 @@
                     font-family: var(--dls-font-jost);
                     font-size: 13px;
                     color: var(--dls-color-burgundy);
-                    line-height: 200%;
+                    line-height: 150%;
                     letter-spacing: -0.5%;
 
                     &.link {
