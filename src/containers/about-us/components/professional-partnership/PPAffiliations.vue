@@ -11,7 +11,7 @@
             </div>
         </article>
 
-        <article class="aff-card" data-aos="fade-up" data-aos-delay="200">
+        <!-- <article class="aff-card" data-aos="fade-up" data-aos-delay="200">
             <img class="aff-logo" src="/images/accreditation/ldn.png" alt="LDN Research Trust">
             <div class="aff-body">
                 <h3 class="aff-name">LDN Research Trust</h3>
@@ -21,7 +21,7 @@
                     prescriber's LDN protocols are compounded with precision.</p>
                 <span class="aff-tag expertise">Specialized Expertise</span>
             </div>
-        </article>
+        </article> -->
 
         <article class="aff-card" data-aos="fade-up" data-aos-delay="300">
             <img class="aff-logo" src="/images/accreditation/apc.png" alt="Alliance for Pharmacy Compounding">
