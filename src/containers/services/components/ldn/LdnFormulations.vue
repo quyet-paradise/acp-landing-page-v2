@@ -17,7 +17,7 @@
             <div class="form-cards">
                 <div class="form-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="form-card-name">Plant-Based Capsules</div>
-                    <div class="form-card-why">Simple, travel-proof, dye free</div>
+                    <div class="form-card-why">Dye-free, allergen-free</div>
                     <span class="form-card-best">Best for most adults</span>
                 </div>
                 <div class="form-card" data-aos="fade-up" data-aos-delay="200">
@@ -30,7 +30,7 @@
                     <div class="form-card-why">Sublingual delivery, allows micro titration</div>
                     <span class="form-card-best">Sensitive stomachs</span>
                 </div>
-                <div class="form-card" data-aos="fade-up" data-aos-delay="400">
+                <!-- <div class="form-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="form-card-name">Transdermal Cream</div>
                     <div class="form-card-why">Rub on wrist — bypasses the gut entirely</div>
                     <span class="form-card-best">Severe GI issues &amp; pediatrics</span>
@@ -39,7 +39,7 @@
                     <div class="form-card-name">Slow Release Capsules</div>
                     <div class="form-card-why">Designed for extended release throughout the day</div>
                     <span class="form-card-best">Light sleepers</span>
-                </div>
+                </div> -->
             </div>
 
             <p class="form-note">All forms can be compounded lactose free and gluten free.</p>
@@ -106,7 +106,7 @@
 
 .form-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
