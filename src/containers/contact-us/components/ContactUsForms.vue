@@ -43,7 +43,7 @@
                                         <div class="appt-desc">Our essential panel covers core hormone markers plus a
                                             consultation to review your results and build a personalized plan.</div>
                                     </div>
-                                    <div class="appt-duration"><span class="appt-price-tag">$259</span></div>
+                                    <div class="appt-duration"><span class="appt-price-tag">$</span></div>
                                 </div>
                                 <div class="appt-type"
                                     :class="{ 'selected': selectedApptType === APPOINTMENT_TYPE.ARTISAN_COMPREHENSIVE_HORMONE_PANEL }" @click="selectApptType(APPOINTMENT_TYPE.ARTISAN_COMPREHENSIVE_HORMONE_PANEL, 359, '50 min')"
@@ -55,7 +55,7 @@
                                             and wellness markers, plus a consultation to review your results and create
                                             a detailed treatment plan.</div>
                                     </div>
-                                    <div class="appt-duration"><span class="appt-price-tag">$359</span></div>
+                                    <div class="appt-duration"><span class="appt-price-tag">$</span></div>
                                 </div>
                                 <div class="appt-type"
                                     :class="{ 'selected': selectedApptType === APPOINTMENT_TYPE.CONSULTATION_ONLY }" @click="selectApptType(APPOINTMENT_TYPE.CONSULTATION_ONLY, 85, '50 min')"
@@ -67,7 +67,7 @@
                                             meet with our pharmacist to discuss your results and explore treatment
                                             options.</div>
                                     </div>
-                                    <div class="appt-duration"><span class="appt-price-tag">$85</span></div>
+                                    <div class="appt-duration"><span class="appt-price-tag">$</span></div>
                                 </div>
                             </div>
                         </div>

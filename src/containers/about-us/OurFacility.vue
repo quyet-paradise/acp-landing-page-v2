@@ -249,11 +249,12 @@ const scrollRight = () => {
 
 .facility-intro .body-text {
     font-size: 24px;
-    line-height: 108%;
-    letter-spacing: 0;
+    line-height: 105%;
+    letter-spacing: -7%;
     font-weight: 300;
     color: var(--dls-color-burgundy);
     margin-top: 32px;
+    font-family: var(--dls-font-spezia-book-b);
 }
 
 /* ── HORIZONTAL LINE (template uses thin lines as dividers) ── */
@@ -409,7 +410,7 @@ const scrollRight = () => {
     color: var(--dls-color-burgundy);
     text-align: center;
     margin: 0;
-    padding: 28px 32px;
+    padding: 32px 24px;
     border-bottom: 1px solid var(--dls-color-border);
 }
 
@@ -422,7 +423,7 @@ const scrollRight = () => {
     color: var(--dls-color-burgundy);
     text-align: center;
     margin: 0;
-    padding: 64px 48px;
+    padding: 32px 24px;
 }
 
 /* ── TAUPE BANNER (per template brown/taupe sections) ── */

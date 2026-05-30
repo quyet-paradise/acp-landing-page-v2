@@ -5,7 +5,7 @@
         <div class="hero-content">
             <div class="breadcrumb" data-aos="fade-up"><a href="/">Home</a><span class="sep">›</span><a href="#">Patients</a><span
                     class="sep">›</span><span>Getting Started</span></div>
-            <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">Patients</div>
+            <!-- <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">Patients</div> -->
             <h1 data-aos="fade-up" data-aos-delay="200">Getting Started</h1>
             <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">Thank you for starting your wellness journey with us. Our pharmacists are here to create personalized solutions that support your health goals — for you and your pets.</p>
         </div>

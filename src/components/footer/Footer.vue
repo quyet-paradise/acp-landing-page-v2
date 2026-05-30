@@ -23,13 +23,13 @@
 
                 <div class="divider"></div>
 
-                <div class="col-item">
+                <!-- <div class="col-item">
                     <div class="item link" @click="goToPage(ROUTE_NAME.OUR_TEAM)">ABOUT US</div>
                     <div class="item link" @click="goToPage(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">SERVICES</div>
                     <div class="item link" @click="goToPage(ROUTE_NAME.GETTING_STATED)">PATIENTS</div>
                     <div class="item link" @click="goToPage(ROUTE_NAME.WHY_ARTISAN)">PROVIDERS</div>
                     <div class="item link" @click="goToPage(ROUTE_NAME.CONTACT_US_PAGE)">CONTACT US</div>
-                </div>
+                </div> -->
 
                 <div class="divider"></div>
             </div>
@@ -43,8 +43,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ROUTE_NAME } from '@/constants/route-constants'
-import { goToPage } from '@/utils/common-utils'
+// import { ROUTE_NAME } from '@/constants/route-constants'
+// import { goToPage } from '@/utils/common-utils'
 </script>
 
 <style lang="scss" scoped>
@@ -72,7 +72,7 @@ import { goToPage } from '@/utils/common-utils'
             align-items: flex-start;
 
             .logo {
-                height: 200px;
+                height: 235px;
                 width: auto;
             }
 
