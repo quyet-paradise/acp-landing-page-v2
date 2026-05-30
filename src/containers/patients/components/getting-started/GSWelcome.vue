@@ -12,26 +12,29 @@
                 </div>
                 <div class="welcome-contact"><strong>Have questions?</strong> Whether it's about compounded medications,
                     pricing, or how compounding works — we're here to help. Call or text us at <strong>(714)
-                        622-8460</strong> or email <strong>info@artisanrx.com</strong>.</div>
+                        622-8460</strong> or email <strong>contact@artisan-rx.com</strong>.</div>
             </div>
             <div data-aos="fade-up">
                 <div class="welcome-specialties-label">Our Compounding Specialties</div>
                 <ul class="specialties-list">
-                    <li><a href="#">Hormone Replacement Therapy <span class="arrow">→</span></a></li>
-                    <li><a href="#">Low Dose Naltrexone (LDN) <span class="arrow">→</span></a></li>
-                    <li><a href="#">Sexual Health for Men &amp; Women <span class="arrow">→</span></a></li>
-                    <li><a href="#">Weight Loss <span class="arrow">→</span></a></li>
-                    <li><a href="#">Hair Growth <span class="arrow">→</span></a></li>
-                    <li><a href="#">Dermatology <span class="arrow">→</span></a></li>
-                    <li><a href="#">Pediatrics <span class="arrow">→</span></a></li>
-                    <li><a href="#">Veterinary (Canine &amp; Feline) <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.HORMONE_REPLACEMENT_THERAPY_SERVICE)">Hormone Replacement Therapy <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.LOW_DOSE_NALTREXONE_SERVICE)">Low Dose Naltrexone (LDN) <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.SEXUAL_HEALTH_SERVICE)">Sexual Health for Men &amp; Women <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.WEIGHT_LOSS_SERVICE)">Weight Loss <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.HAIR_GROWTH_SERVICE)">Hair Growth <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.DERMATOLOGY_SERVICE)">Dermatology <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.PEDIATRICS_SERVICE)">Pediatrics <span class="arrow">→</span></a></li>
+                    <li><a href="javascript:void(0)" @click="goToPage(ROUTE_NAME.VETERINARY_SERVICE)">Veterinary (Canine &amp; Feline) <span class="arrow">→</span></a></li>
                 </ul>
             </div>
         </div>
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .welcome {

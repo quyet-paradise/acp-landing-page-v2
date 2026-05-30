@@ -17,6 +17,7 @@
                 </div>
 
                 <img @click="handleNext" class="next-btn" src="@/assets/images/facility/right-btn.svg" alt="right-arrow">
+                <img @click="handlePrev" class="prev-btn" src="@/assets/images/facility/left-btn.svg" alt="left-arrow">
             </div>
         </div>
     </div>
@@ -69,6 +70,14 @@ const handleNext = () => {
         currentCommitment.value = commitments[0]
     } else {
         currentCommitment.value = commitments[currentCommitment.value?.id + 1]
+    }
+}
+
+const handlePrev = () => {
+    if (currentCommitment.value?.id === 0) {
+        currentCommitment.value = commitments[commitments.length - 1]
+    } else {
+        currentCommitment.value = commitments[currentCommitment.value?.id - 1]
     }
 }
 </script>
@@ -159,6 +168,14 @@ const handleNext = () => {
                 top: 50%;
                 transform: translate(0, -50%);
             } 
+
+            .prev-btn {
+                cursor: pointer;
+                position: absolute;
+                left: 32px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
         }
     }
 

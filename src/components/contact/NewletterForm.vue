@@ -14,7 +14,7 @@
                         message: 'Please input name',
                         trigger: 'blur',
                     }]">
-                    <el-input v-model="contactForm.name" placeholder="FIRST NAME"></el-input>
+                    <el-input v-model="contactForm.name" placeholder="FULL NAME"></el-input>
                 </el-form-item>
 
                 <el-form-item

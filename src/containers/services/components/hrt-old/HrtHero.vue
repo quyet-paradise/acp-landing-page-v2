@@ -9,12 +9,15 @@
             <h1>Hormone Replacement Therapy</h1>
             <p class="hero-subtitle">Individually compounded hormone preparations — customized to your body, your lab
                 results, and your prescriber's plan.</p>
-            <a href="#" class="hero-cta">Book Consultation</a>
+            <a href="#" class="hero-cta" @click="goToPage(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">Book Consultation</a>
         </div>
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .hero {

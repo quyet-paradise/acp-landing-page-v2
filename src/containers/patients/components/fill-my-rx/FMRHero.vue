@@ -5,7 +5,7 @@
         <div class="hero-content">
             <div class="breadcrumb" data-aos="fade-up"><a href="/">Home</a><span class="sep">›</span><a href="#">Patients</a><span
                     class="sep">›</span><span>Fill My Rx</span></div>
-            <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">Patients</div>
+            <!-- <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">Patients</div> -->
             <h1 data-aos="fade-up" data-aos-delay="200">Fill My Rx</h1>
             <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">Need a refill or ready to transfer your prescriptions? Submit your request
                 below and we'll take care of the rest.</p>
