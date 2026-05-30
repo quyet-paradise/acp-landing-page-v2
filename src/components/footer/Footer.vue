@@ -5,10 +5,15 @@
                 <img class="logo" src="/images/footer/logo.png" alt="logo">
                 <div class="col-item">
                     <div class="item">17400 IRVINE BLVD, SUITE H <br /> TUSTIN, CA 92780</div>
-                    <div class="item mt-4px">MONDAY - FRIDAY: 10 AM - 5:30 PM</div>
+                    <div class="item mt-12px">MONDAY - FRIDAY: 10 AM - 5:30 PM</div>
                     <div class="item">SATURDAY: 10 AM - 2PM</div>
                     <div class="item">SUNDAY: CLOSED</div>
-                    <div class="item mt-4px">PHONE: 714-622-8460</div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="col-item">
+                    <div class="item">PHONE: 714-622-8460</div>
                     <div class="item">FAX: 714-622-8460</div>
                     <div class="item">CONTACT@ARTISAN-RX.COM</div>
                 </div>
@@ -18,7 +23,7 @@
                 <div class="col-item">
                     <div class="item link">INSTAGRAM</div>
                     <div class="item link">FACEBOOK</div>
-                    <div class="item link">LINKEDIN</div>
+                    <!-- <div class="item link">LINKEDIN</div> -->
                 </div>
 
                 <div class="divider"></div>
@@ -34,8 +39,12 @@
                 <div class="divider"></div>
             </div>
 
-            <div class="footer--legal">
+            <!-- <div class="footer--legal">
                 © COPYRIGHT {{ new Date().getFullYear() }} ARTISAN COMPOUNDING PHARMACY | <span class="link">PRIVACY POLICY</span> | <span class="link">TERMS OF SERVICE</span>
+            </div> -->
+
+            <div class="footer--legal">
+                © COPYRIGHT {{ new Date().getFullYear() }} ARTISAN COMPOUNDING PHARMACY
             </div>
         </div>
     </div>
