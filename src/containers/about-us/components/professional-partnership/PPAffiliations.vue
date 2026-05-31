@@ -1,7 +1,7 @@
 <template>
     <section class="affiliations">
         <article class="aff-card" data-aos="fade-up" data-aos-delay="100">
-            <img class="aff-logo" src="/images/accreditation/pcca.png" alt="PCCA Proud Member">
+            <img class="aff-logo" @click="openBlankUrl('https://www.pccarx.com/')" src="/images/accreditation/pcca.png" alt="PCCA Proud Member">
             <div class="aff-body">
                 <h3 class="aff-name">PCCA</h3>
                 <p class="aff-full">Professional Compounding Centers of America</p>
@@ -24,7 +24,7 @@
         </article> -->
 
         <article class="aff-card" data-aos="fade-up" data-aos-delay="300">
-            <img class="aff-logo" src="/images/accreditation/apc.png" alt="Alliance for Pharmacy Compounding">
+            <img class="aff-logo" @click="openBlankUrl('https://a4pc.org/')" src="/images/accreditation/apc.png" alt="Alliance for Pharmacy Compounding">
             <div class="aff-body">
                 <h3 class="aff-name">A4PC</h3>
                 <p class="aff-full">Alliance for Pharmacy Compounding</p>
@@ -38,7 +38,9 @@
     </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { openBlankUrl } from '@/utils/common-utils'
+</script>
 
 <style lang="scss" scoped>
 .affiliations {
@@ -92,6 +94,7 @@
     object-fit: contain;
     flex-shrink: 0;
     border-radius: 0;
+    cursor: pointer;
 }
 
 .aff-body {
