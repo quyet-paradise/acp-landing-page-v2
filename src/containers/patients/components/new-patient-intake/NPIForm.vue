@@ -315,7 +315,7 @@
             <div class="help-strip" data-aos="fade-up">
                 <div class="help-strip-text">
                     <h3>Need help with this form?</h3>
-                    <p>Call or text us at (714) 622-8460 — our team is happy to assist.</p>
+                    <p>Call or text us at (949) 818-5799 — our team is happy to assist.</p>
                 </div><a href="#" class="cta-light">Contact Us</a>
             </div>
         </div>

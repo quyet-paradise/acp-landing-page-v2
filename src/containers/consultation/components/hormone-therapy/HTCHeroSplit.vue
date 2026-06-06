@@ -13,8 +13,8 @@
             <p data-aos="fade-up" data-aos-delay="300"
                 style="margin-top:16px;font-size:14px;color:var(--text-body);font-weight:300;position:relative;z-index:1">
                 or text <strong style="font-weight:500;color:var(--brown-dark)">Hormones</strong> to <a
-                    href="sms:+17146228460&body=Hormones"
-                    style="color:var(--brown-dark);font-weight:500;text-decoration:none">(714) 622-8460</a> to get
+                    href="sms:+19498185799&body=Hormones"
+                    style="color:var(--brown-dark);font-weight:500;text-decoration:none">(949) 818-5799</a> to get
                 started</p>
             <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
                 <span><svg viewBox="0 0 24 24">

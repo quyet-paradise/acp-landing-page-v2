@@ -293,7 +293,7 @@
                             </svg>
                         </div>
                         <h3>Phone</h3>
-                        <p class="rx-detail">714-622-8460</p>
+                        <p class="rx-detail">949-818-5799</p>
                         <p>Call us directly to place a prescription. We're available Monday–Friday 10 AM – 5:30 PM and
                             Saturday 10 AM – 2 PM.</p>
                     </div>
@@ -308,7 +308,7 @@
                             </svg>
                         </div>
                         <h3>Fax</h3>
-                        <p class="rx-detail">714-622-8460</p>
+                        <p class="rx-detail">949-818-8168</p>
                         <p>Send prescriptions directly to our pharmacy fax line. We'll confirm receipt and follow up if
                             any clarification is needed.</p>
                     </div>
@@ -326,7 +326,7 @@
                 the same confidence. We'd love to set up your provider account.</p>
             <div data-aos="fade-up" data-aos-delay="200"
                 style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 8px;">
-                <a href="tel:7146228460" class="cta-banner-btn">Call 714-622-8460</a>
+                <a href="tel:9498185799" class="cta-banner-btn">Call 949-818-5799</a>
                 <a href="mailto:contact@artisan-rx.com" class="cta-banner-btn">Email contact@artisan-rx.com</a>
             </div>
         </section>
