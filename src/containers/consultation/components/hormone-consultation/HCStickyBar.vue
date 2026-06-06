@@ -1,7 +1,7 @@
 <template>
     <div class="sticky-bar" id="stickyBar">
         <p>Ready to begin?</p>
-        <a href="sms:+17146228460&body=Hormones" class="sticky-cta"
+        <a href="sms:+19498185799&body=Hormones" class="sticky-cta"
             style="background:transparent;color:var(--dls-color-creamlight);border:1px solid var(--dls-color-creamlight)">Text
             Hormones<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
