@@ -186,7 +186,7 @@
 
 .member-photo {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     min-height: 500px;
     object-fit: cover;
     transition: transform .8s cubic-bezier(.25, .46, .45, .94), filter .6s;
