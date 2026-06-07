@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="appt-duration">15 min</div>
                                 </div>
-                                <div class="appt-type"
+                                <!-- <div class="appt-type"
                                     :class="{ 'selected': selectedApptType === APPOINTMENT_TYPE.ARTISAN_ESSENTIAL_HORMONE_PANEL }" @click="selectApptType(APPOINTMENT_TYPE.ARTISAN_ESSENTIAL_HORMONE_PANEL, 259, '50 min')"
                                     data-duration="50 min" data-price="259">
                                     <div class="appt-radio"></div>
@@ -68,7 +68,7 @@
                                             options.</div>
                                     </div>
                                     <div class="appt-duration"><span class="appt-price-tag">$</span></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
