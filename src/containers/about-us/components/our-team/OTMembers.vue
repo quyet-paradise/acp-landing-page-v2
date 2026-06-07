@@ -150,7 +150,7 @@
 
 /* Alternating layouts */
 .member.layout-a {
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 45% 55%;
 }
 
 .member.layout-b {
@@ -186,7 +186,7 @@
 
 .member-photo {
     width: 100%;
-    height: 70vh;
+    height: 100%;
     min-height: 500px;
     object-fit: cover;
     transition: transform .8s cubic-bezier(.25, .46, .45, .94), filter .6s;
