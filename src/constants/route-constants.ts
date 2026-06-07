@@ -20,7 +20,8 @@ export const ROUTE_NAME = {
     GETTING_STATED: 'Getting Started',
     NEW_PATIENT_INTAKE: 'New Patient Intake Form',
     FILL_MY_RX: 'Fill My Rx',
-    WHY_ARTISAN: 'Why Artisan'
+    WHY_ARTISAN: 'Why Artisan',
+    PRIVACY_POLICY: 'Privacy Policy'
 }
 
 export const PATH = {
@@ -45,5 +46,6 @@ export const PATH = {
     GETTING_STATED: '/patients/getting-started',
     NEW_PATIENT_INTAKE: '/patients/new-patient-intake',
     FILL_MY_RX: '/patients/fill-my-rx',
-    WHY_ARTISAN: '/providers/why-artisan'
+    WHY_ARTISAN: '/providers/why-artisan',
+    PRIVACY_POLICY: '/privacy-policy'
 }

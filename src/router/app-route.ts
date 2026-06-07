@@ -26,6 +26,8 @@ const NewPatientIntake = () => import('@/containers/patients/NewPatientIntake.vu
 const FillMyRx = () => import('@/containers/patients/FillMyRx.vue')
 const WhyArtisan = () => import('@/containers/providers/WhyArtisan.vue')
 
+const PrivacyPolicy = () => import('@/containers/privacy/Privacy.vue')
+
 const routes = [
     { 
         path: PATH.HOME, 
@@ -158,6 +160,12 @@ const routes = [
         name: ROUTE_NAME.WHY_ARTISAN, 
         component: WhyArtisan,
         meta: { title: ` ⊹ ${ROUTE_NAME.WHY_ARTISAN}` }
+    },
+    { 
+        path: PATH.PRIVACY_POLICY, 
+        name: ROUTE_NAME.PRIVACY_POLICY, 
+        component: PrivacyPolicy,
+        meta: { title: ` ⊹ ${ROUTE_NAME.PRIVACY_POLICY}` }
     },
     {
         path: "/:catchAll(.*)", // Unrecognized path automatically matches 404

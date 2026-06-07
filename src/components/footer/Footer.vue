@@ -44,7 +44,7 @@
             </div> -->
 
             <div class="footer--legal">
-                © COPYRIGHT {{ new Date().getFullYear() }} ARTISAN COMPOUNDING PHARMACY
+                © COPYRIGHT {{ new Date().getFullYear() }} ARTISAN COMPOUNDING PHARMACY | <span class="link" @click="goToPage(ROUTE_NAME.PRIVACY_POLICY)">PRIVACY POLICY</span>
             </div>
         </div>
     </div>
@@ -52,8 +52,8 @@
 </template>
 
 <script lang="ts" setup>
-// import { ROUTE_NAME } from '@/constants/route-constants'
-// import { goToPage } from '@/utils/common-utils'
+import { ROUTE_NAME } from '@/constants/route-constants'
+import { goToPage } from '@/utils/common-utils'
 </script>
 
 <style lang="scss" scoped>
