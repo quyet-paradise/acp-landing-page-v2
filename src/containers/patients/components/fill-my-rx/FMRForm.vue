@@ -13,7 +13,7 @@
                         previously filled at Artisan Compounding Pharmacy — for both human and veterinary patients.</p>
                     <div class="form-notice warning"><strong>Please note:</strong> Any order placed on Saturday
                         afternoon or Sunday will not be addressed until the following business day.</div>
-                    <div class="form-help">Need further assistance? Text us at <strong>(949) 818-5799</strong> to chat
+                    <div class="form-help">Need further assistance? Text us at <strong>(949) 818 - 5799</strong> to chat
                         with our team.</div>
                     <div class="form-row form-group">
                         <div><label class="form-label">Your Full Name <span class="req">*</span></label><input
