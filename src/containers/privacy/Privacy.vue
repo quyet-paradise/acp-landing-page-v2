@@ -93,7 +93,7 @@
             <li><strong>Rates:</strong> Message and data rates may apply, depending on your mobile carrier and plan.
             </li>
             <li><strong>Opting out:</strong> You can opt out of text messages at any time by replying STOP to any
-                message. You may reply HELP for assistance, or contact us at (949) 818-5799.</li>
+                message. You may reply HELP for assistance, or contact us at (949) 818 - 5799.</li>
             <li><strong>Privacy of SMS consent:</strong> As stated above, your SMS consent and mobile information are
                 not shared with third parties or affiliates.</li>
         </ul>
@@ -125,7 +125,7 @@
         <div class="contact-card">
             <div class="name">Artisan Compounding Pharmacy</div>
             <p>17400 Irvine Blvd, Suite H, Tustin, CA 92780</p>
-            <p>Phone: <a href="tel:+19498185799">(949) 818-5799</a></p>
+            <p>Phone: <a href="tel:+19498185799">(949) 818 - 5799</a></p>
             <p>Email: <a href="mailto:contact@artisan-rx.com">contact@artisan-rx.com</a></p>
         </div>
     </div>

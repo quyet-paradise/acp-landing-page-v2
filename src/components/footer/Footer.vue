@@ -13,8 +13,8 @@
                 <div class="divider"></div>
 
                 <div class="col-item">
-                    <div class="item">PHONE: 949-818-5799</div>
-                    <div class="item">FAX: 949-818-8168</div>
+                    <div class="item">PHONE: 949 - 818 - 5799</div>
+                    <div class="item">FAX: 949 - 818 - 8168</div>
                     <div class="item">CONTACT@ARTISAN-RX.COM</div>
                 </div>
 

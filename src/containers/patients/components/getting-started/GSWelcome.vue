@@ -11,7 +11,7 @@
                         crafted with pharmaceutical precision and personal care.</p>
                 </div>
                 <div class="welcome-contact"><strong>Have questions?</strong> Whether it's about compounded medications,
-                    pricing, or how compounding works — we're here to help. Call or text us at <strong>(949) 818-5799</strong> or email <strong>contact@artisan-rx.com</strong>.</div>
+                    pricing, or how compounding works — we're here to help. Call or text us at <strong>(949) 818 - 5799</strong> or email <strong>contact@artisan-rx.com</strong>.</div>
             </div>
             <div data-aos="fade-up">
                 <div class="welcome-specialties-label">Our Compounding Specialties</div>
