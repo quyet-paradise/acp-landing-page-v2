@@ -36,12 +36,12 @@
                     </div>
                 </div>
 
-                <div class="consultation">
+                <!-- <div class="consultation">
                     <div class="title" @click="onShowItem('consultation')">Services</div>
                     <div v-if="isShowConsultationsItem" class="list-item">
                         <div class="item" @click="handleRouting(ROUTE_NAME.HORMONE_THERAPY_CONSULTATION)">HORMONE CONSULTATION</div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="patients">
                     <div class="title" @click="onShowItem('patients')">Patients</div>

@@ -1,7 +1,7 @@
 <template>
     <section class="contact-section">
         <div class="contact-grid">
-            <div class="contact-card card--hormone" data-aos="fade-up" data-aos-delay="100">
+            <!-- <div class="contact-card card--hormone" data-aos="fade-up" data-aos-delay="100">
                 <div class="contact-card-header">
                     <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -11,14 +11,13 @@
                     <p>Choose your appointment type, pick a date and time that works for you, and we'll take care of the rest.</p>
                 </div>
                 <div class="contact-card-body">
-                    <!-- Step indicators -->
+
                     <div class="booking-steps">
                         <div class="step-dot active" id="dot1"></div>
                         <div class="step-dot" id="dot2"></div>
                         <div class="step-dot" id="dot3"></div>
                     </div>
 
-                    <!-- STEP 1: Appointment Type + Calendar + Time -->
                     <div class="booking-step" :class="{ 'active': currentStep === 1 }" id="step1">
                         <div class="appt-type-group">
                             <label>Appointment Type</label>
@@ -34,7 +33,7 @@
                                     </div>
                                     <div class="appt-duration">15 min</div>
                                 </div>
-                                <!-- <div class="appt-type"
+                                <div class="appt-type"
                                     :class="{ 'selected': selectedApptType === APPOINTMENT_TYPE.ARTISAN_ESSENTIAL_HORMONE_PANEL }" @click="selectApptType(APPOINTMENT_TYPE.ARTISAN_ESSENTIAL_HORMONE_PANEL, 259, '50 min')"
                                     data-duration="50 min" data-price="259">
                                     <div class="appt-radio"></div>
@@ -68,7 +67,7 @@
                                             options.</div>
                                     </div>
                                     <div class="appt-duration"><span class="appt-price-tag">$</span></div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
@@ -95,7 +94,7 @@
                                 <div class="time-slots" id="timeSlots"></div>
                             </div>
 
-                        </div><!-- end calendarWrap -->
+                        </div>
 
                         <button class="form-submit" id="step1Next" style="opacity:.4;pointer-events:none"
                             @click="goToStep(2)">Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -104,7 +103,6 @@
                             </svg></button>
                     </div>
 
-                    <!-- STEP 2: Patient Info -->
                     <div class="booking-step" :class="{ 'active': currentStep === 2 }" id="step2">
                         <div class="booking-summary" id="summaryPreview"></div>
                         <div class="form-row">
@@ -127,7 +125,6 @@
                                 placeholder="Briefly describe your symptoms, concerns, or what you hope to address..."
                                 id="bkGoals"></textarea></div>
 
-                        <!-- Test Kit Delivery (panels only) -->
                         <div class="delivery-section" id="deliverySection" style="display:none">
                             <div class="payment-header">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -186,7 +183,6 @@
                             </div>
                         </div>
 
-                        <!-- Payment (paid appointments only) -->
                         <div class="payment-section" id="paymentSection" style="display:none">
                             <div class="payment-header">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -268,7 +264,6 @@
                         </div>
                     </div>
 
-                    <!-- STEP 3: Confirmation -->
                     <div class="booking-step" :class="{ 'active': currentStep === 3 }" id="step3">
                         <div class="confirmation">
                             <div class="confirm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -296,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="contact-card card--general" data-aos="fade-up" data-aos-delay="200">
                 <div class="contact-card-header">
                     <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -343,297 +338,300 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, reactive, ref } from 'vue'
-import { APPOINTMENT_TYPE, DELIVERY_TYPE } from '@/constants/app-constants'
-import { ElMessageBox } from 'element-plus'
+// import { computed, onMounted, reactive, ref } from 'vue'
+import { onMounted } from 'vue'
 
-const today = new Date()
-const currentMonth = ref<number>(today.getMonth())
-const currentYear = ref<number>(today.getFullYear())
-const selectedDate = ref<any>(null)
-const selectedTime = ref<any>(null)
-const selectedApptType = ref<any>(null)
-const selectedApptDuration = ref<any>(null)
-const selectedApptPrice = ref<number>(0)
-const selectedDelivery = ref<string>(DELIVERY_TYPE.PICKUP)
-const currentStep = ref<number>(1)
-const formData = reactive<any>({
-    firstName: '',
-    lastName: '',
-    email: '',
-    street: '',
-    city: '',
-    state: '',
-    zip: '',
-    cardNum: '',
-    cardName: '',
-    cardExp: '',
-    cardCvv: ''
-})
+// import { APPOINTMENT_TYPE, DELIVERY_TYPE } from '@/constants/app-constants'
 
-const isPanel = computed<boolean>(() => {
-    return selectedApptType.value && selectedApptType.value.indexOf('Panel') !== -1
-})
+// import { ElMessageBox } from 'element-plus'
 
-const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
-const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+// const today = new Date()
+// const currentMonth = ref<number>(today.getMonth())
+// const currentYear = ref<number>(today.getFullYear())
+// const selectedDate = ref<any>(null)
+// const selectedTime = ref<any>(null)
+// const selectedApptType = ref<any>(null)
+// const selectedApptDuration = ref<any>(null)
+// const selectedApptPrice = ref<number>(0)
+// const selectedDelivery = ref<string>(DELIVERY_TYPE.PICKUP)
+// const currentStep = ref<number>(1)
+// const formData = reactive<any>({
+//     firstName: '',
+//     lastName: '',
+//     email: '',
+//     street: '',
+//     city: '',
+//     state: '',
+//     zip: '',
+//     cardNum: '',
+//     cardName: '',
+//     cardExp: '',
+//     cardCvv: ''
+// })
+
+// const isPanel = computed<boolean>(() => {
+//     return selectedApptType.value && selectedApptType.value.indexOf('Panel') !== -1
+// })
+
+// const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+// const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
 // Available time slots (Mon-Fri only, pharmacy hours)
-const timeSlotOptions = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM']
-const satSlots = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM']
+// const timeSlotOptions = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM']
+// const satSlots = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM']
 
-const selectDelivery = (method: string) => {
-    selectedDelivery.value = method
-}
+// const selectDelivery = (method: string) => {
+//     selectedDelivery.value = method
+// }
 
-const updateStep1Button = () => {
-    const btn: any = document.getElementById('step1Next')
-    if (selectedApptType.value && selectedDate.value && selectedTime.value) {
-        btn.style.opacity = '1'
-        btn.style.pointerEvents = 'auto'
-    } else {
-        btn.style.opacity = '.4'
-        btn.style.pointerEvents = 'none'
-    }
-}
+// const updateStep1Button = () => {
+//     const btn: any = document.getElementById('step1Next')
+//     if (selectedApptType.value && selectedDate.value && selectedTime.value) {
+//         btn.style.opacity = '1'
+//         btn.style.pointerEvents = 'auto'
+//     } else {
+//         btn.style.opacity = '.4'
+//         btn.style.pointerEvents = 'none'
+//     }
+// }
 
-const selectApptType = (name: string, price: number, duration: string) => {
-    selectedApptType.value = name
-    selectedApptDuration.value = duration
-    selectedApptPrice.value = price
+// const selectApptType = (name: string, price: number, duration: string) => {
+//     selectedApptType.value = name
+//     selectedApptDuration.value = duration
+//     selectedApptPrice.value = price
 
-    const calendarWrap = document.getElementById('calendarWrap')
-    if (calendarWrap) {
-        calendarWrap.style.display = 'block'
-    }
+//     const calendarWrap = document.getElementById('calendarWrap')
+//     if (calendarWrap) {
+//         calendarWrap.style.display = 'block'
+//     }
     
-    updateStep1Button()
-}
+//     updateStep1Button()
+// }
 
-const selectTime = (time: any, btn: any) => {
-    document.querySelectorAll('.time-slot.selected').forEach(s => s.classList.remove('selected'))
-    btn.classList.add('selected')
-    selectedTime.value = time
-    updateStep1Button()
-}
+// const selectTime = (time: any, btn: any) => {
+//     document.querySelectorAll('.time-slot.selected').forEach(s => s.classList.remove('selected'))
+//     btn.classList.add('selected')
+//     selectedTime.value = time
+//     updateStep1Button()
+// }
 
-const showTimeSlots = () => {
-    const wrap: any = document.getElementById('timeSlotsWrap')
-    const container: any = document.getElementById('timeSlots')
-    wrap.style.display = 'block'
-    container.innerHTML = ''
+// const showTimeSlots = () => {
+//     const wrap: any = document.getElementById('timeSlotsWrap')
+//     const container: any = document.getElementById('timeSlots')
+//     wrap.style.display = 'block'
+//     container.innerHTML = ''
 
-    const dayOfWeek = selectedDate.value.getDay()
-    const slots = dayOfWeek === 6 ? satSlots : timeSlotOptions
+//     const dayOfWeek = selectedDate.value.getDay()
+//     const slots = dayOfWeek === 6 ? satSlots : timeSlotOptions
 
-    slots.forEach(time => {
-        const btn = document.createElement('div')
-        btn.className = 'time-slot'
-        btn.textContent = time
-        btn.onclick = () => selectTime(time, btn)
-        container.appendChild(btn)
-    });
-}
+//     slots.forEach(time => {
+//         const btn = document.createElement('div')
+//         btn.className = 'time-slot'
+//         btn.textContent = time
+//         btn.onclick = () => selectTime(time, btn)
+//         container.appendChild(btn)
+//     });
+// }
 
-const selectDate = (day: any, cell: any) => {
-    document.querySelectorAll('.cal-day.selected').forEach(c => c.classList.remove('selected'))
-    cell.classList.add('selected')
-    selectedDate.value = new Date(currentYear.value, currentMonth.value, day)
-    selectedTime.value = null
-    showTimeSlots()
-    updateStep1Button()
-}
+// const selectDate = (day: any, cell: any) => {
+//     document.querySelectorAll('.cal-day.selected').forEach(c => c.classList.remove('selected'))
+//     cell.classList.add('selected')
+//     selectedDate.value = new Date(currentYear.value, currentMonth.value, day)
+//     selectedTime.value = null
+//     showTimeSlots()
+//     updateStep1Button()
+// }
 
-const renderCalendar = () => {
-    const grid: any = document.getElementById('calGrid')
-    const calMonthYear: any = document.getElementById('calMonthYear')
-    if (calMonthYear) {
-        calMonthYear.textContent = months[currentMonth.value] + ' ' + currentYear.value
-    }
-    grid.innerHTML = ''
+// const renderCalendar = () => {
+//     const grid: any = document.getElementById('calGrid')
+//     const calMonthYear: any = document.getElementById('calMonthYear')
+//     if (calMonthYear) {
+//         calMonthYear.textContent = months[currentMonth.value] + ' ' + currentYear.value
+//     }
+//     grid.innerHTML = ''
 
-    // Day labels
-    days.forEach(d => {
-        const lbl = document.createElement('div')
-        lbl.className = 'cal-day-label'
-        lbl.textContent = d
-        grid.appendChild(lbl)
-    });
+//     // Day labels
+//     days.forEach(d => {
+//         const lbl = document.createElement('div')
+//         lbl.className = 'cal-day-label'
+//         lbl.textContent = d
+//         grid.appendChild(lbl)
+//     });
 
-    const firstDay = new Date(currentYear.value, currentMonth.value, 1).getDay()
-    const daysInMonth = new Date(currentYear.value, currentMonth.value + 1, 0).getDate()
+//     const firstDay = new Date(currentYear.value, currentMonth.value, 1).getDay()
+//     const daysInMonth = new Date(currentYear.value, currentMonth.value + 1, 0).getDate()
 
-    // Empty cells before first day
-    for (let i = 0; i < firstDay; i++) {
-        const empty = document.createElement('div')
-        empty.className = 'cal-day empty'
-        grid.appendChild(empty)
-    }
+//     // Empty cells before first day
+//     for (let i = 0; i < firstDay; i++) {
+//         const empty = document.createElement('div')
+//         empty.className = 'cal-day empty'
+//         grid.appendChild(empty)
+//     }
 
-    for (let d = 1; d <= daysInMonth; d++) {
-        const cell: any = document.createElement('div')
-        cell.className = 'cal-day'
-        cell.textContent = d
-        const date = new Date(currentYear.value, currentMonth.value, d)
-        const dayOfWeek = date.getDay()
+//     for (let d = 1; d <= daysInMonth; d++) {
+//         const cell: any = document.createElement('div')
+//         cell.className = 'cal-day'
+//         cell.textContent = d
+//         const date = new Date(currentYear.value, currentMonth.value, d)
+//         const dayOfWeek = date.getDay()
 
-        // Disable past dates and Sundays
-        const isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate())
-        const isSunday = dayOfWeek === 0
-        if (isPast || isSunday) {
-        cell.classList.add('disabled')
-        } else {
-        cell.onclick = () => selectDate(d, cell)
-        }
+//         // Disable past dates and Sundays
+//         const isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate())
+//         const isSunday = dayOfWeek === 0
+//         if (isPast || isSunday) {
+//         cell.classList.add('disabled')
+//         } else {
+//         cell.onclick = () => selectDate(d, cell)
+//         }
 
-        // Highlight today
-        if (d === today.getDate() && currentMonth.value === today.getMonth() && currentYear.value === today.getFullYear()) {
-        cell.classList.add('today')
-        }
+//         // Highlight today
+//         if (d === today.getDate() && currentMonth.value === today.getMonth() && currentYear.value === today.getFullYear()) {
+//         cell.classList.add('today')
+//         }
 
-        // Keep selection
-        if (selectedDate.value && d === selectedDate.value.getDate() && currentMonth.value === selectedDate.value.getMonth() && currentYear.value === selectedDate.value.getFullYear()) {
-        cell.classList.add('selected')
-        }
+//         // Keep selection
+//         if (selectedDate.value && d === selectedDate.value.getDate() && currentMonth.value === selectedDate.value.getMonth() && currentYear.value === selectedDate.value.getFullYear()) {
+//         cell.classList.add('selected')
+//         }
 
-        grid.appendChild(cell)
-    }
-}
+//         grid.appendChild(cell)
+//     }
+// }
 
-const changeMonth = (dir: number) => {
-    currentMonth.value += dir;
-    if (currentMonth.value > 11) { currentMonth.value = 0; currentYear.value++; }
-    if (currentMonth.value < 0) { currentMonth.value = 11; currentYear.value--; }
-    renderCalendar()
-}
+// const changeMonth = (dir: number) => {
+//     currentMonth.value += dir;
+//     if (currentMonth.value > 11) { currentMonth.value = 0; currentYear.value++; }
+//     if (currentMonth.value < 0) { currentMonth.value = 11; currentYear.value--; }
+//     renderCalendar()
+// }
 
-const formatDate = (date: any) => {
-    return days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
-}
+// const formatDate = (date: any) => {
+//     return days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
+// }
 
-const goToStep = (step: number) => {
-    currentStep.value = step
+// const goToStep = (step: number) => {
+//     currentStep.value = step
 
-    document.querySelectorAll('.step-dot').forEach((d, i) => {
-        d.classList.remove('active', 'done')
-        if (i < step - 1) d.classList.add('done')
-        if (i === step - 1) d.classList.add('active')
-    })
+//     document.querySelectorAll('.step-dot').forEach((d, i) => {
+//         d.classList.remove('active', 'done')
+//         if (i < step - 1) d.classList.add('done')
+//         if (i === step - 1) d.classList.add('active')
+//     })
 
-    if (step === 2) {
-        const hasFee = selectedApptPrice.value > 0
+//     if (step === 2) {
+//         const hasFee = selectedApptPrice.value > 0
 
-        const paymentSection = document.getElementById('paymentSection')
-        if (paymentSection) {
-            paymentSection.style.display = hasFee ? 'block' : 'none'
-        }
+//         const paymentSection = document.getElementById('paymentSection')
+//         if (paymentSection) {
+//             paymentSection.style.display = hasFee ? 'block' : 'none'
+//         }
 
-        const submitBtnText = document.getElementById('submitBtnText')
-        if (submitBtnText) {
-            submitBtnText.textContent = hasFee ? 'Pay & Book Appointment' : 'Book Appointment'
-        }
+//         const submitBtnText = document.getElementById('submitBtnText')
+//         if (submitBtnText) {
+//             submitBtnText.textContent = hasFee ? 'Pay & Book Appointment' : 'Book Appointment'
+//         }
 
-        // Show test kit delivery for panel types
-        const deliverySection = document.getElementById('deliverySection')
-        if (deliverySection) {
-            deliverySection.style.display = isPanel.value ? 'block' : 'none'
-        }
+//         // Show test kit delivery for panel types
+//         const deliverySection = document.getElementById('deliverySection')
+//         if (deliverySection) {
+//             deliverySection.style.display = isPanel.value ? 'block' : 'none'
+//         }
 
-        // Reset delivery to pickup
-        selectedDelivery.value = DELIVERY_TYPE.PICKUP
+//         // Reset delivery to pickup
+//         selectedDelivery.value = DELIVERY_TYPE.PICKUP
 
-        // Update payment amount display
-        if (hasFee) {
-            const payLabel = document.getElementById('payLabel')
-            const payPrice = document.getElementById('payPrice')
+//         // Update payment amount display
+//         if (hasFee) {
+//             const payLabel = document.getElementById('payLabel')
+//             const payPrice = document.getElementById('payPrice')
 
-            if (payLabel && payPrice) {
-                payLabel.textContent = selectedApptType.value + ' (' + selectedApptDuration.value + ')'
-                payPrice.textContent = '$' + selectedApptPrice.value
-            }
-        }
+//             if (payLabel && payPrice) {
+//                 payLabel.textContent = selectedApptType.value + ' (' + selectedApptDuration.value + ')'
+//                 payPrice.textContent = '$' + selectedApptPrice.value
+//             }
+//         }
 
-        const summaryPreview = document.getElementById('summaryPreview')
-        if (summaryPreview) {
-            summaryPreview.innerHTML =
-                '<div class="booking-summary-row"><span class="label">Appointment</span><span class="value">' + selectedApptType.value + '</span></div>' +
-                '<div class="booking-summary-row"><span class="label">Duration</span><span class="value">' + selectedApptDuration.value + '</span></div>' +
-                '<div class="booking-summary-row"><span class="label">Date</span><span class="value">' + formatDate(selectedDate.value) + '</span></div>' +
-                '<div class="booking-summary-row"><span class="label">Time</span><span class="value">' + selectedTime.value + '</span></div>' +
-                (hasFee ? '<div class="booking-summary-row"><span class="label">Fee</span><span class="value">$' + selectedApptPrice.value + '</span></div>' : '<div class="booking-summary-row"><span class="label">Fee</span><span class="value">Free</span></div>')
-        }
-    }
-}
+//         const summaryPreview = document.getElementById('summaryPreview')
+//         if (summaryPreview) {
+//             summaryPreview.innerHTML =
+//                 '<div class="booking-summary-row"><span class="label">Appointment</span><span class="value">' + selectedApptType.value + '</span></div>' +
+//                 '<div class="booking-summary-row"><span class="label">Duration</span><span class="value">' + selectedApptDuration.value + '</span></div>' +
+//                 '<div class="booking-summary-row"><span class="label">Date</span><span class="value">' + formatDate(selectedDate.value) + '</span></div>' +
+//                 '<div class="booking-summary-row"><span class="label">Time</span><span class="value">' + selectedTime.value + '</span></div>' +
+//                 (hasFee ? '<div class="booking-summary-row"><span class="label">Fee</span><span class="value">$' + selectedApptPrice.value + '</span></div>' : '<div class="booking-summary-row"><span class="label">Fee</span><span class="value">Free</span></div>')
+//         }
+//     }
+// }
 
-const submitBooking = () => {
-    if (!formData.firstName || !formData.lastName || !formData.email) {
-        ElMessageBox.alert('Please fill in your name and email.')
-        return
-    }
+// const submitBooking = () => {
+//     if (!formData.firstName || !formData.lastName || !formData.email) {
+//         ElMessageBox.alert('Please fill in your name and email.')
+//         return
+//     }
 
-    if (isPanel.value && selectedDelivery.value === DELIVERY_TYPE.MAIL) {
-        if (!formData.street || !formData.city || !formData.state || !formData.zip) {
-            ElMessageBox.alert('Please fill in your mailing address for test kit delivery.')
-            return
-        }
-    }
+//     if (isPanel.value && selectedDelivery.value === DELIVERY_TYPE.MAIL) {
+//         if (!formData.street || !formData.city || !formData.state || !formData.zip) {
+//             ElMessageBox.alert('Please fill in your mailing address for test kit delivery.')
+//             return
+//         }
+//     }
 
-    if (selectedApptPrice.value > 0) {
-        if (!formData.cardNum || !formData.cardName || !formData.cardExp || !formData.cardCvv) {
-            ElMessageBox.alert('Please fill in your payment details to secure your appointment.')
-            return
-        }
-    }
+//     if (selectedApptPrice.value > 0) {
+//         if (!formData.cardNum || !formData.cardName || !formData.cardExp || !formData.cardCvv) {
+//             ElMessageBox.alert('Please fill in your payment details to secure your appointment.')
+//             return
+//         }
+//     }
 
-    // Build delivery line for confirmation
-    let deliveryLine = ''
-    if (isPanel.value) {
-        if (selectedDelivery.value === DELIVERY_TYPE.PICKUP) {
-            deliveryLine = '<div class="booking-summary-row"><span class="label">Test Kit</span><span class="value">Pick up at pharmacy</span></div>'
-        } else {
-            deliveryLine = '<div class="booking-summary-row"><span class="label">Test Kit</span><span class="value">Mail to ' + formData.street + ', ' + formData.city + ', ' + formData.state + ' ' + formData.zip + '</span></div>'
-        }
-    }
+//     // Build delivery line for confirmation
+//     let deliveryLine = ''
+//     if (isPanel.value) {
+//         if (selectedDelivery.value === DELIVERY_TYPE.PICKUP) {
+//             deliveryLine = '<div class="booking-summary-row"><span class="label">Test Kit</span><span class="value">Pick up at pharmacy</span></div>'
+//         } else {
+//             deliveryLine = '<div class="booking-summary-row"><span class="label">Test Kit</span><span class="value">Mail to ' + formData.street + ', ' + formData.city + ', ' + formData.state + ' ' + formData.zip + '</span></div>'
+//         }
+//     }
 
-    const confirmName = document.getElementById('confirmName')
-    if (confirmName) {
-        confirmName.textContent = formData.firstName
-    }
+//     const confirmName = document.getElementById('confirmName')
+//     if (confirmName) {
+//         confirmName.textContent = formData.firstName
+//     }
 
-    const confirmSummary = document.getElementById('confirmSummary')
-    if (confirmSummary) {
-        confirmSummary.innerHTML =
-            '<div class="booking-summary-row"><span class="label">Appointment</span><span class="value">' + selectedApptType.value + '</span></div>' +
-            '<div class="booking-summary-row"><span class="label">Duration</span><span class="value">' + selectedApptDuration.value + '</span></div>' +
-            '<div class="booking-summary-row"><span class="label">Date</span><span class="value">' + formatDate(selectedDate.value) + '</span></div>' +
-            '<div class="booking-summary-row"><span class="label">Time</span><span class="value">' + selectedTime.value + '</span></div>' +
-            '<div class="booking-summary-row"><span class="label">Patient</span><span class="value">' + formData.firstName + ' ' + formData.lastName + '</span></div>' +
-            '<div class="booking-summary-row"><span class="label">Email</span><span class="value">' + formData.email + '</span></div>' +
-            deliveryLine +
-            (selectedApptPrice.value > 0 ? '<div class="booking-summary-row"><span class="label">Amount Paid</span><span class="value">$' + selectedApptPrice.value + '</span></div>' : '')
-    }
+//     const confirmSummary = document.getElementById('confirmSummary')
+//     if (confirmSummary) {
+//         confirmSummary.innerHTML =
+//             '<div class="booking-summary-row"><span class="label">Appointment</span><span class="value">' + selectedApptType.value + '</span></div>' +
+//             '<div class="booking-summary-row"><span class="label">Duration</span><span class="value">' + selectedApptDuration.value + '</span></div>' +
+//             '<div class="booking-summary-row"><span class="label">Date</span><span class="value">' + formatDate(selectedDate.value) + '</span></div>' +
+//             '<div class="booking-summary-row"><span class="label">Time</span><span class="value">' + selectedTime.value + '</span></div>' +
+//             '<div class="booking-summary-row"><span class="label">Patient</span><span class="value">' + formData.firstName + ' ' + formData.lastName + '</span></div>' +
+//             '<div class="booking-summary-row"><span class="label">Email</span><span class="value">' + formData.email + '</span></div>' +
+//             deliveryLine +
+//             (selectedApptPrice.value > 0 ? '<div class="booking-summary-row"><span class="label">Amount Paid</span><span class="value">$' + selectedApptPrice.value + '</span></div>' : '')
+//     }
 
-    // Show questionnaire note only for paid consultations (not Discovery Call)
-    const qNote: any = document.getElementById('questionnaireNote')
-    qNote.style.display = selectedApptPrice.value > 0 ? 'block' : 'none'
+//     // Show questionnaire note only for paid consultations (not Discovery Call)
+//     const qNote: any = document.getElementById('questionnaireNote')
+//     qNote.style.display = selectedApptPrice.value > 0 ? 'block' : 'none'
 
-    goToStep(3)
-}
+//     goToStep(3)
+// }
 
-const formatCardNumber = (e: any) => {
-    let v = e.target.value.replace(/\D/g, '').substring(0, 16);
-    v = v.replace(/(.{4})/g, '$1 ').trim()
-    formData.cardNum = v
-}
+// const formatCardNumber = (e: any) => {
+//     let v = e.target.value.replace(/\D/g, '').substring(0, 16);
+//     v = v.replace(/(.{4})/g, '$1 ').trim()
+//     formData.cardNum = v
+// }
 
-const formatExpiry = (e: any) => {
-    let v = e.target.value.replace(/\D/g, '').substring(0, 4);
-    if (v.length >= 3) v = v.substring(0, 2) + ' / ' + v.substring(2);
-    formData.cardExp = v
-}
+// const formatExpiry = (e: any) => {
+//     let v = e.target.value.replace(/\D/g, '').substring(0, 4);
+//     if (v.length >= 3) v = v.substring(0, 2) + ' / ' + v.substring(2);
+//     formData.cardExp = v
+// }
 
 onMounted(() => {
-    renderCalendar()
+    // renderCalendar()
 })
 </script>
 
@@ -646,7 +644,7 @@ onMounted(() => {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 32px;
     align-items: start;
 }
