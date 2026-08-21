@@ -339,17 +339,18 @@
 
 <script lang="ts" setup>
 // import { computed, onMounted, reactive, ref } from 'vue'
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
+
 // import { APPOINTMENT_TYPE, DELIVERY_TYPE } from '@/constants/app-constants'
 
 // import { ElMessageBox } from 'element-plus'
 
-const today = new Date()
-const currentMonth = ref<number>(today.getMonth())
-const currentYear = ref<number>(today.getFullYear())
-const selectedDate = ref<any>(null)
-const selectedTime = ref<any>(null)
-const selectedApptType = ref<any>(null)
+// const today = new Date()
+// const currentMonth = ref<number>(today.getMonth())
+// const currentYear = ref<number>(today.getFullYear())
+// const selectedDate = ref<any>(null)
+// const selectedTime = ref<any>(null)
+// const selectedApptType = ref<any>(null)
 // const selectedApptDuration = ref<any>(null)
 // const selectedApptPrice = ref<number>(0)
 // const selectedDelivery = ref<string>(DELIVERY_TYPE.PICKUP)
@@ -372,27 +373,27 @@ const selectedApptType = ref<any>(null)
 //     return selectedApptType.value && selectedApptType.value.indexOf('Panel') !== -1
 // })
 
-const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
-const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+// const months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+// const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
 // Available time slots (Mon-Fri only, pharmacy hours)
-const timeSlotOptions = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM']
-const satSlots = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM']
+// const timeSlotOptions = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM']
+// const satSlots = ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM']
 
 // const selectDelivery = (method: string) => {
 //     selectedDelivery.value = method
 // }
 
-const updateStep1Button = () => {
-    const btn: any = document.getElementById('step1Next')
-    if (selectedApptType.value && selectedDate.value && selectedTime.value) {
-        btn.style.opacity = '1'
-        btn.style.pointerEvents = 'auto'
-    } else {
-        btn.style.opacity = '.4'
-        btn.style.pointerEvents = 'none'
-    }
-}
+// const updateStep1Button = () => {
+//     const btn: any = document.getElementById('step1Next')
+//     if (selectedApptType.value && selectedDate.value && selectedTime.value) {
+//         btn.style.opacity = '1'
+//         btn.style.pointerEvents = 'auto'
+//     } else {
+//         btn.style.opacity = '.4'
+//         btn.style.pointerEvents = 'none'
+//     }
+// }
 
 // const selectApptType = (name: string, price: number, duration: string) => {
 //     selectedApptType.value = name
@@ -407,95 +408,95 @@ const updateStep1Button = () => {
 //     updateStep1Button()
 // }
 
-const selectTime = (time: any, btn: any) => {
-    document.querySelectorAll('.time-slot.selected').forEach(s => s.classList.remove('selected'))
-    btn.classList.add('selected')
-    selectedTime.value = time
-    updateStep1Button()
-}
+// const selectTime = (time: any, btn: any) => {
+//     document.querySelectorAll('.time-slot.selected').forEach(s => s.classList.remove('selected'))
+//     btn.classList.add('selected')
+//     selectedTime.value = time
+//     updateStep1Button()
+// }
 
-const showTimeSlots = () => {
-    const wrap: any = document.getElementById('timeSlotsWrap')
-    const container: any = document.getElementById('timeSlots')
-    wrap.style.display = 'block'
-    container.innerHTML = ''
+// const showTimeSlots = () => {
+//     const wrap: any = document.getElementById('timeSlotsWrap')
+//     const container: any = document.getElementById('timeSlots')
+//     wrap.style.display = 'block'
+//     container.innerHTML = ''
 
-    const dayOfWeek = selectedDate.value.getDay()
-    const slots = dayOfWeek === 6 ? satSlots : timeSlotOptions
+//     const dayOfWeek = selectedDate.value.getDay()
+//     const slots = dayOfWeek === 6 ? satSlots : timeSlotOptions
 
-    slots.forEach(time => {
-        const btn = document.createElement('div')
-        btn.className = 'time-slot'
-        btn.textContent = time
-        btn.onclick = () => selectTime(time, btn)
-        container.appendChild(btn)
-    });
-}
+//     slots.forEach(time => {
+//         const btn = document.createElement('div')
+//         btn.className = 'time-slot'
+//         btn.textContent = time
+//         btn.onclick = () => selectTime(time, btn)
+//         container.appendChild(btn)
+//     });
+// }
 
-const selectDate = (day: any, cell: any) => {
-    document.querySelectorAll('.cal-day.selected').forEach(c => c.classList.remove('selected'))
-    cell.classList.add('selected')
-    selectedDate.value = new Date(currentYear.value, currentMonth.value, day)
-    selectedTime.value = null
-    showTimeSlots()
-    updateStep1Button()
-}
+// const selectDate = (day: any, cell: any) => {
+//     document.querySelectorAll('.cal-day.selected').forEach(c => c.classList.remove('selected'))
+//     cell.classList.add('selected')
+//     selectedDate.value = new Date(currentYear.value, currentMonth.value, day)
+//     selectedTime.value = null
+//     showTimeSlots()
+//     updateStep1Button()
+// }
 
-const renderCalendar = () => {
-    const grid: any = document.getElementById('calGrid')
-    const calMonthYear: any = document.getElementById('calMonthYear')
-    if (calMonthYear) {
-        calMonthYear.textContent = months[currentMonth.value] + ' ' + currentYear.value
-    }
-    grid.innerHTML = ''
+// const renderCalendar = () => {
+//     const grid: any = document.getElementById('calGrid')
+//     const calMonthYear: any = document.getElementById('calMonthYear')
+//     if (calMonthYear) {
+//         calMonthYear.textContent = months[currentMonth.value] + ' ' + currentYear.value
+//     }
+//     grid.innerHTML = ''
 
-    // Day labels
-    days.forEach(d => {
-        const lbl = document.createElement('div')
-        lbl.className = 'cal-day-label'
-        lbl.textContent = d
-        grid.appendChild(lbl)
-    });
+//     // Day labels
+//     days.forEach(d => {
+//         const lbl = document.createElement('div')
+//         lbl.className = 'cal-day-label'
+//         lbl.textContent = d
+//         grid.appendChild(lbl)
+//     });
 
-    const firstDay = new Date(currentYear.value, currentMonth.value, 1).getDay()
-    const daysInMonth = new Date(currentYear.value, currentMonth.value + 1, 0).getDate()
+//     const firstDay = new Date(currentYear.value, currentMonth.value, 1).getDay()
+//     const daysInMonth = new Date(currentYear.value, currentMonth.value + 1, 0).getDate()
 
-    // Empty cells before first day
-    for (let i = 0; i < firstDay; i++) {
-        const empty = document.createElement('div')
-        empty.className = 'cal-day empty'
-        grid.appendChild(empty)
-    }
+//     // Empty cells before first day
+//     for (let i = 0; i < firstDay; i++) {
+//         const empty = document.createElement('div')
+//         empty.className = 'cal-day empty'
+//         grid.appendChild(empty)
+//     }
 
-    for (let d = 1; d <= daysInMonth; d++) {
-        const cell: any = document.createElement('div')
-        cell.className = 'cal-day'
-        cell.textContent = d
-        const date = new Date(currentYear.value, currentMonth.value, d)
-        const dayOfWeek = date.getDay()
+//     for (let d = 1; d <= daysInMonth; d++) {
+//         const cell: any = document.createElement('div')
+//         cell.className = 'cal-day'
+//         cell.textContent = d
+//         const date = new Date(currentYear.value, currentMonth.value, d)
+//         const dayOfWeek = date.getDay()
 
-        // Disable past dates and Sundays
-        const isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate())
-        const isSunday = dayOfWeek === 0
-        if (isPast || isSunday) {
-        cell.classList.add('disabled')
-        } else {
-        cell.onclick = () => selectDate(d, cell)
-        }
+//         // Disable past dates and Sundays
+//         const isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate())
+//         const isSunday = dayOfWeek === 0
+//         if (isPast || isSunday) {
+//         cell.classList.add('disabled')
+//         } else {
+//         cell.onclick = () => selectDate(d, cell)
+//         }
 
-        // Highlight today
-        if (d === today.getDate() && currentMonth.value === today.getMonth() && currentYear.value === today.getFullYear()) {
-        cell.classList.add('today')
-        }
+//         // Highlight today
+//         if (d === today.getDate() && currentMonth.value === today.getMonth() && currentYear.value === today.getFullYear()) {
+//         cell.classList.add('today')
+//         }
 
-        // Keep selection
-        if (selectedDate.value && d === selectedDate.value.getDate() && currentMonth.value === selectedDate.value.getMonth() && currentYear.value === selectedDate.value.getFullYear()) {
-        cell.classList.add('selected')
-        }
+//         // Keep selection
+//         if (selectedDate.value && d === selectedDate.value.getDate() && currentMonth.value === selectedDate.value.getMonth() && currentYear.value === selectedDate.value.getFullYear()) {
+//         cell.classList.add('selected')
+//         }
 
-        grid.appendChild(cell)
-    }
-}
+//         grid.appendChild(cell)
+//     }
+// }
 
 // const changeMonth = (dir: number) => {
 //     currentMonth.value += dir;
@@ -630,7 +631,7 @@ const renderCalendar = () => {
 // }
 
 onMounted(() => {
-    renderCalendar()
+    // renderCalendar()
 })
 </script>
 

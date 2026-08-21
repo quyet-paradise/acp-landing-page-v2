@@ -113,14 +113,14 @@ const aboutUsNavRef = ref()
 const servicesNavRef = ref()
 const patientsNavRef = ref()
 const providersNavRef = ref()
-const consultationNavRef = ref()
+// const consultationNavRef = ref()
 
 const hideAllPopover = () => {
     aboutUsNavRef.value.hide()
     servicesNavRef.value.hide()
     patientsNavRef.value.hide()
     providersNavRef.value.hide()
-    consultationNavRef.value.hide()
+    // consultationNavRef.value.hide()
 }
 
 const handleRouting = (routeName: string) => {
