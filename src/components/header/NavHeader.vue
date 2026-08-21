@@ -46,7 +46,7 @@
                     </template>
                 </el-popover>
 
-                <el-popover
+                <!-- <el-popover
                     ref="consultationNavRef"
                     :show-arrow="false"
                     placement="bottom-start"
@@ -60,7 +60,7 @@
                     <template #reference>
                         <div class="item">SERVICES</div>
                     </template>
-                </el-popover>
+                </el-popover> -->
 
                 <el-popover
                     ref="patientsNavRef"

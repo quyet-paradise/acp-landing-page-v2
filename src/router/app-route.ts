@@ -19,7 +19,7 @@ const ContactUs = () => import('@/containers/about-us/ContactUs.vue')
 const WhatIsCompounding = () => import('@/containers/patients/WhatIsCompounding.vue')
 const WhyChooseUs = () => import('@/containers/patients/WhyChooseUs.vue')
 // const HormoneTherapyConsultation = () => import('@/containers/consultation/HormoneTherapyConsultation.vue')
-const HormoneConsultation = () => import('@/containers/consultation/HormoneConsultation.vue')
+// const HormoneConsultation = () => import('@/containers/consultation/HormoneConsultation.vue')
 const ContactUsPage = () => import('@/containers/contact-us/ContactUs.vue')
 const GettingStarted = () => import('@/containers/patients/GettingStarted.vue')
 const NewPatientIntake = () => import('@/containers/patients/NewPatientIntake.vue')
@@ -125,12 +125,12 @@ const routes = [
         component: WhyChooseUs,
         meta: { title: ` ⊹ ${ROUTE_NAME.WHY_CHOOSE_US}` }
     },
-    { 
-        path: PATH.HORMONE_THERAPY_CONSULTATION, 
-        name: ROUTE_NAME.HORMONE_THERAPY_CONSULTATION, 
-        component: HormoneConsultation,
-        meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_THERAPY_CONSULTATION}` }
-    },
+    // { 
+    //     path: PATH.HORMONE_THERAPY_CONSULTATION, 
+    //     name: ROUTE_NAME.HORMONE_THERAPY_CONSULTATION, 
+    //     component: HormoneConsultation,
+    //     meta: { title: ` ⊹ ${ROUTE_NAME.HORMONE_THERAPY_CONSULTATION}` }
+    // },
     { 
         path: PATH.CONTACT_US_PAGE, 
         name: ROUTE_NAME.CONTACT_US_PAGE, 
