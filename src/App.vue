@@ -220,9 +220,9 @@ form?.addEventListener('submit', (e: any) => {
 
   if (!popupConfig.formEndpoint) {
     // No endpoint configured — open the visitor's mail app instead.
-    window.location.href = 'mailto:' + popupConfig.fallbackEmail +
-      '?subject=' + encodeURIComponent('Please add me to the Artisan opening list') +
-      '&body=' + encodeURIComponent('Hi Artisan,\n\nPlease notify me when you open.\n\nEmail: ' + v + '\n')
+    // window.location.href = 'mailto:' + popupConfig.fallbackEmail +
+    //   '?subject=' + encodeURIComponent('Please add me to the Artisan opening list') +
+    //   '&body=' + encodeURIComponent('Hi Artisan,\n\nPlease notify me when you open.\n\nEmail: ' + v + '\n')
     setTimeout(succeed, 400)
     return;
   }
